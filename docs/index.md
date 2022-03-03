@@ -1,5 +1,3 @@
-## We publish [Heusala Group's](https://heusalagroup.fi) open source projects here
-
 ### Websites
 
  * [docs.hg.fi - Documentation](https://docs.hg.fi)

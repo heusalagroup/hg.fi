@@ -1,4 +1,5 @@
-title: hg.fi
+title: Heusala Group
+description: We publish our open source projects here
 url: "https://hg.fi"
 theme: jekyll-theme-slate
 plugins:
