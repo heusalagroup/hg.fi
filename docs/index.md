@@ -1,8 +1,7 @@
-### Websites
+### Websites & apps
 
  * [docs.hg.fi](https://docs.hg.fi) -- Documentation and guides for our software
- * [Github @heusalagroup](https://github.com/heusalagroup)
- * [Github @hangovergames](https://github.com/hangovergames) ... our alterego for the gaming industry
+ * [laskurit.hg.fi](https://laskurit.hg.fi) -- Some web calculators & tools
 
 ### Package creators
 
@@ -15,3 +14,8 @@
 ### Tools
 
  * TODO
+
+### Social media
+
+ * [Github @heusalagroup](https://github.com/heusalagroup)
+ * [Github @hangovergames](https://github.com/hangovergames) ... our alterego for the gaming industry
