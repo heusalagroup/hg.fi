@@ -1,8 +1,8 @@
 ### Websites
 
- * [docs.hg.fi - Documentation](https://docs.hg.fi)
+ * [docs.hg.fi](https://docs.hg.fi) -- Documentation and guides for our software
  * [Github @heusalagroup](https://github.com/heusalagroup)
- * [Github @hangovergames .. our alterego for gaming industry](https://github.com/hangovergames)
+ * [Github @hangovergames](https://github.com/hangovergames) ... our alterego for the gaming industry
 
 ### Package creators
 
