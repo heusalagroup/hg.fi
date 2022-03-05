@@ -6,7 +6,7 @@
 
 ### Project templates
 
- * [create-backend](https://github.com/heusalagroup/create-backend) - TypeScript/NodeJS backend generator
+ * [create-backend](https://github.com/heusalagroup/create-backend) - TypeScript/NodeJS REST backend generator
  * [create-command](https://github.com/heusalagroup/create-command) - TypeScript/NodeJS shell command generator
 
 ### Tools
