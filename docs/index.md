@@ -27,6 +27,7 @@
 ### Tools
 
  * [hgm](https://github.com/heusalagroup/hgm) -- Our Git Submodule Package Manager
+ * [test](https://github.com/heusalagroup/test) -- Testing Environment for our modules
 
 ### Social media
 
