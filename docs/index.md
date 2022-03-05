@@ -26,7 +26,7 @@
 
 ### Tools
 
- * [hgm](https://github.com/heusalagroup/hgm))
+ * [hgm](https://github.com/heusalagroup/hgm) -- Our Git Submodule Package Manager
 
 ### Social media
 
