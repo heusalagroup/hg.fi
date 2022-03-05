@@ -2,6 +2,7 @@
 
  * [docs.hg.fi](https://docs.hg.fi) -- Documentation and guides for our software
  * [laskurit.hg.fi](https://laskurit.hg.fi) -- Some web calculators & tools
+ * [heusalagroup.fi](https://heusalagroup.fi) -- Our official website (in finnish)
 
 ### Project templates
 
