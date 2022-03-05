@@ -1,3 +1,8 @@
+---
+layout: post
+title: We publish our open source projects here - Heusala Group
+---
+
 ### Websites & apps
 
  * [docs.hg.fi](https://docs.hg.fi) -- Documentation and guides for our software
