@@ -5,8 +5,8 @@
 
 ### Project templates
 
- * [heusalagroup/create-backend](https://github.com/heusalagroup/create-backend) - TypeScript/NodeJS backend generator
- * [heusalagroup/create-command](https://github.com/heusalagroup/create-command) - TypeScript/NodeJS shell command generator
+ * [create-backend](https://github.com/heusalagroup/create-backend) - TypeScript/NodeJS backend generator
+ * [create-command](https://github.com/heusalagroup/create-command) - TypeScript/NodeJS shell command generator
 
 ### Git Submodules
 
