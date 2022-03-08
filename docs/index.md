@@ -40,3 +40,7 @@ These are probably outdated. We don't use them very often at the moment.
 
  * [Github @heusalagroup](https://github.com/heusalagroup)
  * [Github @hangovergames](https://github.com/hangovergames) ... our alterego for the gaming industry
+
+### We're hiring :)
+
+Send your resume at <a href="mailto:cv@hg.fi">cv@hg.fi</a>.
