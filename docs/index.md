@@ -9,6 +9,7 @@
 
  * [create-backend](https://github.com/heusalagroup/create-backend) - TypeScript/NodeJS REST backend generator
  * [create-command](https://github.com/heusalagroup/create-command) - TypeScript/NodeJS shell command generator
+ * [create-ssr-server](https://github.com/heusalagroup/create-ssr-server) - ReactJS SSR server generator
 
 ### Tools
 
@@ -28,6 +29,7 @@
  * [fi.hg.ui.components](https://github.com/heusalagroup/fi.hg.ui.components) -- HG ReactJS components
  * [fi.hg.ui.styles](https://github.com/heusalagroup/fi.hg.ui.styles) -- HG UI styles
  * [fi.hg.ui.form](https://github.com/heusalagroup/fi.hg.ui.form) -- HG ReactJS form module
+ * [fi.hg.create](https://github.com/heusalagroup/fi.hg.create) -- Module for project creators
 
 ### Meta packages
 
