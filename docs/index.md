@@ -8,6 +8,8 @@
 ### Microservices
 
  * [hg-email-auth](https://github.com/heusalagroup/hg-email-auth) -- Simple stateless email ownership verification service
+ * [hghs](https://github.com/heusalagroup/hghs) -- Matrix Server for our software projects (plan only)
+ * [hgchat](https://github.com/heusalagroup/hgchat) -- Web chat project (frontend only)
 
 ### Project templates
 
@@ -34,7 +36,6 @@
  * [fi.hg.ui.styles](https://github.com/heusalagroup/fi.hg.ui.styles) -- HG UI styles
  * [fi.hg.ui.form](https://github.com/heusalagroup/fi.hg.ui.form) -- HG ReactJS form module
  * [fi.hg.backend](https://github.com/heusalagroup/fi.hg.backend) -- HG Common Backend module
- * [fi.hg.auth.email](https://github.com/heusalagroup/fi.hg.backend) -- HG Common code for [hg-email-auth](https://github.com/heusalagroup/hg-email-auth) and [fi.hg.backend](https://github.com/heusalagroup/fi.hg.backend)
  * [fi.hg.create](https://github.com/heusalagroup/fi.hg.create) -- Module for project creators
 
 ### Meta packages
