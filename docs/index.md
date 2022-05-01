@@ -20,6 +20,7 @@
 ### Tools
 
  * [hgm](https://github.com/heusalagroup/hgm) -- Git Submodule Package Manager
+ * [hgtest](https://github.com/heusalagroup/hgtest) -- Zero dep test runner for TypeScript
  * [test](https://github.com/heusalagroup/test) -- Testing Environment for HG software
 
 ### Git Submodules
