@@ -31,20 +31,9 @@
  * [fi.hg.ssr](https://github.com/heusalagroup/fi.hg.ssr) -- React Server Side Rendering module
  * [fi.hg.matrix](https://github.com/heusalagroup/fi.hg.matrix) -- Matrix.org module
  * [fi.hg.discord](https://github.com/heusalagroup/fi.hg.discord) -- Discord bot
- * [fi.hg.ui.hooks](https://github.com/heusalagroup/fi.hg.ui.hooks) -- HG ReactJS hooks
- * [fi.hg.ui.services](https://github.com/heusalagroup/fi.hg.ui.services) -- HG browser services
- * [fi.hg.ui.components](https://github.com/heusalagroup/fi.hg.ui.components) -- HG ReactJS components
- * [fi.hg.ui.styles](https://github.com/heusalagroup/fi.hg.ui.styles) -- HG UI styles
- * [fi.hg.ui.form](https://github.com/heusalagroup/fi.hg.ui.form) -- HG ReactJS form module
+ * [fi.hg.frontend](https://github.com/heusalagroup/fi.hg.frontend) -- HG frontend module (ReactJS)
  * [fi.hg.backend](https://github.com/heusalagroup/fi.hg.backend) -- HG Common Backend module
  * [fi.hg.create](https://github.com/heusalagroup/fi.hg.create) -- Module for project creators
-
-### Meta packages
-
-These are probably outdated. We don't use them very often at the moment.
-
- * [fi.hg](https://github.com/heusalagroup/fi.hg) -- Meta package for fi.hg.*
- * [fi.hg.ui](https://github.com/heusalagroup/fi.hg.ui) -- Meta package for fi.hg.ui.*
 
 ### Social media
 
