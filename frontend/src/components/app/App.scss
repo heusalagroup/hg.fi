@@ -18,14 +18,18 @@
     display: flex;
     flex-direction: row;
 
-    & > .App-nav-logo {
-      box-sizing: border-box;
-      margin: 0 100px 0 0;
+    & > .App-nav-logo-link {
 
-      & > svg {
-        width: auto;
-        height: 90px;
+      & > .App-nav-logo {
+        box-sizing: border-box;
+        margin: 0 100px 0 0;
+
+        & > svg {
+          width: auto;
+          height: 90px;
+        }
       }
+
     }
 
     & > .App-nav-content {
@@ -46,6 +50,9 @@
 
     }
 
+    a, a:hover, a:visited {
+      color: #62579E;
+    }
 
   }
 
@@ -54,6 +61,7 @@
     box-sizing: border-box;
     color: #FFFFFF;
     background-color: #62579e;
+    background-image: url("../../assets/tausta_header.svg");
 
     & > h1 {
       box-sizing: border-box;
@@ -106,16 +114,18 @@
     box-sizing: border-box;
     color: #62579E;
     background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 
     & > .App-content-row {
 
       display: flex;
       flex-direction: row;
-      //align-items: center;
-      //justify-items: center;
-      //align-content: center;
-      //justify-content: center;
       flex-wrap: wrap;
+      justify-content: center;
+
+      margin: 0 auto;
 
       & > article {
         margin: 90px;
@@ -130,6 +140,122 @@
           font-size: 20px;
         }
 
+      }
+
+    }
+
+    & > hr {
+      border-top: 3px solid #62579E;
+      margin: 2em auto;
+      padding: 0;
+      max-width: 1640px;
+    }
+
+    & > .App-content-sample {
+
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 0;
+      margin: 0;
+      //max-width: 1018px;
+      text-align: left;
+
+      & > .App-content-sample-content {
+
+        box-sizing: border-box;
+        margin: 0 0 0 auto;
+        padding: 0 22px 22px 90px;
+        flex-shrink: 0;
+        max-width: 40em;
+
+        & > h3 {
+          font-size: 30px;
+          font-weight: bold;
+        }
+
+        & > p {
+          font-size: 20px;
+        }
+
+      }
+
+      & > .App-content-sample-example {
+
+        box-sizing: border-box;
+        margin: 0 auto 0 0;
+        padding: 0 90px 90px 0;
+        flex-shrink: 0;
+        text-align: left;
+
+        & > .App-content-sample-example-preview {
+
+
+        }
+
+      }
+
+    }
+
+  }
+
+  & > .App-footer {
+
+    box-sizing: border-box;
+    color: #FFFFFF;
+    background-color: #62579e;
+    padding: 148px 142px 170px 142px;
+    background-image: url("../../assets/tausta_header.svg");
+
+    display: flex;
+    flex-direction: row;
+    //align-items: center;
+    //justify-items: center;
+    //align-content: center;
+    //justify-content: center;
+    flex-wrap: wrap;
+
+    a, a:hover, a:visited {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    & > p {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0 90px;
+      font-size: 25px;
+
+      & > strong {
+        box-sizing: border-box;
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+    }
+
+    & > .App-header-button-container {
+
+      padding: 0 11px 195px 11px;
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-items: center;
+      align-content: center;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      & > .hg-button {
+        border-radius: 8px;
+        border: 0;
+        font-size: 25px;
+        text-align: center;
+        color: #62579E;
+        background-color: #ffffff;
+        margin: 11px;
+        font-weight: bold;
       }
 
     }

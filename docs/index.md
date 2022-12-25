@@ -1,6 +1,6 @@
 ### Websites & apps
 
- * [docs.hg.fi](https://docs.hg.fi) -- Documentation and guides for HG software
+ * [docs.hg.fi](https://docs.hg.fi) -- Documentation and guides for HG software projects
  * [laskurit.hg.fi](https://laskurit.hg.fi) -- Some web calculators & tools
  * [heusalagroup.fi](https://heusalagroup.fi) -- Official company website (in finnish)
  * [hangover.games](https://hangover.games) -- Our official gaming company alterego

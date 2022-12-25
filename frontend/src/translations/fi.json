@@ -1,5 +1,8 @@
 {
+  "nav.docs": "Docs",
+  "nav.tutorial": "Tutorial",
+  "nav.github": "Github",
   "website.title": "HG.fi",
-  "website.subtitle": "A TypeScript modules for building standalone, production-grade full stack apps",
+  "website.subtitle": "TypeScript modules for building standalone, production-grade full stack software",
   "website.getStarted.buttonLabel": "Get Started"
 }

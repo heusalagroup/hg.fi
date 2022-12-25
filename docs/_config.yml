@@ -1,10 +1,6 @@
-title: Heusala Group
-description: We publish our open source projects here
+title: HG.fi
+description: TypeScript modules for building standalone, production-grade full stack apps
 url: "https://hg.fi"
-theme: jekyll-theme-slate
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
 exclude:
   - vendor
   - CNAME
@@ -12,9 +8,5 @@ exclude:
   - Gemfile.lock
   - package.json
   - package-lock.json
-markdown: kramdown
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
 lang: en
 include: [".well-known"]
