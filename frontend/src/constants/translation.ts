@@ -1,6 +1,7 @@
 // Keep the same order as in fi.json and en.json
 
 export const T_NAV_DOCS = "nav.docs";
+export const T_NAV_API = "nav.api";
 export const T_NAV_TUTORIAL = "nav.tutorial";
 export const T_NAV_GITHUB = "nav.github";
 export const T_WEBSITE_TITLE = "website.title";

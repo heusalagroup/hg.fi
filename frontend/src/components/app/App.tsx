@@ -1,10 +1,15 @@
 import React from 'react';
 import { APP_CLASS_NAME } from "../../constants/className";
 import { useTranslation } from "react-i18next";
-import { T_NAV_DOCS, T_NAV_GITHUB, T_NAV_TUTORIAL, T_WEBSITE_GET_STARTED_BUTTON_LABEL, T_WEBSITE_SUBTITLE, T_WEBSITE_TITLE } from "../../constants/translation";
+import {
+    T_NAV_API,
+    T_NAV_DOCS,
+    T_NAV_GITHUB,
+    T_WEBSITE_SUBTITLE,
+    T_WEBSITE_TITLE
+} from "../../constants/translation";
 import { HgLogoSvg } from "../../assets";
 import { Icon } from "../../fi/hg/frontend/components/icon/Icon";
-import { Button } from "../../fi/hg/frontend/components/button/Button";
 import { CodePreview } from "../codePreview/CodePreview";
 import './App.scss';
 
@@ -22,6 +27,10 @@ export function App () {
                         className={APP_CLASS_NAME + "-nav-link"}
                         href={"https://docs.hg.fi"}
                     >{t(T_NAV_DOCS)}</a>
+                    <a
+                        className={APP_CLASS_NAME + "-nav-link"}
+                        href={"https://docs.hg.fi/api/"}
+                    >{t(T_NAV_API)}</a>
                     {/*<a*/}
                     {/*    className={APP_CLASS_NAME + "-nav-link"}*/}
                     {/*    href={"https://hg.fi/tutorial"}*/}
