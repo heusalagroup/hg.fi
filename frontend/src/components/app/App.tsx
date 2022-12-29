@@ -286,6 +286,125 @@ export class ApiController {
                     </article>
                 </section>
 
+                <section className={APP_CLASS_NAME + "-content-sample"}>
+                    <article className={APP_CLASS_NAME + "-content-sample-content"}>
+                        <h3>Simple Entity</h3>
+                        <p>HG provides annotations to define data entities for persistent storage.</p>
+                        <p>Our implementation covers PostgreSQL and MySQL databases.</p>
+                    </article>
+                    <article className={APP_CLASS_NAME + "-content-sample-example"}>
+                        <CodePreview className={APP_CLASS_NAME + "-content-sample-example-preview"}
+                            title={'Example UserEntity class'}
+                        >{`@Table("users")
+export class User extends Entity {
+
+    @Id()
+    @Column("id")
+    public id?: string;
+
+    @Column("name")
+    public name: string;
+
+    @Column("email")
+    public email: string;
+
+    @Column("age")
+    public age: number;
+
+    public constructor (
+        id    : string | undefined, 
+        name  : string, 
+        email : string, 
+        age   : number
+    ) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.age = age;
+    }
+
+}
+`
+                        }</CodePreview>
+                    </article>
+                </section>
+
+                <section className={APP_CLASS_NAME + "-content-sample"}>
+                    <article className={APP_CLASS_NAME + "-content-sample-content"}>
+                        <h3>Simple Repository</h3>
+                        <p>Just define your interface -- no need to implement methods!</p>
+                        <p>You can use any method as long as it's named <i>operation</i>By<i>propertyName</i> and has correct types... :)</p>
+                    </article>
+                    <article className={APP_CLASS_NAME + "-content-sample-example"}>
+                        <CodePreview className={APP_CLASS_NAME + "-content-sample-example-preview"}
+                            title={'Example UserRepository'}
+                        >{`export interface UserRepository extends CrudRepository<User, string> {
+
+    findAllByEmail   (email : string) : Promise<User[]>;
+    findByEmail      (email : string) : Promise<User|undefined>;
+    countByEmail     (email : string) : Promise<number>;
+    existsByEmail    (email : string) : Promise<boolean>;
+    deleteAllByEmail (email : string) : Promise<void>;
+    
+}                        
+`
+                        }</CodePreview>
+                    </article>
+                </section>
+
+                <section className={APP_CLASS_NAME + "-content-sample"}>
+                    <article className={APP_CLASS_NAME + "-content-sample-content"}>
+                        <h3>Using Custom Methods</h3>
+                        <p>It looks like magic -- and it is, a bit.</p>
+                        <p>(We don't usually support this type of magic.)</p>
+                    </article>
+                    <article className={APP_CLASS_NAME + "-content-sample-example"}>
+                        <CodePreview className={APP_CLASS_NAME + "-content-sample-example-preview"}
+                                     title={'Searching for an user entity using email address'}
+                        >{`const users : User | undefined = await userRepository.findByEmail('foo@example.com');`
+                        }</CodePreview>
+                    </article>
+                </section>
+
+                <section className={APP_CLASS_NAME + "-content-sample"}>
+                    <article className={APP_CLASS_NAME + "-content-sample-content"}>
+                        <h3>Saving Persistent Data</h3>
+                        <p>Using the repository is easy.</p>
+                    </article>
+                    <article className={APP_CLASS_NAME + "-content-sample-example"}>
+                        <CodePreview className={APP_CLASS_NAME + "-content-sample-example-preview"}
+                                     title={'Saving new user entity'}
+                        >{`const newUser = new User(/*...*/);
+const addedUser = await userRepository.save(newUser);
+console.log(\`Added user #\${addedUser.id}\`);
+`
+                        }</CodePreview>
+                    </article>
+                </section>
+
+                <section className={APP_CLASS_NAME + "-content-sample"}>
+                    <article className={APP_CLASS_NAME + "-content-sample-content"}>
+                        <h3>Setting Up Persistent Storage</h3>
+                        <p>HG provides MySQL and PostgreSQL persisters.</p>
+                    </article>
+                    <article className={APP_CLASS_NAME + "-content-sample-example"}>
+                        <CodePreview className={APP_CLASS_NAME + "-content-sample-example-preview"}
+                                     title={'Initializing a repository'}
+                        >{`const pgPersister    : Persister = new PgPersister(...);
+                        
+const userRepository : UserRepository = createCrudRepositoryWithPersister<
+    UserRepository, 
+    User, 
+    string
+>(
+    new User(),
+    pgPersister
+);
+`
+                        }</CodePreview>
+                    </article>
+                </section>
+
             </section>
 
             <footer className={APP_CLASS_NAME + "-footer"}>
@@ -317,6 +436,7 @@ export class ApiController {
                     <a href={"https://github.com/heusalagroup/fi.hg.node"}>fi.hg.node</a><br />
                     <a href={"https://github.com/heusalagroup/fi.hg.backend"}>fi.hg.backend</a><br />
                     <a href={"https://github.com/heusalagroup/fi.hg.frontend"}>fi.hg.frontend</a><br />
+                    <a href={"https://github.com/heusalagroup/fi.hg.repository"}>fi.hg.repository</a><br />
                 </p>
 
             </footer>
