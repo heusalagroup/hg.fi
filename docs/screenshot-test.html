@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heusala Group - Visual Test</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f8fafc;
+        }
+        .test-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        iframe {
+            width: 100%;
+            height: 800px;
+            border: none;
+        }
+        .controls {
+            padding: 20px;
+            text-align: center;
+        }
+        button {
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            margin: 0 10px;
+        }
+        button:hover {
+            background: #1d4ed8;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <div class="controls">
+            <button onclick="setViewport('desktop')">Desktop View</button>
+            <button onclick="setViewport('tablet')">Tablet View</button>
+            <button onclick="setViewport('mobile')">Mobile View</button>
+        </div>
+        <iframe id="website-frame" src="http://localhost:8000"></iframe>
+    </div>
+    
+    <script>
+        function setViewport(type) {
+            const iframe = document.getElementById('website-frame');
+            if (type === 'mobile') {
+                iframe.style.width = '375px';
+                iframe.style.height = '667px';
+            } else if (type === 'tablet') {
+                iframe.style.width = '768px';
+                iframe.style.height = '1024px';
+            } else {
+                iframe.style.width = '100%';
+                iframe.style.height = '800px';
+            }
+        }
+    </script>
+</body>
+</html> 

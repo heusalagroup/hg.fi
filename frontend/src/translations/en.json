@@ -1,9 +1,0 @@
-{
-  "nav.docs": "Docs",
-  "nav.api": "API",
-  "nav.tutorial": "Tutorial",
-  "nav.github": "Github",
-  "website.title": "HG.fi",
-  "website.subtitle": "TypeScript modules for building standalone, production-grade full stack software",
-  "website.getStarted.buttonLabel": "Get Started"
-}

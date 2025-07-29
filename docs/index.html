@@ -1,1 +1,518 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="TypeScript modules for building standalone, production-grade full stack apps"/><link rel="apple-touch-icon" href="/logo192.png"/><link rel="manifest" href="/manifest.json"/><title>HG TypeScript modules for building standalone, production-grade full stack software</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;700&display=swap" rel="stylesheet"><meta property="og:title" content="TypeScript modules for building standalone, production-grade full stack apps"/><meta property="og:type" content="website"/><meta property="og:url" content="https://hg.fi"/><meta property="og:image" content="https://hg.fi/siteimage-scaled.png"/><script defer="defer" src="/static/js/main.6e8c22d7.js"></script><link href="/static/css/main.02166181.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heusala Group – Custom Software Development & IT Consulting in Finland</title>
+    <meta name="description" content="Fixed-scope software packages delivered in 1-2 weeks. 12 months support included. Custom software, web development & automation for Finnish small businesses.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Heusala Group – Custom Software Development & IT Consulting in Finland">
+    <meta property="og:description" content="Fixed-scope software packages delivered in 1-2 weeks. 12 months support included. Custom software, web development & automation for Finnish small businesses.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hg.fi">
+    <meta property="og:image" content="https://hg.fi/assets/hero.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="index.css">
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="assets/hero.png" as="image">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__container">
+                <a href="#hero" class="nav__logo">
+                    <svg id="hg_logo" xmlns="http://www.w3.org/2000/svg" width="89.959" height="89.973" viewBox="0 0 89.959 89.973"><g id="Group_1" data-name="Group 1" transform="translate(0)"><path id="Path_1" data-name="Path 1" d="M85.346,89.973H4.627A4.623,4.623,0,0,1,0,85.346V4.627A4.623,4.623,0,0,1,4.627,0H85.333a4.623,4.623,0,0,1,4.627,4.627V85.333A4.605,4.605,0,0,1,85.346,89.973Z" transform="translate(0)" fill="#62579e"></path></g><g id="Group_6" data-name="Group 6" transform="translate(13.063 13.063)"><g id="Group_2" data-name="Group 2" transform="translate(0 34.128)"><path id="Path_2" data-name="Path 2" d="M96,375.7v-6.327l18.139-8.124L96,353.127V346.8l26.548,12.424v4.069Z" transform="translate(-96 -346.8)" fill="#fff"></path></g><g id="Group_3" data-name="Group 3" transform="translate(36.332 0.463)"><path id="Path_3" data-name="Path 3" d="M390.514,128.33,363,115.892v-4.069L390.514,99.4v6.341l-18.806,8.124,18.806,8.124Z" transform="translate(-363 -99.4)" fill="#fff"></path></g><g id="Group_4" data-name="Group 4"><path id="Path_4" data-name="Path 4" d="M96,96h7.1v12.328h16.792V96H127v29.855h-7.1v-12.41H103.1v12.41H96Z" transform="translate(-96 -96)" fill="#fff"></path></g><g id="Group_5" data-name="Group 5" transform="translate(31.801 33.325)"><path id="Path_5" data-name="Path 5" d="M335.987,370.02a10.551,10.551,0,0,1-6.287-9.933v-7.852a10.519,10.519,0,0,1,6.314-9.934,16.333,16.333,0,0,1,6.967-1.4h5.674a16.37,16.37,0,0,1,6.695,1.279,10.4,10.4,0,0,1,4.49,3.62,9.428,9.428,0,0,1,1.592,5.416h-6.9a4.7,4.7,0,0,0-1.619-3.715,6.279,6.279,0,0,0-4.259-1.4h-5.674a6.047,6.047,0,0,0-4.558,1.769,6.383,6.383,0,0,0-1.728,4.627v7.334a6.422,6.422,0,0,0,1.7,4.627,5.913,5.913,0,0,0,4.49,1.769h5.987a6.061,6.061,0,0,0,4.286-1.579,5.131,5.131,0,0,0,1.7-3.919v-.939h-9.838v-5.13h16.737v6.055a9.769,9.769,0,0,1-1.619,5.538,10.853,10.853,0,0,1-4.559,3.8,15.694,15.694,0,0,1-6.695,1.361H342.9A15.8,15.8,0,0,1,335.987,370.02Z" transform="translate(-329.7 -340.9)" fill="#fff"></path></g></g></svg>
+                </a>
+                <ul class="nav__menu">
+                    <li><a href="#hero" class="nav__link">Home</a></li>
+                    <li><a href="#services" class="nav__link">Services</a></li>
+                    <li><a href="#process" class="nav__link">Process</a></li>
+                    <li><a href="#whyus" class="nav__link">Why Us</a></li>
+                    <li><a href="#guarantee" class="nav__link">Guarantee</a></li>
+                    <li><a href="#about" class="nav__link">About</a></li>
+                    <li><a href="#contact" class="nav__link nav__link--cta">Contact</a></li>
+                </ul>
+                <button class="nav__toggle" aria-label="Toggle navigation">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero__container">
+            <div class="hero__content">
+                <h1 class="hero__title">Custom Software & IT Solutions—Delivered Fast.</h1>
+                <p class="hero__subtitle">Fixed-scope packages delivered in 1-2 weeks. 12 months support included. Pay only if satisfied.</p>
+                <div class="hero__cta">
+                    <a href="#contact" class="btn btn--primary">Let's Talk</a>
+                    <a href="#services" class="btn btn--secondary">View Services</a>
+                </div>
+            </div>
+            <div class="hero__image">
+                <img src="assets/hero.png" alt="Software development and IT solutions illustration" loading="eager">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section__title">What we can build & run for you.</h2>
+            
+            <!-- Service Cards -->
+            <div class="services__grid">
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Custom Software Development</h3>
+                    <p class="service-card__description">Tailored applications that solve your specific business challenges and streamline operations.</p>
+                    <a href="#packages" class="service-card__link">View Packages →</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"></path>
+                            <path d="M12 12v9"></path>
+                            <path d="m8 17 4 4 4-4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Cloud & DevOps</h3>
+                    <p class="service-card__description">Scalable cloud infrastructure and automated deployment pipelines for reliable, fast delivery.</p>
+                    <a href="#packages" class="service-card__link">View Packages →</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Web & Server Hosting</h3>
+                    <p class="service-card__description">Fast, secure hosting with 24/7 monitoring and automatic backups for peace of mind.</p>
+                    <a href="#packages" class="service-card__link">View Packages →</a>
+                </div>
+            </div>
+
+            <!-- Packages Grid -->
+            <div id="packages" class="packages">
+                <h3 class="packages__title">Fixed-Scope Service Packages</h3>
+                <p class="packages__subtitle">Transparent pricing with 12 months support & hosting included</p>
+                <div class="packages__grid">
+                    <div class="package-card">
+                        <div class="package-card__guarantee">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4"></path>
+                                <path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"></path>
+                            </svg>
+                            <span>Pay Only If Satisfied</span>
+                        </div>
+                        <h4 class="package-card__title">Startup Launch</h4>
+                        <p class="package-card__description">Launch a new app/MVP in 1–2 weeks</p>
+                        <div class="package-card__price">€15,000</div>
+                        <div class="package-card__timeline">1-2 weeks</div>
+                        <div class="package-card__features">
+                            <span class="package-card__feature">Custom MVP Development</span>
+                            <span class="package-card__feature">12 Months Support</span>
+                            <span class="package-card__feature">Hosting Included</span>
+                        </div>
+                        <a href="#contact" class="btn btn--secondary">Get Started</a>
+                    </div>
+                    
+                    <div class="package-card">
+                        <div class="package-card__guarantee">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4"></path>
+                                <path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"></path>
+                            </svg>
+                            <span>Pay Only If Satisfied</span>
+                        </div>
+                        <h4 class="package-card__title">Online Presence</h4>
+                        <p class="package-card__description">Bring a small business online in 1–2 weeks</p>
+                        <div class="package-card__price">€6,000</div>
+                        <div class="package-card__timeline">1-2 weeks</div>
+                        <div class="package-card__features">
+                            <span class="package-card__feature">Modern Website/E-commerce</span>
+                            <span class="package-card__feature">12 Months Support</span>
+                            <span class="package-card__feature">Hosting Included</span>
+                        </div>
+                        <a href="#contact" class="btn btn--secondary">Get Started</a>
+                    </div>
+                    
+                    <div class="package-card">
+                        <div class="package-card__guarantee">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4"></path>
+                                <path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"></path>
+                            </svg>
+                            <span>Pay Only If Satisfied</span>
+                        </div>
+                        <h4 class="package-card__title">Business Process Automation</h4>
+                        <p class="package-card__description">Automate operations/workflows in 1–2 weeks</p>
+                        <div class="package-card__price">€10,000</div>
+                        <div class="package-card__timeline">1-2 weeks</div>
+                        <div class="package-card__features">
+                            <span class="package-card__feature">Custom Automation</span>
+                            <span class="package-card__feature">12 Months Support</span>
+                            <span class="package-card__feature">Hosting Included</span>
+                        </div>
+                        <a href="#contact" class="btn btn--secondary">Get Started</a>
+                    </div>
+                    
+                    <div class="package-card package-card--highlight">
+                        <h4 class="package-card__title">Free Discovery & Advice</h4>
+                        <p class="package-card__description">30 min consultation + custom proposal</p>
+                        <div class="package-card__price">Free</div>
+                        <div class="package-card__timeline">30 min</div>
+                        <div class="package-card__features">
+                            <span class="package-card__feature">Business Analysis</span>
+                            <span class="package-card__feature">Custom Proposal</span>
+                            <span class="package-card__feature">No Obligation</span>
+                        </div>
+                        <a href="#contact" class="btn btn--primary">Get Free Consultation</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="process">
+        <div class="container">
+            <h2 class="section__title">Guided Process</h2>
+            <div class="process__grid">
+                <div class="process-step">
+                    <div class="process-step__number">1</div>
+                    <h3 class="process-step__title">Tell us your goal</h3>
+                    <p class="process-step__description">Share your vision and challenges. We listen, ask questions, and understand your business needs.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="process-step__number">2</div>
+                    <h3 class="process-step__title">Fixed Plan & Pricing</h3>
+                    <p class="process-step__description">Choose from our fixed-scope packages with transparent pricing. No surprises, guaranteed delivery in 1-2 weeks.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="process-step__number">3</div>
+                    <h3 class="process-step__title">Delivered in 1-2 Weeks</h3>
+                    <p class="process-step__description">We build, deploy, and support your solution. You get a working product, not just promises.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="whyus" class="whyus">
+        <div class="container">
+            <h2 class="section__title">Why Choose Us</h2>
+            <div class="whyus__grid">
+                <div class="reason-card">
+                    <div class="reason-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22,4 12,14.01 9,11.01"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="reason-card__title">Gets Things Done</h3>
+                    <p class="reason-card__description">We deliver working solutions on time, every time. No endless meetings or scope creep.</p>
+                </div>
+                
+                <div class="reason-card">
+                    <div class="reason-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                        </svg>
+                    </div>
+                    <h3 class="reason-card__title">Senior Expertise</h3>
+                    <p class="reason-card__description">20+ years of experience building and scaling software solutions for businesses like yours.</p>
+                </div>
+                
+                <div class="reason-card">
+                    <div class="reason-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3 class="reason-card__title">Flexible & Personal</h3>
+                    <p class="reason-card__description">Direct communication and personalized attention. No layers of management or bureaucracy.</p>
+                </div>
+                
+                <div class="reason-card">
+                    <div class="reason-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                        </svg>
+                    </div>
+                    <h3 class="reason-card__title">Fixed Pricing</h3>
+                    <p class="reason-card__description">Transparent, all-inclusive pricing. No surprises, no hidden fees, no scope creep.</p>
+                </div>
+                
+                <div class="reason-card">
+                    <div class="reason-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                    <h3 class="reason-card__title">12 Months Support Included</h3>
+                    <p class="reason-card__description">Every package includes a full year of hosting, maintenance, and support. No hidden costs.</p>
+                </div>
+                
+                <div class="reason-card reason-card--highlight">
+                    <div class="reason-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M9 12l2 2 4-4"></path>
+                            <path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="reason-card__title">Pay Only If Satisfied</h3>
+                    <p class="reason-card__description">We send an invoice when we deliver. You only pay if you're completely satisfied with the result.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantee Section -->
+    <section id="guarantee" class="guarantee">
+        <div class="container">
+            <div class="guarantee__content">
+                <div class="guarantee__badge">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M9 12l2 2 4-4"></path>
+                        <path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"></path>
+                    </svg>
+                </div>
+                <h2 class="guarantee__title">Pay Only If Satisfied</h2>
+                <p class="guarantee__description">
+                    We're confident in our ability to deliver exactly what you need. We send an invoice when we deliver—you only pay if you're completely satisfied with the result.
+                </p>
+                <div class="guarantee__details">
+                    <div class="guarantee__detail">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 12l2 2 4-4"></path>
+                            <path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"></path>
+                        </svg>
+                        <span>Invoice sent upon delivery</span>
+                    </div>
+                    <div class="guarantee__detail">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 12l2 2 4-4"></path>
+                            <path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"></path>
+                        </svg>
+                        <span>Pay only if satisfied</span>
+                    </div>
+                    <div class="guarantee__detail">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 12l2 2 4-4"></path>
+                            <path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"></path>
+                        </svg>
+                        <span>No upfront payment required</span>
+                    </div>
+                </div>
+                <a href="#contact" class="btn btn--primary guarantee__cta">Start Your Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section id="testimonial" class="testimonial">
+        <div class="container">
+            <div class="testimonial__content">
+                <blockquote class="testimonial__quote">
+                    "Heusala Group delivered on time and exceeded expectations. The quality of work and attention to detail was outstanding."
+                </blockquote>
+                <cite class="testimonial__author">
+                    <span class="testimonial__name">John Smith</span>
+                    <span class="testimonial__company">CEO, TechStartup</span>
+                </cite>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about__content">
+                <div class="about__text">
+                    <h2 class="section__title">About Heusala Group</h2>
+                    <p class="about__bio">
+                        With over 20 years of experience in software development and IT consulting, I founded Heusala Group to help small businesses and startups get technology solutions that actually work. My approach is simple: fixed-scope packages, delivered fast, with 12 months of support included. No endless meetings, no scope creep, just results.
+                    </p>
+                    
+                    <h3 class="about__values-title">Our Values</h3>
+                    <ul class="about__values">
+                        <li><strong>Fixed Pricing:</strong> Transparent, all-inclusive packages with no hidden costs</li>
+                        <li><strong>Fast Delivery:</strong> 1-2 week delivery guaranteed for all packages</li>
+                        <li><strong>12 Months Support:</strong> Hosting, maintenance, and support included with every project</li>
+                    </ul>
+                </div>
+                <div class="about__image">
+                    <img src="https://thejhh.me/assets/images/avatar.jpg" alt="Heusala Group Founder" class="about__avatar" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section__title">Let's Talk</h2>
+                        <div class="contact__content">
+                <div class="contact__info">
+                    <h3 class="contact__subtitle">Get in Touch</h3>
+                    <div class="contact__channels">
+                        <a href="mailto:info@hg.fi" class="contact__channel">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            info@hg.fi
+                        </a>
+                        <a href="tel:+358451734604" class="contact__channel">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            +358 45 1734604
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h4 class="footer__title">Navigation</h4>
+                    <div class="footer__nav">
+                        <a href="#hero">Home</a>
+                        <a href="#services">Services</a>
+                        <a href="#process">Process</a>
+                        <a href="#whyus">Why Us</a>
+                        <a href="#guarantee">Guarantee</a>
+                        <a href="#about">About</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+                
+                <div class="footer__section">
+                    <h4 class="footer__title">Company</h4>
+                    <div class="footer__company">
+                        <p><strong>Heusala Group Ltd</strong></p>
+                        <p>Business ID: 3091818-9</p>
+                        <p>Keskustori 7 A 14<br>33100 Tampere<br>Finland</p>
+                    </div>
+                </div>
+                
+                <div class="footer__section">
+                    <h4 class="footer__title">Contact</h4>
+                    <div class="footer__contact">
+                        <a href="mailto:info@hg.fi">info@hg.fi</a>
+                        <a href="tel:+358451734604">+358 45 1734604</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2025 Heusala Group. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Mobile navigation toggle
+        const navToggle = document.querySelector('.nav__toggle');
+        const navMenu = document.querySelector('.nav__menu');
+        
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('nav__menu--open');
+        });
+
+        // Active navigation highlighting
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav__link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('nav__link--active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('nav__link--active');
+                }
+            });
+        });
+
+
+
+        // Intersection Observer for animations
+        if ('IntersectionObserver' in window) {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-in');
+                    }
+                });
+            }, observerOptions);
+
+            // Observe elements for animation
+            document.querySelectorAll('.service-card, .process-step, .reason-card, .package-card').forEach(el => {
+                observer.observe(el);
+            });
+        }
+    </script>
+</body>
+</html> 
