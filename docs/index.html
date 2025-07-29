@@ -3,24 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
     <title>Heusala Group – Custom Software Development & IT Consulting in Finland</title>
     <meta name="description" content="Fixed-scope software packages delivered in 1-2 weeks. 12 months support included. Custom software, web development & automation for Finnish small businesses.">
+    <meta name="keywords" content="software development, IT consulting, custom software, web development, Finland, Tampere, business automation">
+    <meta name="author" content="Heusala Group">
+    <meta name="robots" content="index, follow">
     
-    <!-- Open Graph -->
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://hg.fi/">
+    
+    <!-- Language & International Targeting -->
+    <link rel="alternate" hreflang="en" href="https://hg.fi/">
+    <link rel="alternate" hreflang="fi" href="https://hg.fi/#fi">
+    <link rel="alternate" hreflang="x-default" href="https://hg.fi/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hg.fi/">
     <meta property="og:title" content="Heusala Group – Custom Software Development & IT Consulting in Finland">
     <meta property="og:description" content="Fixed-scope software packages delivered in 1-2 weeks. 12 months support included. Custom software, web development & automation for Finnish small businesses.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://hg.fi">
     <meta property="og:image" content="https://hg.fi/assets/hero.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Heusala Group - Custom Software Development & IT Consulting">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="fi_FI">
+    <meta property="og:site_name" content="Heusala Group">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://hg.fi/">
+    <meta property="twitter:title" content="Heusala Group – Custom Software Development & IT Consulting in Finland">
+    <meta property="twitter:description" content="Fixed-scope software packages delivered in 1-2 weeks. 12 months support included. Custom software, web development & automation for Finnish small businesses.">
+    <meta property="twitter:image" content="https://hg.fi/assets/hero.png">
+    <meta property="twitter:image:alt" content="Heusala Group - Custom Software Development & IT Consulting">
     
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="assets/hero.png" as="image">
+    <link rel="preload" href="index.css" as="style">
     
     <!-- Styles -->
     <link rel="stylesheet" href="index.css">
     
-    <!-- Preload critical assets -->
-    <link rel="preload" href="assets/hero.png" as="image">
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Heusala Group",
+      "url": "https://hg.fi",
+      "telephone": "+358451734604",
+      "email": "info@hg.fi",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Keskustori 7 A 14",
+        "addressLocality": "Tampere",
+        "postalCode": "33100",
+        "addressCountry": "FI"
+      },
+      "priceRange": "€€€",
+      "sameAs": ["https://github.com/heusalagroup"],
+      "description": "Fixed-scope software packages delivered in 1-2 weeks. 12 months support included. Custom software, web development & automation for Finnish small businesses.",
+      "openingHours": "Mo-Fr 09:00-17:00",
+      "areaServed": "FI",
+      "serviceArea": {
+        "@type": "Country",
+        "name": "Finland"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Software Development Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Startup Launch Package",
+              "description": "Launch a new app/MVP in 1–2 weeks"
+            },
+            "price": "15000",
+            "priceCurrency": "EUR"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Online Presence Package",
+              "description": "Bring a small business online in 1–2 weeks"
+            },
+            "price": "6000",
+            "priceCurrency": "EUR"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Business Process Automation",
+              "description": "Automate operations/workflows in 1–2 weeks"
+            },
+            "price": "10000",
+            "priceCurrency": "EUR"
+          }
+        ]
+      }
+    }
+    </script>
 </head>
 <body>
     <!-- Navigation -->
@@ -370,7 +463,7 @@
                     </ul>
                 </div>
                 <div class="about__image">
-                    <img src="https://thejhh.me/assets/images/avatar.jpg" alt="Heusala Group Founder" class="about__avatar" loading="lazy">
+                    <img src="https://thejhh.me/assets/images/avatar.jpg" alt="Heusala Group Founder - Professional headshot" class="about__avatar" loading="lazy">
                 </div>
             </div>
         </div>
@@ -446,7 +539,7 @@
     </footer>
 
     <!-- Scripts -->
-    <script>
+    <script defer>
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -490,8 +583,6 @@
                 }
             });
         });
-
-
 
         // Intersection Observer for animations
         if ('IntersectionObserver' in window) {
