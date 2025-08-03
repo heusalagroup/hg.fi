@@ -346,6 +346,151 @@ a:hover {
     transform: scale(1.02);
 }
 
+
+
+/* Books Section */
+.books {
+    padding: var(--space-4xl) 0;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.books::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="%23e2e8f0" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+.books__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: var(--space-3xl);
+    position: relative;
+    z-index: 1;
+}
+
+.book-card {
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-xl);
+    overflow: hidden;
+    transition: var(--transition-slow);
+    box-shadow: var(--shadow-md);
+}
+
+.book-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--color-accent);
+}
+
+.book-card__image {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.book-card__image img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+    transition: var(--transition-slow);
+}
+
+.book-card:hover .book-card__image img {
+    transform: scale(1.05);
+}
+
+.book-card__content {
+    padding: var(--space-3xl);
+}
+
+.book-card__title {
+    font-size: var(--font-size-2xl);
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: var(--space-lg);
+    line-height: 1.2;
+}
+
+.book-card__description {
+    font-size: var(--font-size-base);
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-xl);
+    line-height: 1.6;
+}
+
+.book-card__features {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-xl);
+}
+
+.book-card__feature {
+    font-size: var(--font-size-sm);
+    color: var(--color-text);
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.book-card__feature::before {
+    content: '✓';
+    color: var(--color-success);
+    font-weight: bold;
+    font-size: var(--font-size-base);
+}
+
+.book-card__meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-lg);
+    padding: var(--space-lg);
+    background: var(--color-border-light);
+    border-radius: var(--border-radius);
+}
+
+.book-card__info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.book-card__price {
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    color: var(--color-accent);
+}
+
+.book-card__tax {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-muted);
+    font-style: italic;
+}
+
+.book-card__format {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+}
+
+.book-card__actions {
+    display: flex;
+    justify-content: center;
+}
+
 /* Section Titles - Enhanced centered styling */
 .section__title {
     text-align: center;
@@ -372,6 +517,7 @@ a:hover {
 .services,
 .process,
 .whyus,
+.books,
 .about,
 .contact {
     position: relative;
@@ -380,6 +526,7 @@ a:hover {
 .services::before,
 .process::before,
 .whyus::before,
+.books::before,
 .about::before,
 .contact::before {
     content: '';
@@ -1226,6 +1373,33 @@ html {
 
     .hero__cta {
         justify-content: center;
+    }
+    
+    .books__grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-2xl);
+    }
+    
+    .book-card__content {
+        padding: var(--space-2xl);
+    }
+    
+    .book-card__title {
+        font-size: var(--font-size-xl);
+    }
+    
+    .book-card__description {
+        font-size: var(--font-size-sm);
+    }
+    
+    .book-card__meta {
+        flex-direction: column;
+        gap: var(--space-lg);
+        text-align: center;
+    }
+    
+    .book-card__info {
+        align-items: center;
     }
 
     /* Services & Packages */
