@@ -110,7 +110,7 @@ Sivusto julkaistaan automaattisesti kun `docs/`-hakemisto päivitetään.
 ## Yhteystiedot
 
 - **Kehittäjä**: Heusala Group
-- **Email**: jhh@heusalagroup.fi
+- **Email**: jhh@hg.fi
 - **Web**: https://hg.fi
 
 ---

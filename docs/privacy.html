@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Heusala Group</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        /* Use main site CSS variables */
+        :root {
+            --color-bg: #ffffff;
+            --color-text: #0f172a;
+            --color-text-muted: #475569;
+            --color-accent: #2563eb;
+            --color-accent-hover: #1d4ed8;
+            --color-border: #e2e8f0;
+            --color-border-light: #f8fafc;
+            --font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            --space-xs: 0.5rem;
+            --space-sm: 0.75rem;
+            --space-md: 1rem;
+            --space-lg: 1.5rem;
+            --space-xl: 2rem;
+            --space-2xl: 3rem;
+            --space-3xl: 4rem;
+            --space-4xl: 6rem;
+            --border-radius: 0.5rem;
+            --border-radius-lg: 0.75rem;
+            --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            --transition: all 0.15s ease-in-out;
+        }
+
+        /* Language switcher - matching main site button style */
+        .language-switcher {
+            text-align: center;
+            margin: var(--space-2xl) 0;
+            padding: var(--space-lg);
+            background: var(--color-border-light);
+            border-radius: var(--border-radius-lg);
+            border: 1px solid var(--color-border);
+        }
+        
+        .language-switcher button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: var(--space-md) var(--space-xl);
+            font-size: 1rem;
+            font-weight: 500;
+            border: none;
+            border-radius: var(--border-radius-lg);
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            min-height: 44px;
+            white-space: nowrap;
+            position: relative;
+            overflow: hidden;
+            letter-spacing: 0.01em;
+            margin: 0 var(--space-xs);
+        }
+        
+        .language-switcher button:not(.active) {
+            background-color: var(--color-bg);
+            color: var(--color-text);
+            border: 1px solid var(--color-border);
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .language-switcher button:not(.active):hover {
+            background-color: var(--color-border-light);
+            color: var(--color-text);
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--color-accent);
+        }
+        
+        .language-switcher button.active {
+            background-color: var(--color-accent);
+            color: white;
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .language-switcher button.active:hover {
+            background-color: var(--color-accent-hover);
+            color: white;
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .content-section {
+            display: none;
+        }
+        
+        .content-section.active {
+            display: block;
+        }
+        
+        /* Typography - matching main site */
+        .content-section p {
+            margin-bottom: var(--space-lg);
+            color: var(--color-text-muted);
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+        
+        .content-section h2 {
+            font-size: 2.25rem;
+            font-weight: 600;
+            line-height: 1.2;
+            margin-bottom: var(--space-lg);
+            color: var(--color-text);
+            letter-spacing: -0.025em;
+            position: relative;
+            padding-bottom: var(--space-md);
+        }
+        
+        .content-section h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--color-accent), var(--color-accent-hover));
+            border-radius: 2px;
+        }
+        
+        .content-section strong {
+            color: var(--color-text);
+            font-weight: 600;
+        }
+        
+        .content-section a {
+            color: var(--color-accent);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .content-section a:hover {
+            color: var(--color-accent-hover);
+            text-decoration: underline;
+        }
+        
+        /* List styles - matching main site */
+        .content-section ul {
+            list-style: disc;
+            margin-left: var(--space-2xl);
+            margin-bottom: var(--space-lg);
+        }
+        
+        .content-section li {
+            margin-bottom: var(--space-sm);
+            line-height: 1.6;
+            color: var(--color-text-muted);
+        }
+        
+        .content-section section {
+            margin-bottom: var(--space-3xl);
+            padding: var(--space-2xl);
+            background: var(--color-bg);
+            border: 1px solid var(--color-border);
+            border-radius: var(--border-radius-lg);
+            transition: var(--transition);
+        }
+        
+        .content-section section:hover {
+            box-shadow: var(--shadow-md);
+            border-color: var(--color-accent);
+        }
+        
+        /* Header styles - matching main site */
+        .header-content {
+            display: flex;
+            align-items: center;
+            gap: var(--space-lg);
+            margin-bottom: var(--space-3xl);
+            padding-bottom: var(--space-xl);
+            border-bottom: 1px solid var(--color-border);
+        }
+        
+        .logo-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .logo-link:hover {
+            transform: scale(1.05);
+        }
+        
+        .logo-link svg {
+            transition: var(--transition);
+        }
+        
+        .logo-link:hover svg {
+            filter: brightness(1.1);
+        }
+        
+        #title {
+            margin-bottom: 0;
+            color: var(--color-text);
+            font-size: clamp(2.2rem, 5vw, 3rem);
+            font-weight: 700;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+        }
+        
+        /* Footer styles - matching main site */
+        footer {
+            margin-top: var(--space-4xl);
+            padding-top: var(--space-2xl);
+            border-top: 1px solid var(--color-border);
+            text-align: center;
+        }
+        
+        footer a {
+            color: var(--color-accent);
+            text-decoration: none;
+            transition: var(--transition);
+            font-weight: 500;
+        }
+        
+        footer a:hover {
+            color: var(--color-accent-hover);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <a href="index.html" class="logo-link">
+                    <svg id="hg_logo" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 89.959 89.973">
+                        <g id="Group_1" data-name="Group 1" transform="translate(0)">
+                            <path id="Path_1" data-name="Path 1" d="M85.346,89.973H4.627A4.623,4.623,0,0,1,0,85.346V4.627A4.623,4.623,0,0,1,4.627,0H85.333a4.623,4.623,0,0,1,4.627,4.627V85.333A4.605,4.605,0,0,1,85.346,89.973Z" transform="translate(0)" fill="#62579e"></path>
+                        </g>
+                        <g id="Group_6" data-name="Group 6" transform="translate(13.063 13.063)">
+                            <g id="Group_2" data-name="Group 2" transform="translate(0 34.128)">
+                                <path id="Path_2" data-name="Path 2" d="M96,375.7v-6.327l18.139-8.124L96,353.127V346.8l26.548,12.424v4.069Z" transform="translate(-96 -346.8)" fill="#fff"></path>
+                            </g>
+                            <g id="Group_3" data-name="Group 3" transform="translate(36.332 0.463)">
+                                <path id="Path_3" data-name="Path 3" d="M390.514,128.33,363,115.892v-4.069L390.514,99.4v6.341l-18.806,8.124,18.806,8.124Z" transform="translate(-363 -99.4)" fill="#fff"></path>
+                            </g>
+                            <g id="Group_4" data-name="Group 4">
+                                <path id="Path_4" data-name="Path 4" d="M96,96h7.1v12.328h16.792V96H127v29.855h-7.1v-12.41H103.1v12.41H96Z" transform="translate(-96 -96)" fill="#fff"></path>
+                            </g>
+                            <g id="Group_5" data-name="Group 5" transform="translate(31.801 33.325)">
+                                <path id="Path_5" data-name="Path 5" d="M335.987,370.02a10.551,10.551,0,0,1-6.287-9.933v-7.852a10.519,10.519,0,0,1,6.314-9.934,16.333,16.333,0,0,1,6.967-1.4h5.674a16.37,16.37,0,0,1,6.695,1.279,10.4,10.4,0,0,1,4.49,3.62,9.428,9.428,0,0,1,1.592,5.416h-6.9a4.7,4.7,0,0,0-1.619-3.715,6.279,6.279,0,0,0-4.259-1.4h-5.674a6.047,6.047,0,0,0-4.558,1.769,6.383,6.383,0,0,0-1.728,4.627v7.334a6.422,6.422,0,0,0,1.7,4.627,5.913,5.913,0,0,0,4.49,1.769h5.987a6.061,6.061,0,0,0,4.286-1.579,5.131,5.131,0,0,0,1.7-3.919v-.939h-9.838v-5.13h16.737v6.055a9.769,9.769,0,0,1-1.619,5.538,10.853,10.853,0,0,1-4.559,3.8,15.694,15.694,0,0,1-6.695,1.361H342.9A15.8,15.8,0,0,1,335.987,370.02Z" transform="translate(-329.7 -340.9)" fill="#fff"></path>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+                <h1 id="title">Our Privacy Statement</h1>
+            </div>
+        </header>
+
+        <div class="language-switcher">
+            <button onclick="switchLanguage('en')" id="btn-en" class="active">English</button>
+            <button onclick="switchLanguage('fi')" id="btn-fi">Suomi</button>
+        </div>
+
+        <main>
+            <!-- English Content -->
+            <div id="content-en" class="content-section active">
+                <p>This statement fulfills the informing obligation under the General Data Protection Regulation (GDPR) and describes how Heusala Group Oy ("Heusala Group Oy", English: "Heusala Group Ltd.") processes personal data under its trade names Suomen Palvelinkauppa and Hangover Games.</p>
+
+                <section>
+                    <h2>1. Personal data controller</h2>
+                    <p>Heusala Group Oy (Business ID: 3091818-9)<br>
+                    Address: Keskustori 7 A 14, 33100 Tampere, Finland<br>
+                    General email: <a href="mailto:info@heusalagroup.fi">info@heusalagroup.fi</a><br>
+                    General phone: <a href="tel:+358407300149">+358 40 730 0149</a></p>
+
+                    <p><strong>Contact information for matters related to personal data files:</strong><br>
+                    Jaakko Heusela, Data Protection Officer<br>
+                    Heusala Group Oy<br>
+                    Address: Keskustori 7 A 14, 33100 Tampere, Finland<br>
+                    Email: <a href="mailto:jhh@hg.fi">jhh@hg.fi</a><br>
+                    Phone: <a href="tel:+358451734604">+358 45 173 4604</a></p>
+
+                    <p><strong>Trade names under the same controller:</strong></p>
+                    <ul>
+                        <li>Suomen Palvelinkauppa (hosting and Internet services)</li>
+                        <li>Hangover Games (gaming services)</li>
+                    </ul>
+
+                    <p><strong>Websites to which this statement applies:</strong></p>
+                    <ul>
+                        <li><a href="https://hg.fi" target="_blank" rel="noopener">https://hg.fi</a></li>
+                        <li><a href="https://palvelinkauppa.fi" target="_blank" rel="noopener">https://palvelinkauppa.fi</a></li>
+                        <li><a href="https://hangover.games" target="_blank" rel="noopener">https://hangover.games</a></li>
+                        <li><a href="https://holvi.com/shop/hangovergames/" target="_blank" rel="noopener">https://holvi.com/shop/hangovergames/</a></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>2. Data subjects</h2>
+                    <p>This register contains personal data on customers and users of our websites, products, and services.</p>
+                </section>
+
+                <section>
+                    <h2>3. Purpose of use and legal basis</h2>
+                    <p>Personal data is processed based on an existing customer relationship or on consent granted by the data subject.<br>
+                    Purposes include:</p>
+                    <ul>
+                        <li>Customer relationship management and support</li>
+                        <li>Sales and marketing of products and services</li>
+                        <li>Identification of users of our online services</li>
+                        <li>Informing about new products and services</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>4. Personal data recorded in the register</h2>
+                    <p><strong>Contact information:</strong></p>
+                    <ul>
+                        <li>Name</li>
+                        <li>Email address</li>
+                        <li>Phone number</li>
+                        <li>Postal address (for customer register)</li>
+                    </ul>
+
+                    <p><strong>Customer information:</strong></p>
+                    <ul>
+                        <li>Information on products and services purchased or pre-ordered</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>5. The data subject's rights</h2>
+                    <p>Requests regarding these rights should be sent to jhh@hg.fi.<br>
+                    The data subject has the right to:</p>
+                    <ul>
+                        <li>Access the personal data recorded about them</li>
+                        <li>Request rectification of inaccurate or incomplete data</li>
+                        <li>Object to the processing of personal data</li>
+                        <li>Prohibit the use of personal data for direct marketing</li>
+                        <li>Request deletion of data when processing is not necessary</li>
+                        <li>Withdraw consent to processing</li>
+                        <li>Lodge a complaint with a supervisory authority</li>
+                        <li>Request restriction of processing of disputed data until the matter is resolved</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>6. Regular information sources</h2>
+                    <p>We obtain personal data directly from the data subject when they use our websites, register for services, or order products.</p>
+                </section>
+
+                <section>
+                    <h2>7. Regular disclosures of data</h2>
+                    <p>Personal data is not disclosed to third parties for marketing purposes.<br>
+                    We ensure that all our service providers comply with applicable data protection legislation.</p>
+                </section>
+
+                <section>
+                    <h2>8. Duration of processing</h2>
+                    <p>Personal data is processed for as long as the customer relationship exists.<br>
+                    Data subjects may unsubscribe from marketing lists by following the link in marketing emails or via their account settings.</p>
+                </section>
+
+                <section>
+                    <h2>9. Personal data processors</h2>
+                    <p>The controller and its employees process personal data.<br>
+                    We may outsource processing to third-party service providers under contractual arrangements to ensure compliance with data protection laws.<br>
+                    For example, we use Google Analytics to monitor and analyze website traffic; see Google's privacy policy at <a href="https://policies.google.com/privacy?hl=en" target="_blank">https://policies.google.com/privacy?hl=en</a>.</p>
+                </section>
+
+                <section>
+                    <h2>10. Transferring data outside the EU/EEA</h2>
+                    <p>Personal data is not transferred outside the European Union or the European Economic Area.</p>
+                </section>
+
+                <section>
+                    <h2>11. Automated decision-making and profiling</h2>
+                    <p>We do not use personal data for automated decision-making or profiling.</p>
+                </section>
+            </div>
+
+            <!-- Finnish Content -->
+            <div id="content-fi" class="content-section">
+                <p>Tämä ilmoitus täyttää yleisen tietosuoja-asetuksen (GDPR) mukaisen tiedonantovelvollisuuden ja kuvaa, miten Heusala Group Oy ("Heusala Group Oy", englanniksi "Heusala Group Ltd.") käsittelee henkilötietoja kauppanimillään Suomen Palvelinkauppa ja Hangover Games.</p>
+
+                <section>
+                    <h2>1. Henkilötietojen käsittelijä</h2>
+                    <p>Heusala Group Oy (Y‑tunnus: 3091818-9)<br>
+                    Osoite: Keskustori 7 A 14, 33100 Tampere, Suomi<br>
+                    Yleinen sähköposti: <a href="mailto:info@heusalagroup.fi">info@heusalagroup.fi</a><br>
+                    Yleinen puhelin: <a href="tel:+358407300149">+358 40 730 0149</a></p>
+
+                    <p><strong>Henkilötietoja koskevissa asioissa yhteyshenkilö:</strong><br>
+                    Jaakko Heusela, tietosuojavastaava<br>
+                    Heusala Group Oy<br>
+                    Osoite: Keskustori 7 A 14, 33100 Tampere, Suomi<br>
+                    Sähköposti: <a href="mailto:jhh@hg.fi">jhh@hg.fi</a><br>
+                    Puhelin: <a href="tel:+358451734604">+358 45 173 4604</a></p>
+
+                    <p><strong>Kauppanimet samassa käsittelijässä:</strong></p>
+                    <ul>
+                        <li>Suomen Palvelinkauppa (hostaus- ja Internet-palvelut)</li>
+                        <li>Hangover Games (pelitoiminta)</li>
+                    </ul>
+
+                    <p><strong>Verkkosivustot, joihin tämä ilmoitus koskee:</strong></p>
+                    <ul>
+                        <li><a href="https://hg.fi" target="_blank" rel="noopener">https://hg.fi</a></li>
+                        <li><a href="https://palvelinkauppa.fi" target="_blank" rel="noopener">https://palvelinkauppa.fi</a></li>
+                        <li><a href="https://hangover.games" target="_blank" rel="noopener">https://hangover.games</a></li>
+                        <li><a href="https://holvi.com/shop/hangovergames/" target="_blank" rel="noopener">https://holvi.com/shop/hangovergames/</a></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>2. Rekisterin sisältö</h2>
+                    <p>Tässä rekisterissä käsitellään verkkosivujemme, tuotteidemme ja palveluidemme asiakkaiden ja käyttäjien henkilötietoja.</p>
+                </section>
+
+                <section>
+                    <h2>3. Henkilötietojen käyttötarkoitus ja käsittelyperuste</h2>
+                    <p>Henkilötietoja käsitellään olemassa olevan asiakassuhteen perusteella tai rekisteröidyn antaman suostumuksen nojalla.<br>
+                    Käyttötarkoitukset:</p>
+                    <ul>
+                        <li>Asiakkuuden hallinta ja asiakastuki</li>
+                        <li>Tuotteiden ja palveluiden myynti ja markkinointi</li>
+                        <li>Verkkopalveluiden käyttäjien tunnistaminen</li>
+                        <li>Uusista tuotteista ja palveluista tiedottaminen</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>4. Rekisteriin tallennettavat tiedot</h2>
+                    <p><strong>Yhteystiedot:</strong></p>
+                    <ul>
+                        <li>Nimi</li>
+                        <li>Sähköpostiosoite</li>
+                        <li>Puhelinnumero</li>
+                        <li>Postiosoite (asiakasrekisterissä)</li>
+                    </ul>
+
+                    <p><strong>Asiakastiedot:</strong></p>
+                    <ul>
+                        <li>Tiedot ostetuista tai ennakkotilatuista tuotteista ja palveluista</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>5. Rekisteröidyn oikeudet</h2>
+                    <p>Pyyntöjä koskien ota yhteyttä osoitteeseen jhh@hg.fi.<br>
+                    Rekisteröidyllä on oikeus:</p>
+                    <ul>
+                        <li>Saada pääsy häntä koskeviin henkilötietoihin</li>
+                        <li>Pyytää virheellisten tai puutteellisten tietojen oikaisua</li>
+                        <li>Vastustaa henkilötietojensa käsittelyä</li>
+                        <li>Kieltää henkilötietojensa käyttö suoramarkkinointiin</li>
+                        <li>Pyytää henkilötietojen poistamista, kun käsittely ei ole tarpeen</li>
+                        <li>Peruuttaa suostumus milloin tahansa</li>
+                        <li>Tehdä valitus valvontaviranomaiselle</li>
+                        <li>Pyytää käsittelyn rajoittamista kiistanalaisissa tapauksissa</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>6. Rekisterin tietolähteet</h2>
+                    <p>Hankimme henkilötiedot suoraan rekisteröidyiltä, kun he käyttävät verkkosivujamme, rekisteröityvät palveluihin tai tilaavat tuotteita.</p>
+                </section>
+
+                <section>
+                    <h2>7. Tietojen säännöllinen luovutus</h2>
+                    <p>Henkilötietoja ei luovuteta kolmansille osapuolille markkinointitarkoituksessa.<br>
+                    Varmistamme, että kaikki palveluntarjoajamme noudattavat sovellettavaa tietosuojalainsäädäntöä.</p>
+                </section>
+
+                <section>
+                    <h2>8. Tietojen säilytysaika</h2>
+                    <p>Henkilötietoja säilytetään niin kauan kuin asiakassuhde on voimassa.<br>
+                    Rekisteröity voi kieltäytyä markkinointiviestinnästä noudattamalla markkinointiviesteissä olevaa poista-linkkiä tai omien asetusten kautta.</p>
+                </section>
+
+                <section>
+                    <h2>9. Henkilötietojen käsittelijät</h2>
+                    <p>Käsittelijä ja sen työntekijät käsittelevät henkilötietoja.<br>
+                    Voimme ulkoistaa käsittelyä palveluntarjoajille sopimusjärjestelyin varmistaaksemme tietosuojalakien noudattamisen.<br>
+                    Esimerkiksi käytämme Google Analyticsia verkkoliikenteen seurantaan; katso Googlen tietosuojakäytäntö osoitteessa <a href="https://policies.google.com/privacy?hl=en" target="_blank">https://policies.google.com/privacy?hl=en</a>.</p>
+                </section>
+
+                <section>
+                    <h2>10. Tietojen siirto EU/ETA-alueen ulkopuolelle</h2>
+                    <p>Henkilötietoja ei siirretä EU:n tai ETA:n ulkopuolelle.</p>
+                </section>
+
+                <section>
+                    <h2>11. Automaattinen päätöksenteko ja profilointi</h2>
+                    <p>Emme käytä henkilötietoja automatisoituun päätöksentekoon tai profilointiin.</p>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <p><a href="index.html">← Back to Home</a></p>
+        </footer>
+    </div>
+
+    <script>
+        // Language detection and switching functionality
+        const languages = {
+            en: {
+                title: 'Our Privacy Statement',
+                backLink: '← Back to Home'
+            },
+            fi: {
+                title: 'Tietosuojailmoitus',
+                backLink: '← Takaisin etusivulle'
+            }
+        };
+
+        let currentLanguage = 'en';
+
+        // Detect user's preferred language
+        function detectUserLanguage() {
+            // Check browser language
+            const browserLang = navigator.language || navigator.userLanguage;
+            
+            // Check if Finnish is preferred
+            if (browserLang.startsWith('fi')) {
+                return 'fi';
+            }
+            
+            // Default to English
+            return 'en';
+        }
+
+        // Switch language
+        function switchLanguage(lang) {
+            currentLanguage = lang;
+            
+            // Update content visibility
+            document.querySelectorAll('.content-section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(`content-${lang}`).classList.add('active');
+            
+            // Update button states
+            document.querySelectorAll('.language-switcher button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.getElementById(`btn-${lang}`).classList.add('active');
+            
+            // Update page title and language attribute
+            document.documentElement.lang = lang;
+            document.title = `${languages[lang].title} - Heusala Group`;
+            document.getElementById('title').textContent = languages[lang].title;
+            
+            // Update footer link
+            const footerLink = document.querySelector('footer a');
+            footerLink.textContent = languages[lang].backLink;
+            
+            // Store preference in localStorage
+            localStorage.setItem('privacyLanguage', lang);
+        }
+
+        // Initialize page
+        function initializePage() {
+            // Check for stored preference first
+            const storedLang = localStorage.getItem('privacyLanguage');
+            
+            if (storedLang && (storedLang === 'en' || storedLang === 'fi')) {
+                switchLanguage(storedLang);
+            } else {
+                // Use detected language
+                const detectedLang = detectUserLanguage();
+                switchLanguage(detectedLang);
+            }
+        }
+
+        // Initialize when page loads
+        document.addEventListener('DOMContentLoaded', initializePage);
+    </script>
+</body>
+</html> 
