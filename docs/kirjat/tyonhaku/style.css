@@ -400,7 +400,7 @@ a:hover {
 .section__title::after {
     content: '';
     position: absolute;
-    bottom: -var(--space-lg);
+    bottom: -var(--space-xl);
     left: 50%;
     transform: translateX(-50%);
     width: 60px;
