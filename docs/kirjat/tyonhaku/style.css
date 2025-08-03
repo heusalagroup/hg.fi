@@ -748,6 +748,19 @@ a:hover {
 .author__expertise {
     color: var(--color-text-muted);
     font-size: var(--font-size-base);
+    margin-bottom: var(--space-xl);
+}
+
+.author__cta {
+    margin-top: var(--space-lg);
+}
+
+.author__cta .btn {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition);
 }
 
 /* Final CTA Section */
@@ -1052,6 +1065,11 @@ a:hover {
     
     .author__bio {
         padding: var(--space-lg);
+    }
+    
+    .author__cta .btn {
+        width: 100%;
+        justify-content: center;
     }
     
     .audience__benefits {
