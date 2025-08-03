@@ -173,6 +173,12 @@ a:hover {
     min-height: 44px;
 }
 
+/* Holvi logo in buttons */
+.btn__holvi-logo {
+    flex-shrink: 0;
+    vertical-align: middle;
+}
+
 /* Navigation */
 .nav {
     position: fixed;
