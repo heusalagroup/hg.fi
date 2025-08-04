@@ -1,6 +1,31 @@
 // Book Landing Page JavaScript
 document.addEventListener('DOMContentLoaded', function() {
     
+    // Mobile navigation toggle
+    const navToggle = document.querySelector('.nav__toggle');
+    const navMenu = document.querySelector('.nav__menu');
+    
+    if (navToggle && navMenu) {
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('nav__menu--open');
+        });
+        
+        // Close menu when clicking on a link
+        const navLinks = navMenu.querySelectorAll('.nav__link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('nav__menu--open');
+            });
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!navToggle.contains(e.target) && !navMenu.contains(e.target)) {
+                navMenu.classList.remove('nav__menu--open');
+            }
+        });
+    }
+    
     // Sticky CTA functionality
     const stickyCTA = document.getElementById('sticky-cta');
     const heroCTA = document.querySelector('.hero__cta .btn');
