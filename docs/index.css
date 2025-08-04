@@ -475,6 +475,35 @@ a:hover {
     color: var(--color-accent);
 }
 
+.book-card__pricing {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-xs);
+}
+
+.book-card__price--discounted {
+    color: var(--color-success);
+    font-size: var(--font-size-2xl);
+}
+
+.book-card__price--original {
+    color: var(--color-text-muted);
+    text-decoration: line-through;
+    font-size: var(--font-size-lg);
+}
+
+.book-card__early-bird {
+    background: linear-gradient(135deg, var(--color-success), #047857);
+    color: white;
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: var(--border-radius);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
 .book-card__tax {
     font-size: var(--font-size-xs);
     color: var(--color-text-muted);
@@ -1623,6 +1652,25 @@ html {
     
     .book-card__info {
         align-items: center;
+    }
+    
+    .book-card__pricing {
+        flex-direction: column;
+        gap: var(--space-xs);
+        text-align: center;
+    }
+    
+    .book-card__price--discounted {
+        font-size: var(--font-size-xl);
+    }
+    
+    .book-card__price--original {
+        font-size: var(--font-size-base);
+    }
+    
+    .book-card__early-bird {
+        font-size: 0.625rem;
+        padding: 0.25rem 0.5rem;
     }
 
     /* Services & Packages */

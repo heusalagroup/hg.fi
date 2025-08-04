@@ -448,10 +448,47 @@ a:hover {
     gap: var(--space-md);
 }
 
+.hero__pricing {
+    margin: var(--space-lg) 0;
+}
+
+.hero__price-container {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-xs);
+}
+
 .hero__price {
-    font-size: var(--font-size-lg);
     font-weight: 600;
-    color: var(--color-text);
+    margin: 0;
+}
+
+.hero__price--discounted {
+    font-size: var(--font-size-2xl);
+    color: var(--color-success);
+}
+
+.hero__price--original {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-muted);
+    text-decoration: line-through;
+}
+
+.hero__early-bird {
+    background: linear-gradient(135deg, var(--color-success), #047857);
+    color: white;
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: var(--border-radius);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.hero__price-note {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
     margin: 0;
 }
 
@@ -1159,10 +1196,50 @@ a:hover {
     margin-bottom: var(--space-lg);
 }
 
+.final-cta__pricing {
+    margin-bottom: var(--space-lg);
+}
+
+.final-cta__price-container {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-xs);
+    justify-content: center;
+}
+
+.final-cta__price {
+    font-weight: 600;
+    margin: 0;
+}
+
+.final-cta__price--discounted {
+    font-size: var(--font-size-xl);
+    color: var(--color-green-light);
+}
+
+.final-cta__price--original {
+    font-size: var(--font-size-base);
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: line-through;
+}
+
+.final-cta__early-bird {
+    background: linear-gradient(135deg, var(--color-success), #047857);
+    color: white;
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: var(--border-radius);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
 .final-cta__note {
     font-size: var(--font-size-sm);
     color: rgba(255, 255, 255, 0.8);
-    margin-bottom: var(--space-lg);
+    margin: 0;
+    text-align: center;
 }
 
 .final-cta__summary {
@@ -1199,10 +1276,39 @@ a:hover {
     margin: 0 auto;
 }
 
+.sticky-cta__pricing {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
 .sticky-cta__text {
     font-weight: 600;
     color: var(--color-text);
     font-size: var(--font-size-base);
+    margin: 0;
+}
+
+.sticky-cta__price-container {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+}
+
+.sticky-cta__price {
+    font-weight: 600;
+    margin: 0;
+}
+
+.sticky-cta__price--discounted {
+    font-size: var(--font-size-base);
+    color: var(--color-success);
+}
+
+.sticky-cta__price--original {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+    text-decoration: line-through;
 }
 
 /* Footer */
@@ -1366,6 +1472,59 @@ a:hover {
     
     .hero__features {
         align-items: center;
+    }
+    
+    .hero__price-container {
+        flex-direction: column;
+        gap: var(--space-xs);
+        text-align: center;
+    }
+    
+    .hero__price--discounted {
+        font-size: var(--font-size-xl);
+    }
+    
+    .hero__price--original {
+        font-size: var(--font-size-base);
+    }
+    
+    .hero__early-bird {
+        font-size: 0.625rem;
+        padding: 0.25rem 0.5rem;
+    }
+    
+    .final-cta__price-container {
+        flex-direction: column;
+        gap: var(--space-xs);
+    }
+    
+    .final-cta__price--discounted {
+        font-size: var(--font-size-lg);
+    }
+    
+    .final-cta__price--original {
+        font-size: var(--font-size-sm);
+    }
+    
+    .final-cta__early-bird {
+        font-size: 0.625rem;
+        padding: 0.25rem 0.5rem;
+    }
+    
+    .sticky-cta__pricing {
+        gap: 0.25rem;
+    }
+    
+    .sticky-cta__price-container {
+        gap: 0.25rem;
+    }
+    
+    .sticky-cta__price--discounted {
+        font-size: var(--font-size-sm);
+    }
+    
+    .sticky-cta__price--original {
+        font-size: 0.75rem;
     }
     
     .hero__book-image {

@@ -87,6 +87,8 @@
       "offers": {
         "@type": "Offer",
         "price": "19.00",
+        "highPrice": "45.00",
+        "lowPrice": "19.00",
         "priceCurrency": "EUR",
         "priceValidUntil": "2025-12-31",
         "availability": "https://schema.org/InStock",
@@ -156,7 +158,10 @@
       "offers": {
         "@type": "Offer",
         "price": "19.00",
+        "highPrice": "45.00",
+        "lowPrice": "19.00",
         "priceCurrency": "EUR",
+        "priceValidUntil": "2025-12-31",
         "availability": "https://schema.org/InStock",
         "url": "https://holvi.com/shop/hangovergames/product/3f80f1d077f1b9765468a2f9010127f5/"
       }
@@ -245,7 +250,14 @@
                         </svg>
                         Osta e-kirja nyt
                     </a>
-                    <p class="hero__price">19 € sis. ALV 10%</p>
+                    <div class="hero__pricing">
+                        <div class="hero__price-container">
+                            <span class="hero__price hero__price--discounted">19 €</span>
+                            <span class="hero__price hero__price--original">45 €</span>
+                            <span class="hero__early-bird">Early Bird -hinta</span>
+                        </div>
+                        <p class="hero__price-note">sis. ALV 10%</p>
+                    </div>
                     <div class="hero__language-switcher">
                         <a href="/books/job-search/" class="hero__language-link">
                             <span class="hero__language-flag">🇬🇧</span>
@@ -494,7 +506,14 @@
                         Osta e-kirja nyt
                     </a>
                 </div>
-                <p class="final-cta__note">19 € sis. ALV 10% • Päivitykset ilmaisia vuoden 2025 loppuun asti</p>
+                <div class="final-cta__pricing">
+                    <div class="final-cta__price-container">
+                        <span class="final-cta__price final-cta__price--discounted">19 €</span>
+                        <span class="final-cta__price final-cta__price--original">45 €</span>
+                        <span class="final-cta__early-bird">Early Bird -hinta</span>
+                    </div>
+                    <p class="final-cta__note">sis. ALV 10% • Päivitykset ilmaisia vuoden 2025 loppuun asti</p>
+                </div>
                 <p class="final-cta__summary">
                     <strong>Nyt on oikea hetki tarttua tilaisuuteen ja nostaa työnhakusi uudelle tasolle tekoälyn avulla.</strong>
                 </p>
@@ -505,7 +524,13 @@
     <!-- Sticky CTA for Mobile -->
     <div class="sticky-cta" id="sticky-cta">
         <div class="sticky-cta__content">
-            <span class="sticky-cta__text">Osta Tekoäly työnhaussa – 19 €</span>
+            <div class="sticky-cta__pricing">
+                <span class="sticky-cta__text">Osta Tekoäly työnhaussa</span>
+                <div class="sticky-cta__price-container">
+                    <span class="sticky-cta__price sticky-cta__price--discounted">19 €</span>
+                    <span class="sticky-cta__price sticky-cta__price--original">45 €</span>
+                </div>
+            </div>
             <a href="https://holvi.com/shop/hangovergames/product/3f80f1d077f1b9765468a2f9010127f5/" class="btn btn--primary btn--small" target="_blank" rel="noopener">
                 <svg class="btn__holvi-logo" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
