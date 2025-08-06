@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (navToggle && navMenu) {
         navToggle.addEventListener('click', function() {
             navMenu.classList.toggle('nav__menu--open');
-            navToggle.classList.toggle('nav__toggle--active');
+            navToggle.classList.toggle('nav__toggle--open');
         });
     }
     
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
         link.addEventListener('click', function() {
             if (navMenu.classList.contains('nav__menu--open')) {
                 navMenu.classList.remove('nav__menu--open');
-                navToggle.classList.remove('nav__toggle--active');
+                navToggle.classList.remove('nav__toggle--open');
             }
         });
     });
