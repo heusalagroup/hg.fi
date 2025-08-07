@@ -1222,4 +1222,170 @@ Coming 14.8.2025.
 
 ### 14.5 Further reading and tool links
 
-Coming 14.8.2025. 
+Coming 14.8.2025.
+
+### 14.6 Job search sites list
+
+This appendix contains a comprehensive list of job search sites that are particularly useful for AI-assisted job search. The sites are divided into categories for clarity.
+
+#### General job search sites
+
+| Site | Description |
+|------|-------------|
+| [GitHub Careers](https://www.github.careers/careers-home/jobs) | GitHub's official job search site, especially for technology roles and developers |
+| [Oikotie Työpaikat](https://tyopaikat.oikotie.fi/) | Finland's largest job search site, covers all industries and job positions in Finland |
+| [LinkedIn Jobs](https://www.linkedin.com/jobs/) | Professional network's job search feature, excellent for building networks |
+| [Indeed](https://www.indeed.com) | World's largest job search site, covers global opportunities |
+
+#### Technology industry specialized sites
+
+| Site | Description |
+|------|-------------|
+| [Golang Cafe](https://golang.cafe/) | Go programming language specialized site, Go developer jobs |
+| [TeamIT](https://teamit.fi/en/recruiting/) | Finland's IT industry recruitment service, technology and digital roles |
+| [Mozilla Careers](https://www.mozilla.org/en-US/careers/listings/) | Mozilla's job positions, open source and web technology roles |
+
+#### Freelancer and project sites
+
+| Site | Description |
+|------|-------------|
+| [DigiaHub](https://digiahub.com/Project/OpenProjects) | Finland's digital industry project site, freelancer opportunities |
+| [Finitec Gigs](https://www.finitec.fi/en/gigs) | Finland's IT consulting company project site, freelancer roles |
+| [Verama](https://app.verama.com/job-requests) | Finland's technology industry project site, freelancer opportunities |
+| [NordGigs](https://nordgigs.com/projects) | Nordic project site, freelancer roles |
+| [Gofore Gigs](https://gigs.gofore.com/gigs/) | Gofore consulting company's project site, freelancer roles |
+| [Witted Partners](https://wittedpartners.com/) | Finland's technology consulting company project site |
+| [Solita Friends](https://www.solita.fi/friends-of-solita/) | Solita consulting company's freelancer network |
+| [Right People Group](https://rightpeoplegroup.com/open-assignments) | Finland's IT consulting company project site |
+| [Plantrs](https://plantrs.com) | Finland's technology industry project site |
+| [Conexus DX](https://www.conexusdx.com) | Finland's digital industry consulting company project site |
+| [Endeavour Recruitment](https://www.endeavourrecruitment.com) | International recruitment service, technology industry roles |
+| [NineDots](https://ninedots.io) | Finland's technology industry project site |
+
+#### Large technology companies
+
+| Site | Description |
+|------|-------------|
+| [Nokia Careers](https://careers.nokia.com) | Nokia's job positions, telecommunications and technology industry roles |
+| [Samsung Careers](https://careers.samsung.com) | Samsung's job positions, electronics and technology industry roles |
+| [Apple Jobs](https://jobs.apple.com) | Apple's job positions, hardware and software development |
+| [Google Careers](https://careers.google.com) | Google's job positions, software development and AI |
+| [Microsoft Careers](https://careers.microsoft.com) | Microsoft's job positions, software development and cloud services |
+| [OpenAI Careers](https://openai.com/careers) | OpenAI's job positions, AI and machine learning roles |
+| [DeepMind Careers](https://careers.deepmind.com) | DeepMind's job positions, AI research and development |
+| [Spotify Jobs](https://jobs.spotify.com) | Spotify's job positions, music and software technology |
+| [Wolt Jobs](https://wolt.com/en/jobs) | Wolt's job positions, delivery and software technology |
+| [Supercell Careers](https://supercell.com/en/careers) | Supercell's job positions, game development |
+| [AWS Careers](https://aws.amazon.com/careers) | Amazon Web Services' job positions, cloud technology |
+| [Meta Careers](https://careers.meta.com) | Meta's job positions, social media and VR/AR |
+| [Stripe Jobs](https://stripe.com/jobs) | Stripe's job positions, payment services and software development |
+| [Revolut Careers](https://revolut.com/careers) | Revolut's job positions, fintech and software development |
+| [Adyen Jobs](https://jobs.adyen.com) | Adyen's job positions, payment services and technology |
+| [Wise Jobs](https://wise.com/jobs) | Wise's job positions, money transfers and fintech |
+| [Databricks Jobs](https://jobs.databricks.com) | Databricks' job positions, data analytics and cloud technology |
+| [Snowflake Careers](https://careers.snowflake.com) | Snowflake's job positions, cloud-based data analytics |
+| [Palantir Careers](https://www.palantir.com/careers) | Palantir's job positions, data analytics and software development |
+| [Atlassian Careers](https://careers.atlassian.com) | Atlassian's job positions, software development tools |
+| [GitLab Jobs](https://jobs.gitlab.com) | GitLab's job positions, DevOps and software development |
+| [Figma Jobs](https://boards.greenhouse.io/figma) | Figma's job positions, design and software tools |
+| [Tesla Careers](https://careers.tesla.com) | Tesla's job positions, electric vehicles and energy |
+| [NVIDIA Careers](https://careers.nvidia.com) | NVIDIA's job positions, GPU technology and AI |
+| [AMD Careers](https://careers.amd.com) | AMD's job positions, processors and graphics cards |
+| [ASML Careers](https://www.asml.com/en/careers) | ASML's job positions, semiconductor technology |
+| [ARM Careers](https://careers.arm.com) | ARM's job positions, processor architecture |
+| [Infineon Careers](https://careers.infineon.com) | Infineon's job positions, semiconductor technology |
+
+#### Industry and energy sector companies
+
+| Site | Description |
+|------|-------------|
+| [Siemens Careers](https://careers.siemens.com) | Siemens' job positions, industrial automation and energy |
+| [Ericsson Careers](https://careers.ericsson.com) | Ericsson's job positions, telecommunications and 5G |
+| [Huawei Talent](https://www.huawei.com/en/talent) | Huawei's job positions, telecommunications and technology |
+| [Airbus Careers](https://careers.airbus.com) | Airbus' job positions, aviation and space technology |
+| [Boeing Careers](https://careers.boeing.com) | Boeing's job positions, aviation and defense technology |
+| [Lockheed Martin Careers](https://careers.lockheedmartin.com) | Lockheed Martin's job positions, defense and space technology |
+| [Shell Careers](https://careers.shell.com) | Shell's job positions, energy and oil |
+| [BP Careers](https://careers.bp.com) | BP's job positions, energy and oil |
+
+#### Banking and finance sector
+
+| Site | Description |
+|------|-------------|
+| [Nordea Careers](https://careers.nordea.com) | Nordea's job positions, banking and financial services |
+| [OP Careers](https://op-careers.fi) | OP's job positions, banking and insurance services |
+| [Danske Bank Careers](https://www.danskebank.com/careers) | Danske Bank's job positions, banking and financial services |
+| [Swedbank Careers](https://careers.swedbank.com) | Swedbank's job positions, banking and financial services |
+| [SEB Jobs](https://jobs.sebgroup.com) | SEB's job positions, banking and financial services |
+| [Handelsbanken Careers](https://careers.handelsbanken.com) | Handelsbanken's job positions, banking and financial services |
+| [Klarna Careers](https://www.klarna.com/careers) | Klarna's job positions, fintech and payment services |
+| [PayPal Careers](https://careers.paypal.com) | PayPal's job positions, fintech and payment services |
+| [Mastercard Jobs](https://jobs.mastercard.com) | Mastercard's job positions, payment services and fintech |
+| [Visa Careers](https://careers.visa.com) | Visa's job positions, payment services and fintech |
+| [London Stock Exchange Jobs](https://londonstockexchange.wd3.myworkdayjobs.com/LSEG) | LSEG's job positions, exchange and financial services |
+| [Bloomberg Jobs](https://jobs.bloomberg.com) | Bloomberg's job positions, financial data and media |
+| [Goldman Sachs Careers](https://careers.goldmansachs.com) | Goldman Sachs' job positions, investment banking |
+| [Morgan Stanley Careers](https://careers.morganstanley.com) | Morgan Stanley's job positions, investment banking |
+| [JPMorgan Careers](https://careers.jpmorgan.com) | JPMorgan's job positions, investment banking |
+| [Deutsche Bank Careers](https://careers.deutschebank.com) | Deutsche Bank's job positions, investment banking |
+| [Credit Suisse Careers](https://careers.credit-suisse.com) | Credit Suisse's job positions, investment banking |
+
+#### Pharmaceutical and biotechnology companies
+
+| Site | Description |
+|------|-------------|
+| [Thermo Fisher Careers](https://careers.thermofisher.com) | Thermo Fisher's job positions, medical devices |
+| [Roche Careers](https://careers.roche.com) | Roche's job positions, pharmaceutical industry and diagnostics |
+| [Novartis Careers](https://careers.novartis.com) | Novartis' job positions, pharmaceutical industry |
+| [Bayer Careers](https://careers.bayer.com) | Bayer's job positions, pharmaceutical industry and agriculture |
+| [GSK Careers](https://careers.gsk.com) | GSK's job positions, pharmaceutical industry |
+| [Pfizer Careers](https://careers.pfizer.com) | Pfizer's job positions, pharmaceutical industry |
+| [AstraZeneca Careers](https://careers.astrazeneca.com) | AstraZeneca's job positions, pharmaceutical industry |
+| [Sanofi Jobs](https://jobs.sanofi.com) | Sanofi's job positions, pharmaceutical industry |
+| [Lilly Jobs](https://careers.lilly.com) | Lilly's job positions, pharmaceutical industry |
+| [Abbott Jobs](https://jobs.abbott) | Abbott's job positions, medical devices |
+| [Medtronic Careers](https://careers.medtronic.com) | Medtronic's job positions, medical devices |
+| [Philips Jobs](https://careers.philips.com) | Philips' job positions, medical devices |
+| [Becton Dickinson Jobs](https://jobs.becton.com) | Becton Dickinson's job positions, medical devices |
+| [Bosch Healthcare Careers](https://careers.bosch-healthcare.com) | Bosch Healthcare's job positions, medical devices |
+
+#### Agriculture and chemical industry companies
+
+| Site | Description |
+|------|-------------|
+| [Yara Careers](https://www.yara.com/careers) | Yara's job positions, fertilizers and agriculture |
+| [Valio Careers](https://careers.valio.com) | Valio's job positions, dairy farming and food industry |
+| [KWS Careers](https://careers.kws.com) | KWS's job positions, seed farming and plant breeding |
+| [Corteva Careers](https://careers.corteva.com) | Corteva's job positions, agriculture and crop protection |
+| [Syngenta Careers](https://careers.syngenta.com) | Syngenta's job positions, agriculture and crop protection |
+| [Cargill Jobs](https://jobs.cargill.com) | Cargill's job positions, food industry and agriculture |
+| [John Deere Careers](https://careers.john-deere.com) | John Deere's job positions, agricultural machinery |
+| [AGCO Careers](https://careers.agco.com) | AGCO's job positions, agricultural machinery |
+| [BASF Careers](https://careers.basf.com) | BASF's job positions, chemical industry and materials |
+| [Bunge Careers](https://careers.bunge.com) | Bunge's job positions, food industry and agriculture |
+| [ADM Careers](https://careers.adm.com) | ADM's job positions, food industry and agriculture |
+
+#### Recruitment services and tools
+
+| Site | Description |
+|------|-------------|
+| [Lever Jobs](https://jobs.lever.co) | Lever's job positions, recruitment technology |
+| [Greenhouse Jobs](https://boards.greenhouse.io) | Greenhouse's job positions, recruitment technology |
+
+#### Public administration and international organizations
+
+| Site | Description |
+|------|-------------|
+| [EU Careers](https://jobs.european-union.europa.eu) | European Union's job positions, public administration |
+| [ESA Careers](https://careers.esa.int) | European Space Agency's job positions, space technology |
+
+#### Alternative job search sites
+
+| Site | Description |
+|------|-------------|
+| [Instaffo Jobs](https://jobs.instaffo.com) | Finland's job search site, especially for IT and technology roles |
+| [Portfolio Jobs](https://portfoliojobs.tcv.com) | TCV's portfolio companies' job positions, technology industry startups |
+| [ODS.ai](https://ods.ai) | AI and data industry specialized site |
+| [Carbonfact](https://www.carbonfact.com) | Environmental and sustainable development industry job positions |
+
+**Note:** This list includes both direct job search sites and companies' own job pages. Freelancer sites are particularly useful for project-based job search, while large companies' sites offer opportunities for permanent roles. In AI-assisted job search, these sites can be utilized with ChatGPT's Web Search tool for finding and analyzing job postings. 

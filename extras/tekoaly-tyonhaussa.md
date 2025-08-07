@@ -80,7 +80,7 @@ Tarkemmat versio- ja asetusvertailut löytyvät [liitteestä A](#liite-a-chatgpt
 | **4. Kehotteiden ketjutus** | Nelivaiheinen prosessi: ilmoitus → vertailu → hakemus | Pääset eroon massahakemisesta |
 | **5. CV & LinkedIn optimointi** | ATS-sanat, 300 merkin About, projektien esittely | Profiili puhuu samaa kieltä kuin rekrybotit |
 | **6. Ilmoitusten analyysi** | Must-have vs nice-to-have, gap-strategia | Haku kohdistuu realistisiin paikkoihin |
-| **7. Haastattelusimulaatiot** | Voice Mode, kritiikki-&-paranna-luupit | Harjoittelet vastaukset ennen live-tilannetta |
+| **7. Haastattelusimulaatiot** | Kritiikki-&-paranna-luupit | Harjoittelet vastaukset ennen live-tilannetta |
 | **8. Palkkaneuvottelut** | Markkinadata + AI-sparraus | Myyt osaamisesi arvoonsa |
 | **9–10. Workflow-kirjasto** | Valmiit suomi & englanti -promptit | Kopioi–liitä kun tarvitset nopeasti |
 | **14. Liitteet** | Mallivertailut, syvätutkimus, 1-sivun muistilista | Lisätiedot silloin kun niitä kaipaat |
@@ -110,19 +110,19 @@ Nyt kun olet lukenut johdannon, olet valmis aloittamaan. Luku 2 opastaa sinut Ch
 
 Tarkemmat versio- ja hintavertailut löytyvät [liitteestä A](#a.1-chatgpt-versioiden-vertailutaulukko).
 
-### 2.2  Työkalupakki: sisäänrakennetut ominaisuudet ja puhekäyttö
+### 2.2  Työkalupakki: sisäänrakennetut ominaisuudet
 
 | Ominaisuus                                                                                                                                                                                         | Missä se löytyy?                      | Milloin siitä on hyötyä?                                                    |
 |----|----| ---- |
 | **Companion-ikkuna (macOS)**<br/> Option + Space avaa kelluvan ChatGPT-ikkunan, joka pysyy muiden sovellusten päällä.                                                                              | ChatGPT-työpöytäsovellus (macOS)      | Kun haluat analysoida työpaikkailmoituksen ilman selaimen vaihtamista.      |
-| **Advanced Voice Mode**<br/> Puhu ja kuuntele vastaukset reaaliajassa GPT-4o-mallilla. Free-tasolla tarjolla "päivittäinen esikatselu", Plus/Team-tasoilla laajempi käyttö.                        | Selain-, työpöytä- ja mobiilisovellukset | CV-korjausten tai haastatteluvastausten harjoitteluun ääneen.               |
+
 | **ChatGPT oletusassistenttina Androidissa**<br/> Beta-versio 1.2025.070 mahdollistaa ChatGPT:n valinnan "Digital assistant app" -asetuksessa; avaus pitkällä Home-painalluksella tai pyyhkäisyllä. | Android-sovellus (beta ≥ 1.2025.070)  | Hands-free-kysymykset liikkeellä, esim. "tiivistä tämä ilmoitus".           |
 | **Record Mode (Team)**<br/> Nauhoittaa maks. 120 min ääntä, transkriboi ja laatii toimintalistat; ylläpitäjä voi kytkeä pois Workspace Controlsista.                                               | ChatGPT Team (macOS-sovellus)         | Nopeuttaa follow-up-viestien ja muistiinpanojen laatimista rekrypalavereista. |
 
 Työnhaun minimi-paketti on selain- tai mobiilisovellus. Erillisiä selaimen lisäosia ei tarvita – Verkkohaku-työkalu ja yllä olevat sisäänrakennetut työkalut riittävät useimpiin hakurutiineihin. GPT-4o on saatavilla myös Free-tasolla rajatuin viestirajoin, joten pääset vauhtiin ilman maksullista tilausta.
 
 [31]: https://x.com/OpenAI/status/1820914089612439622?lang=en&utm_source=chatgpt.com "OpenAI on X"
-[32]: https://help.openai.com/en/articles/8400625-voice-mode-faq?utm_source=chatgpt.com "Voice Mode FAQ - OpenAI Help Center"
+
 [33]: https://help.openai.com/en/articles/6825453-chatgpt-release-notes?utm_source=chatgpt.com "ChatGPT — Release Notes - OpenAI Help Center"
 [34]: https://www.tomsguide.com/ai/chatgpt/how-to-make-chatgpt-your-default-assistant-on-android-instead-of-gemini?utm_source=chatgpt.com "How to make ChatGPT your default assistant on Android instead of Gemini"
 [35]: https://9to5google.com/2025/03/14/chatgpt-default-assistant-android/?utm_source=chatgpt.com "ChatGPT can now replace Gemini as your default assistant on Android"
@@ -156,6 +156,34 @@ Tarkemmat ohjeet seuraavissa kappaleissa.
 * Selaimessa: **Asetukset ▸ Tiedonhallinta ▸ Auta parantamaan mallia kaikille → Off**. Tällöin viestisi eivät päädy mallien jatkokoulutukseen.
 * Kun poistat viestiketjun tai käytät *Väliaikainen keskustelu*-tilaa, aineisto säilyy OpenAI-palvelimilla enintään **30 päivää** ennen lopullista poistoa
 * **Zero-Data-Retention (ZDR)** on saatavilla vain erillisillä API-päätteillä — ChatGPT:n käyttöliittymässä tätä valintaa ei ole
+
+\vspace{0.5em}
+**Ota mallikoulutus pois käytöstä**
+
+**Miksi?** Kun poistat toiminnon käytöstä, OpenAI ei käytä keskustelujasi mallien koulutukseen. Tämä parantaa yksityisyyttä ja pienentää arkaluontoisen datan vuotoriskiä.
+
+**Tee näin (5 vaihetta):**
+
+1. Napauta oikeassa yläkulmassa profiilikuvaasi.
+2. Valitse **Asetukset**.
+3. Avaa **Tiedonhallinta**.
+4. Kytke **Auta parantamaan mallia kaikille** *pois käytöstä*.
+5. Sulje asetukset ja jatka keskustelua.
+
+<!-- TODO: Lisää ruutukaappaus kytkimestä OFF-tilassa (alt-teksti: "Improve the model for everyone – kytkin pois päältä"). -->
+
+::: {.warningbox title="Jaa-linkit ovat julkisia (ei hakukoneissa)"}
+**Jaettu linkki on edelleen avoin kenelle tahansa linkin saaneelle**, vaikka se ei enää näy Google-hauissa.  
+OpenAI poisti hakukone-indeksoinnin 31. 7. 2025 tietosuoja­huolten vuoksi.
+
+**Muista:**  
+1. Älä jaa arkaluontoista dataa linkillä.  
+2. Tarkista säännöllisesti jaetut linkit: **Profiilikuva → Asetukset → Tiedonhallinta → Jaetut linkit**.  
+3. Poista tarpeettomat linkit roskakorikuvakkeella.
+
+<!-- TODO: Lisää kuvakaappaus Shared Links -hallinnasta (alt-teksti: Shared Links -lista, roskakorikuvake esillä). -->
+
+:::
 
 \vspace{0.5em}
 **Jaa-linkkien riskit:**
@@ -1074,7 +1102,7 @@ Tulossa 8.8.2025.
 
 * 8.1 Yritystutkimus ja toimialatrendit
 * 8.2 Behavioural-kysymykset (STAR) vs tekniset kysymykset
-* 8.3 Mock-haastattelu ChatGPT-näkökulmasta (teksti & puhe)
+* 8.3 Mock-haastattelu ChatGPT-näkökulmasta
 * 8.4 Vastausten palautesykli: itsearvio + ChatGPT-kritiikki
 
 \pagebreak
