@@ -270,4 +270,54 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initialize with first section visible
     updateTocHighlight();
+    
+    // Auto-resize textareas to fit content
+    function autoResizeTextarea(textarea) {
+        textarea.style.height = 'auto';
+        textarea.style.height = textarea.scrollHeight + 'px';
+    }
+    
+    // Apply auto-resize to all prompt textareas
+    const promptTextareas = document.querySelectorAll('.prompt-text');
+    promptTextareas.forEach(textarea => {
+        autoResizeTextarea(textarea);
+    });
+    
+    // Copy prompt functionality
+    window.copyPrompt = function(button) {
+        const promptExample = button.closest('.prompt-example');
+        const textArea = promptExample.querySelector('.prompt-text');
+        const textToCopy = textArea.value;
+        
+        navigator.clipboard.writeText(textToCopy).then(() => {
+            // Visual feedback
+            const originalText = button.textContent;
+            button.textContent = '✓ Copied!';
+            button.style.background = 'rgba(76, 175, 80, 0.8)';
+            button.style.borderColor = 'rgba(76, 175, 80, 0.8)';
+            
+            setTimeout(() => {
+                button.textContent = originalText;
+                button.style.background = 'rgba(255, 255, 255, 0.2)';
+                button.style.borderColor = 'rgba(255, 255, 255, 0.3)';
+            }, 2000);
+        }).catch(err => {
+            console.error('Failed to copy text: ', err);
+            // Fallback for older browsers
+            textArea.select();
+            document.execCommand('copy');
+            
+            // Visual feedback for fallback
+            const originalText = button.textContent;
+            button.textContent = '✓ Copied!';
+            button.style.background = 'rgba(76, 175, 80, 0.8)';
+            button.style.borderColor = 'rgba(76, 175, 80, 0.8)';
+            
+            setTimeout(() => {
+                button.textContent = originalText;
+                button.style.background = 'rgba(255, 255, 255, 0.2)';
+                button.style.borderColor = 'rgba(255, 255, 255, 0.3)';
+            }, 2000);
+        });
+    };
 }); 
