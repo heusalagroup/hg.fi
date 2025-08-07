@@ -15,9 +15,9 @@
     <link rel="canonical" href="https://hg.fi/">
     
     <!-- Language & International Targeting -->
-    <link rel="alternate" hreflang="en" href="https://hg.fi/">
-    <link rel="alternate" hreflang="fi" href="https://hg.fi/#fi">
-    <link rel="alternate" hreflang="x-default" href="https://hg.fi/">
+    <link rel="alternate" hreflang="en" href="https://hg.fi/en.html">
+    <link rel="alternate" hreflang="fi" href="https://hg.fi/fi.html">
+    <link rel="alternate" hreflang="x-default" href="https://hg.fi/en.html">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -51,684 +51,256 @@
     <!-- Styles -->
     <link rel="stylesheet" href="index.css">
     
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Heusala Group",
-      "url": "https://hg.fi",
-      "telephone": "+358451734604",
-      "email": "info@hg.fi",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Keskustori 7 A 14",
-        "addressLocality": "Tampere",
-        "postalCode": "33100",
-        "addressCountry": "FI"
-      },
-      "priceRange": "€€€",
-      "sameAs": ["https://github.com/heusalagroup"],
-      "description": "Fixed-scope software packages delivered in 1-2 weeks. 12 months support included. Custom software, web development & automation for Finnish small businesses.",
-      "openingHours": "Mo-Fr 09:00-17:00",
-      "areaServed": "FI",
-      "serviceArea": {
-        "@type": "Country",
-        "name": "Finland"
-      },
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Software Development Services",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Startup Launch Package",
-              "description": "Launch a new app/MVP in 1–2 weeks"
-            },
-            "price": "15000",
-            "priceCurrency": "EUR"
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Online Presence Package",
-              "description": "Bring a small business online in 1–2 weeks"
-            },
-            "price": "6000",
-            "priceCurrency": "EUR"
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Business Process Automation",
-              "description": "Automate operations/workflows in 1–2 weeks"
-            },
-            "price": "10000",
-            "priceCurrency": "EUR"
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "2-Day Website Launch",
-              "description": "Your website – online in just 1–2 business days"
-            },
-            "price": "1500",
-            "priceCurrency": "EUR"
-          }
-        ]
-      }
-    }
-    </script>
+    <style>
+        /* Language selection styles using site's design system */
+        .language-selector {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--color-bg) 0%, var(--color-border-light) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .language-selector::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 20% 80%, rgba(37, 99, 235, 0.05) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 20%, rgba(37, 99, 235, 0.05) 0%, transparent 50%);
+            pointer-events: none;
+        }
+        
+        .language-card {
+            background: white;
+            border-radius: var(--border-radius-xl);
+            padding: var(--space-4xl);
+            box-shadow: var(--shadow-xl);
+            text-align: center;
+            max-width: 500px;
+            margin: var(--space-xl);
+            position: relative;
+            z-index: 1;
+            border: 1px solid var(--color-border);
+        }
+        
+        .language-card__logo {
+            margin-bottom: var(--space-xl);
+        }
+        
+        .language-card__logo svg {
+            transition: var(--transition);
+        }
+        
+        .language-card:hover .language-card__logo svg {
+            transform: scale(1.05);
+        }
+        
+        .language-card h1 {
+            color: var(--color-text);
+            font-size: var(--font-size-4xl);
+            font-weight: 700;
+            margin-bottom: var(--space-lg);
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+        }
+        
+        .language-card p {
+            color: var(--color-text-muted);
+            margin-bottom: var(--space-3xl);
+            line-height: 1.6;
+            font-size: var(--font-size-lg);
+        }
+        
+        .language-buttons {
+            display: flex;
+            gap: var(--space-lg);
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .language-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-sm);
+            padding: var(--space-md) var(--space-xl);
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: var(--font-size-base);
+            transition: var(--transition);
+            border: 2px solid transparent;
+            min-width: 140px;
+            justify-content: center;
+        }
+        
+        .language-btn--primary {
+            background: var(--color-accent);
+            color: white;
+        }
+        
+        .language-btn--primary:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .language-btn--secondary {
+            background: white;
+            color: var(--color-text);
+            border-color: var(--color-border);
+        }
+        
+        .language-btn--secondary:hover {
+            background: var(--color-border-light);
+            border-color: var(--color-accent);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .language-btn__flag {
+            font-size: var(--font-size-lg);
+            line-height: 1;
+        }
+        
+        .language-btn__text {
+            font-size: var(--font-size-base);
+            font-weight: 600;
+        }
+        
+        .loading {
+            display: none;
+            margin-top: var(--space-lg);
+            color: var(--color-text-muted);
+            font-size: var(--font-size-sm);
+            animation: pulse 2s infinite;
+        }
+        
+        @media (max-width: 768px) {
+            .language-card {
+                margin: var(--space-lg);
+                padding: var(--space-3xl);
+            }
+            
+            .language-buttons {
+                flex-direction: column;
+                gap: var(--space-md);
+            }
+            
+            .language-btn {
+                justify-content: center;
+                min-width: 200px;
+            }
+            
+            .language-card h1 {
+                font-size: var(--font-size-3xl);
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .language-card {
+                margin: var(--space-md);
+                padding: var(--space-2xl);
+            }
+            
+            .language-btn {
+                min-width: 180px;
+                padding: var(--space-sm) var(--space-lg);
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <header class="header">
-        <nav class="nav">
-            <div class="nav__container">
-                <a href="#hero" class="nav__logo">
-                    <svg id="hg_logo" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 89.959 89.973">
-                        <g id="Group_1" data-name="Group 1" transform="translate(0)">
-                            <path id="Path_1" data-name="Path 1" d="M85.346,89.973H4.627A4.623,4.623,0,0,1,0,85.346V4.627A4.623,4.623,0,0,1,4.627,0H85.333a4.623,4.623,0,0,1,4.627,4.627V85.333A4.605,4.605,0,0,1,85.346,89.973Z" transform="translate(0)" fill="#62579e"></path>
+    <!-- Language Selection for non-JavaScript users -->
+    <div class="language-selector" id="languageSelector">
+        <div class="language-card">
+            <div class="language-card__logo">
+                <svg id="hg_logo" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 89.959 89.973">
+                    <g id="Group_1" data-name="Group 1" transform="translate(0)">
+                        <path id="Path_1" data-name="Path 1" d="M85.346,89.973H4.627A4.623,4.623,0,0,1,0,85.346V4.627A4.623,4.623,0,0,1,4.627,0H85.333a4.623,4.623,0,0,1,4.627,4.627V85.333A4.605,4.605,0,0,1,85.346,89.973Z" transform="translate(0)" fill="#62579e"></path>
+                    </g>
+                    <g id="Group_6" data-name="Group 6" transform="translate(13.063 13.063)">
+                        <g id="Group_2" data-name="Group 2" transform="translate(0 34.128)">
+                            <path id="Path_2" data-name="Path 2" d="M96,375.7v-6.327l18.139-8.124L96,353.127V346.8l26.548,12.424v4.069Z" transform="translate(-96 -346.8)" fill="#fff"></path>
                         </g>
-                        <g id="Group_6" data-name="Group 6" transform="translate(13.063 13.063)">
-                            <g id="Group_2" data-name="Group 2" transform="translate(0 34.128)">
-                                <path id="Path_2" data-name="Path 2" d="M96,375.7v-6.327l18.139-8.124L96,353.127V346.8l26.548,12.424v4.069Z" transform="translate(-96 -346.8)" fill="#fff"></path>
-                            </g>
-                            <g id="Group_3" data-name="Group 3" transform="translate(36.332 0.463)">
-                                <path id="Path_3" data-name="Path 3" d="M390.514,128.33,363,115.892v-4.069L390.514,99.4v6.341l-18.806,8.124,18.806,8.124Z" transform="translate(-363 -99.4)" fill="#fff"></path>
-                            </g>
-                            <g id="Group_4" data-name="Group 4">
-                                <path id="Path_4" data-name="Path 4" d="M96,96h7.1v12.328h16.792V96H127v29.855h-7.1v-12.41H103.1v12.41H96Z" transform="translate(-96 -96)" fill="#fff"></path>
-                            </g>
-                            <g id="Group_5" data-name="Group 5" transform="translate(31.801 33.325)">
-                                <path id="Path_5" data-name="Path 5" d="M335.987,370.02a10.551,10.551,0,0,1-6.287-9.933v-7.852a10.519,10.519,0,0,1,6.314-9.934,16.333,16.333,0,0,1,6.967-1.4h5.674a16.37,16.37,0,0,1,6.695,1.279,10.4,10.4,0,0,1,4.49,3.62,9.428,9.428,0,0,1,1.592,5.416h-6.9a4.7,4.7,0,0,0-1.619-3.715,6.279,6.279,0,0,0-4.259-1.4h-5.674a6.047,6.047,0,0,0-4.558,1.769,6.383,6.383,0,0,0-1.728,4.627v7.334a6.422,6.422,0,0,0,1.7,4.627,5.913,5.913,0,0,0,4.49,1.769h5.987a6.061,6.061,0,0,0,4.286-1.579,5.131,5.131,0,0,0,1.7-3.919v-.939h-9.838v-5.13h16.737v6.055a9.769,9.769,0,0,1-1.619,5.538,10.853,10.853,0,0,1-4.559,3.8,15.694,15.694,0,0,1-6.695,1.361H342.9A15.8,15.8,0,0,1,335.987,370.02Z" transform="translate(-329.7 -340.9)" fill="#fff"></path>
-                            </g>
+                        <g id="Group_3" data-name="Group 3" transform="translate(36.332 0.463)">
+                            <path id="Path_3" data-name="Path 3" d="M390.514,128.33,363,115.892v-4.069L390.514,99.4v6.341l-18.806,8.124,18.806,8.124Z" transform="translate(-363 -99.4)" fill="#fff"></path>
                         </g>
-                    </svg>
+                        <g id="Group_4" data-name="Group 4">
+                            <path id="Path_4" data-name="Path 4" d="M96,96h7.1v12.328h16.792V96H127v29.855h-7.1v-12.41H103.1v12.41H96Z" transform="translate(-96 -96)" fill="#fff"></path>
+                        </g>
+                        <g id="Group_5" data-name="Group 5" transform="translate(31.801 33.325)">
+                            <path id="Path_5" data-name="Path 5" d="M335.987,370.02a10.551,10.551,0,0,1-6.287-9.933v-7.852a10.519,10.519,0,0,1,6.314-9.934,16.333,16.333,0,0,1,6.967-1.4h5.674a16.37,16.37,0,0,1,6.695,1.279,10.4,10.4,0,0,1,4.49,3.62,9.428,9.428,0,0,1,1.592,5.416h-6.9a4.7,4.7,0,0,0-1.619-3.715,6.279,6.279,0,0,0-4.259-1.4h-5.674a6.047,6.047,0,0,0-4.558,1.769,6.383,6.383,0,0,0-1.728,4.627v7.334a6.422,6.422,0,0,0,1.7,4.627,5.913,5.913,0,0,0,4.49,1.769h5.987a6.061,6.061,0,0,0,4.286-1.579,5.131,5.131,0,0,0,1.7-3.919v-.939h-9.838v-5.13h16.737v6.055a9.769,9.769,0,0,1-1.619,5.538,10.853,10.853,0,0,1-4.559,3.8,15.694,15.694,0,0,1-6.695,1.361H342.9A15.8,15.8,0,0,1,335.987,370.02Z" transform="translate(-329.7 -340.9)" fill="#fff"></path>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+            <p>Valitse kieli / Select language</p>
+            <div class="language-buttons">
+                <a href="fi.html" class="language-btn language-btn--primary">
+                    <span class="language-btn__flag">🇫🇮</span>
+                    <span class="language-btn__text">Suomi</span>
                 </a>
-                <ul class="nav__menu">
-                    <li><a href="#hero" class="nav__link">Home</a></li>
-                    <li><a href="#services" class="nav__link">Services</a></li>
-                    <li><a href="#process" class="nav__link">Process</a></li>
-                    <li><a href="#whyus" class="nav__link">Why Us</a></li>
-                    <li><a href="#guarantee" class="nav__link">Guarantee</a></li>
-                    <li><a href="#books" class="nav__link">Books</a></li>
-                    <li><a href="#about" class="nav__link">About</a></li>
-                    <li><a href="#contact" class="nav__link nav__link--cta">Contact</a></li>
-                </ul>
-                <button class="nav__toggle" aria-label="Toggle navigation">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="3" y1="6" x2="21" y2="6"></line>
-                        <line x1="3" y1="12" x2="21" y2="12"></line>
-                        <line x1="3" y1="18" x2="21" y2="18"></line>
-                    </svg>
-                </button>
+                <a href="en.html" class="language-btn language-btn--secondary">
+                    <span class="language-btn__flag">🇬🇧</span>
+                    <span class="language-btn__text">English</span>
+                </a>
             </div>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero">
-        <div class="hero__container">
-            <div class="hero__content">
-                <h1 class="hero__title">Custom Software & IT Solutions—Delivered Fast.</h1>
-                <p class="hero__subtitle">Fixed-scope packages delivered in 1-2 weeks. 12 months support included. Pay only if satisfied.</p>
-                <div class="hero__cta">
-                    <a href="#contact" class="btn btn--primary">Let's Talk</a>
-                    <a href="#services" class="btn btn--secondary">View Services</a>
-                </div>
-            </div>
-            <div class="hero__image">
-                <img src="assets/hero.webp" alt="Software development and IT solutions illustration" loading="eager">
-            </div>
+            <div class="loading" id="loading">Ohjataan sinua automaattisesti... / Redirecting you automatically...</div>
         </div>
-    </section>
+    </div>
 
-
-
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <h2 class="section__title">What we can build & run for you.</h2>
+    <script>
+        // Language detection and automatic redirect
+        function detectLanguage() {
+            // Check for stored preference first
+            const storedLang = localStorage.getItem('preferred-language');
+            if (storedLang) {
+                redirectToLanguage(storedLang);
+                return;
+            }
             
-            <!-- Service Cards -->
-            <div class="services__grid">
-                <div class="service-card">
-                    <div class="service-card__icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-                        </svg>
-                    </div>
-                    <h3 class="service-card__title">Custom Software Development</h3>
-                    <p class="service-card__description">Tailored applications that solve your specific business challenges and streamline operations.</p>
-                    <a href="#packages" class="service-card__link">View Packages →</a>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-card__icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"></path>
-                            <path d="M12 12v9"></path>
-                            <path d="m8 17 4 4 4-4"></path>
-                        </svg>
-                    </div>
-                    <h3 class="service-card__title">Cloud & DevOps</h3>
-                    <p class="service-card__description">Scalable cloud infrastructure and automated deployment pipelines for reliable, fast delivery.</p>
-                    <a href="#packages" class="service-card__link">View Packages →</a>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-card__icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                            <line x1="8" y1="21" x2="16" y2="21"></line>
-                            <line x1="12" y1="17" x2="12" y2="21"></line>
-                        </svg>
-                    </div>
-                    <h3 class="service-card__title">Web & Server Hosting</h3>
-                    <p class="service-card__description">Fast, secure hosting with 24/7 monitoring and automatic backups for peace of mind.</p>
-                    <a href="#packages" class="service-card__link">View Packages →</a>
-                </div>
-            </div>
-
-            <!-- Packages Grid -->
-            <div id="packages" class="packages">
-                <h3 class="packages__title">Fixed-Scope Service Packages</h3>
-                <p class="packages__subtitle">Transparent pricing with 12 months support & hosting included</p>
-                <div class="packages__grid">
-                    <div class="package-card">
-                        <div class="package-card__guarantee">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M9 12l2 2 4-4"></path>
-                                <path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"></path>
-                            </svg>
-                            <span>Pay Only If Satisfied</span>
-                        </div>
-                        <h4 class="package-card__title">Startup Launch</h4>
-                        <p class="package-card__description">Launch a new app/MVP in 1–2 weeks</p>
-                        <div class="package-card__price">€15,000</div>
-                        <div class="package-card__timeline">1-2 weeks</div>
-                        <div class="package-card__features">
-                            <span class="package-card__feature">Custom MVP Development</span>
-                            <span class="package-card__feature">12 Months Support</span>
-                            <span class="package-card__feature">Hosting Included</span>
-                        </div>
-                        <a href="#contact" class="btn btn--secondary">Get Started</a>
-                    </div>
-                    
-                    <div class="package-card">
-                        <div class="package-card__guarantee">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M9 12l2 2 4-4"></path>
-                                <path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"></path>
-                            </svg>
-                            <span>Pay Only If Satisfied</span>
-                        </div>
-                        <h4 class="package-card__title">Online Presence</h4>
-                        <p class="package-card__description">Bring a small business online in 1–2 weeks</p>
-                        <div class="package-card__price">€6,000</div>
-                        <div class="package-card__timeline">1-2 weeks</div>
-                        <div class="package-card__features">
-                            <span class="package-card__feature">Modern Website/E-commerce</span>
-                            <span class="package-card__feature">12 Months Support</span>
-                            <span class="package-card__feature">Hosting Included</span>
-                        </div>
-                        <a href="#contact" class="btn btn--secondary">Get Started</a>
-                    </div>
-                    
-                    <div class="package-card">
-                        <div class="package-card__guarantee">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M9 12l2 2 4-4"></path>
-                                <path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"></path>
-                            </svg>
-                            <span>Pay Only If Satisfied</span>
-                        </div>
-                        <h4 class="package-card__title">Business Process Automation</h4>
-                        <p class="package-card__description">Automate operations/workflows in 1–2 weeks</p>
-                        <div class="package-card__price">€10,000</div>
-                        <div class="package-card__timeline">1-2 weeks</div>
-                        <div class="package-card__features">
-                            <span class="package-card__feature">Custom Automation</span>
-                            <span class="package-card__feature">12 Months Support</span>
-                            <span class="package-card__feature">Hosting Included</span>
-                        </div>
-                        <a href="#contact" class="btn btn--secondary">Get Started</a>
-                    </div>
-                    
-                    <div class="package-card">
-                        <div class="package-card__guarantee">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M9 12l2 2 4-4"></path>
-                                <path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"></path>
-                            </svg>
-                            <span>Pay Only If Satisfied</span>
-                        </div>
-                        <h4 class="package-card__title">2-Day Website Launch</h4>
-                        <p class="package-card__description">Your website – online in just 1–2 business days</p>
-                        <div class="package-card__price">€1,500</div>
-                        <div class="package-card__timeline">1-2 days</div>
-                        <div class="package-card__features">
-                            <span class="package-card__feature">Static HTML or WordPress</span>
-                            <span class="package-card__feature">12 Months Hosting</span>
-                            <span class="package-card__feature">SEO & Mobile Optimized</span>
-                        </div>
-                        <a href="#contact" class="btn btn--secondary">Launch in 2 Days</a>
-                    </div>
-                    
-                    <div class="package-card package-card--highlight">
-                        <h4 class="package-card__title">Free Discovery & Advice</h4>
-                        <p class="package-card__description">30 min consultation + custom proposal</p>
-                        <div class="package-card__price">Free</div>
-                        <div class="package-card__timeline">30 min</div>
-                        <div class="package-card__features">
-                            <span class="package-card__feature">Business Analysis</span>
-                            <span class="package-card__feature">Custom Proposal</span>
-                            <span class="package-card__feature">No Obligation</span>
-                        </div>
-                        <a href="#contact" class="btn btn--primary">Get Free Consultation</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Process Section -->
-    <section id="process" class="process">
-        <div class="container">
-            <h2 class="section__title">Guided Process</h2>
-            <div class="process__grid">
-                <div class="process-step">
-                    <div class="process-step__number">1</div>
-                    <h3 class="process-step__title">Tell us your goal</h3>
-                    <p class="process-step__description">Share your vision and challenges. We listen, ask questions, and understand your business needs.</p>
-                </div>
-                
-                <div class="process-step">
-                    <div class="process-step__number">2</div>
-                    <h3 class="process-step__title">Fixed Plan & Pricing</h3>
-                    <p class="process-step__description">Choose from our fixed-scope packages with transparent pricing. No surprises, guaranteed delivery in 1-2 weeks.</p>
-                </div>
-                
-                <div class="process-step">
-                    <div class="process-step__number">3</div>
-                    <h3 class="process-step__title">Delivered in 1-2 Weeks</h3>
-                    <p class="process-step__description">We build, deploy, and support your solution. You get a working product, not just promises.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Us Section -->
-    <section id="whyus" class="whyus">
-        <div class="container">
-            <h2 class="section__title">Why Choose Us</h2>
-            <div class="whyus__grid">
-                <div class="reason-card">
-                    <div class="reason-card__icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                            <polyline points="22,4 12,14.01 9,11.01"></polyline>
-                        </svg>
-                    </div>
-                    <h3 class="reason-card__title">Gets Things Done</h3>
-                    <p class="reason-card__description">We deliver working solutions on time, every time. No endless meetings or scope creep.</p>
-                </div>
-                
-                <div class="reason-card">
-                    <div class="reason-card__icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-                        </svg>
-                    </div>
-                    <h3 class="reason-card__title">Senior Expertise</h3>
-                    <p class="reason-card__description">20+ years of experience building and scaling software solutions for businesses like yours.</p>
-                </div>
-                
-                <div class="reason-card">
-                    <div class="reason-card__icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                            <circle cx="9" cy="7" r="4"></circle>
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                        </svg>
-                    </div>
-                    <h3 class="reason-card__title">Flexible & Personal</h3>
-                    <p class="reason-card__description">Direct communication and personalized attention. No layers of management or bureaucracy.</p>
-                </div>
-                
-                <div class="reason-card">
-                    <div class="reason-card__icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-                        </svg>
-                    </div>
-                    <h3 class="reason-card__title">Fixed Pricing</h3>
-                    <p class="reason-card__description">Transparent, all-inclusive pricing. No surprises, no hidden fees, no scope creep.</p>
-                </div>
-                
-                <div class="reason-card">
-                    <div class="reason-card__icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                            <line x1="8" y1="21" x2="16" y2="21"></line>
-                            <line x1="12" y1="17" x2="12" y2="21"></line>
-                        </svg>
-                    </div>
-                    <h3 class="reason-card__title">12 Months Support Included</h3>
-                    <p class="reason-card__description">Every package includes a full year of hosting, maintenance, and support. No hidden costs.</p>
-                </div>
-                
-                <div class="reason-card reason-card--highlight">
-                    <div class="reason-card__icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M9 12l2 2 4-4"></path>
-                            <path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="reason-card__title">Pay Only If Satisfied</h3>
-                    <p class="reason-card__description">We send an invoice when we deliver. You only pay if you're completely satisfied with the result.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Guarantee Section -->
-    <section id="guarantee" class="guarantee">
-        <div class="container">
-            <div class="guarantee__content">
-                <div class="guarantee__badge">
-                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                        <path d="M9 12l2 2 4-4"></path>
-                        <path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"></path>
-                    </svg>
-                </div>
-                <h2 class="guarantee__title">Pay Only If Satisfied</h2>
-                <p class="guarantee__description">
-                    We're confident in our ability to deliver exactly what you need. We send an invoice when we deliver—you only pay if you're completely satisfied with the result.
-                </p>
-                <div class="guarantee__details">
-                    <div class="guarantee__detail">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M9 12l2 2 4-4"></path>
-                            <path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"></path>
-                        </svg>
-                        <span>Invoice sent upon delivery</span>
-                    </div>
-                    <div class="guarantee__detail">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M9 12l2 2 4-4"></path>
-                            <path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"></path>
-                        </svg>
-                        <span>Pay only if satisfied</span>
-                    </div>
-                    <div class="guarantee__detail">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M9 12l2 2 4-4"></path>
-                            <path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"></path>
-                        </svg>
-                        <span>No upfront payment required</span>
-                    </div>
-                </div>
-                <a href="#contact" class="btn btn--primary guarantee__cta">Start Your Project</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Books Section -->
-    <section id="books" class="books">
-        <div class="container">
-            <h2 class="section__title">Books & Resources</h2>
-            <div class="books__grid">
-                <div class="book-card">
-                    <div class="book-card__image">
-                        <img src="/books/job-search/assets/ebook-landing-hero-transparent.webp" alt="AI Job Hunting Guide - E-book cover" loading="lazy">
-                    </div>
-                    <div class="book-card__content">
-                        <h3 class="book-card__title">AI Job Hunting Guide</h3>
-                        <p class="book-card__description">
-                            Learn how to use AI to find, analyze, and apply for the best job opportunities. Our comprehensive e-book includes ready-to-use ChatGPT prompts, CV optimization tips, and free updates until the end of 2025.
-                        </p>
-                        <div class="book-card__features">
-                            <span class="book-card__feature">Step-by-step AI job hunting guide</span>
-                            <span class="book-card__feature">Ready-to-use ChatGPT prompts</span>
-                            <span class="book-card__feature">CV optimization strategies</span>
-                            <span class="book-card__feature">Free updates until 2025</span>
-                        </div>
-                        <div class="book-card__meta">
-                            <div class="book-card__info">
-                                <div class="book-card__pricing">
-                                    <span class="book-card__price book-card__price--discounted">€19</span>
-                                    <span class="book-card__price book-card__price--original">€45</span>
-                                    <span class="book-card__early-bird">Early Bird Price</span>
-                                </div>
-                                <span class="book-card__tax">incl. VAT 10%</span>
-                                <span class="book-card__format">PDF • 32 pages • English</span>
-                            </div>
-                            <a href="https://holvi.com/shop/hangovergames/product/3baacdbcc893b67d9aed07c44edc5f4e/" class="btn btn--primary" target="_blank" rel="noopener">Buy Now</a>
-                        </div>
-                        <div class="book-card__actions">
-                            <a href="/books/job-search/preview/" class="btn btn--secondary">Read Preview</a>
-                            <a href="/books/job-search/" class="btn btn--secondary">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="book-card">
-                    <div class="book-card__image">
-                        <img src="/kirjat/tyonhaku/assets/ebook-landing-hero-transparent.webp" alt="Tekoäly työnhaussa - E-kirjan kansi" loading="lazy">
-                    </div>
-                    <div class="book-card__content">
-                        <h3 class="book-card__title">Tekoäly työnhaussa</h3>
-                        <p class="book-card__description">
-                            Opi käyttämään tekoälyä parhaiden työpaikkojen löytämiseen, analysointiin ja hakemiseen. Kattava e-kirjamme sisältää valmiit ChatGPT-promptit, CV-optimointivinkkejä ja ilmaiset päivitykset vuoden 2025 loppuun asti.
-                        </p>
-                        <div class="book-card__features">
-                            <span class="book-card__feature">Askel askeleelta tekoälytyönhaku</span>
-                            <span class="book-card__feature">Valmiit ChatGPT-promptit</span>
-                            <span class="book-card__feature">CV-optimointistrategiat</span>
-                            <span class="book-card__feature">Ilmaiset päivitykset vuoteen 2025</span>
-                        </div>
-                        <div class="book-card__meta">
-                            <div class="book-card__info">
-                                <div class="book-card__pricing">
-                                    <span class="book-card__price book-card__price--discounted">€19</span>
-                                    <span class="book-card__price book-card__price--original">€45</span>
-                                    <span class="book-card__early-bird">Early Bird -hinta</span>
-                                </div>
-                                <span class="book-card__tax">sis. ALV 10%</span>
-                                <span class="book-card__format">PDF • 32 sivua • Suomi</span>
-                            </div>
-                            <a href="https://holvi.com/shop/hangovergames/product/3f80f1d077f1b9765468a2f9010127f5/" class="btn btn--primary" target="_blank" rel="noopener">Osta nyt</a>
-                        </div>
-                        <div class="book-card__actions">
-                            <a href="/kirjat/tyonhaku/preview/" class="btn btn--secondary">Lue alku maksutta</a>
-                            <a href="/kirjat/tyonhaku/" class="btn btn--secondary">Lue lisää</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about__content">
-                <div class="about__text">
-                    <h2 class="section__title">About Heusala Group</h2>
-                    <p class="about__bio">
-                        With over 20 years of experience in software development and IT consulting, I founded Heusala Group to help small businesses and startups get technology solutions that actually work. My approach is simple: fixed-scope packages, delivered fast, with 12 months of support included. No endless meetings, no scope creep, just results.
-                    </p>
-                    <p class="about__personal-link">
-                        <a href="https://thejhh.me/" target="_blank" rel="noopener noreferrer" class="about__link">Learn more about me personally →</a>
-                    </p>
-                    
-                    <h3 class="about__values-title">Our Values</h3>
-                    <ul class="about__values">
-                        <li><strong>Fixed Pricing:</strong> Transparent, all-inclusive packages with no hidden costs</li>
-                        <li><strong>Fast Delivery:</strong> 1-2 week delivery guaranteed for all packages</li>
-                        <li><strong>12 Months Support:</strong> Hosting, maintenance, and support included with every project</li>
-                    </ul>
-                </div>
-                <div class="about__image">
-                    <img src="https://thejhh.me/assets/images/avatar.jpg" alt="Heusala Group Founder - Professional headshot" class="about__avatar" loading="lazy">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section__title">Let's Talk</h2>
-                        <div class="contact__content">
-                <div class="contact__info">
-                    <h3 class="contact__subtitle">Get in Touch</h3>
-                    <div class="contact__channels">
-                        <a href="https://www.linkedin.com/in/jheusala/" target="_blank" rel="noopener noreferrer" class="contact__channel">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                                <rect x="2" y="9" width="4" height="12"></rect>
-                                <circle cx="4" cy="4" r="2"></circle>
-                            </svg>
-                            Chat on LinkedIn
-                        </a>
-                        <a href="mailto:info@hg.fi" class="contact__channel">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                <polyline points="22,6 12,13 2,6"></polyline>
-                            </svg>
-                            info@hg.fi
-                        </a>
-                        <a href="tel:+358451734604" class="contact__channel">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                            </svg>
-                            +358 45 1734604
-                        </a>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__content">
-                <div class="footer__section">
-                    <h4 class="footer__title">Navigation</h4>
-                    <div class="footer__nav">
-                        <a href="#hero">Home</a>
-                        <a href="#services">Services</a>
-                        <a href="#process">Process</a>
-                        <a href="#whyus">Why Us</a>
-                        <a href="#guarantee">Guarantee</a>
-                        <a href="#books">Books</a>
-                        <a href="#about">About</a>
-                        <a href="#contact">Contact</a>
-                    </div>
-                </div>
-                
-                <div class="footer__section">
-                    <h4 class="footer__title">Company</h4>
-                    <div class="footer__company">
-                        <p><strong>Heusala Group Ltd</strong></p>
-                        <p>Business ID: 3091818-9</p>
-                        <p>Keskustori 7 A 14<br>33100 Tampere<br>Finland</p>
-                    </div>
-                </div>
-                
-                <div class="footer__section">
-                    <h4 class="footer__title">Contact</h4>
-                    <div class="footer__contact">
-                        <a href="https://www.linkedin.com/in/jheusala/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                        <a href="mailto:info@hg.fi">info@hg.fi</a>
-                        <a href="tel:+358451734604">+358 45 1734604</a>
-                    </div>
-                </div>
-            </div>
+            // Check browser language
+            const browserLang = navigator.language || navigator.userLanguage;
+            const langCode = browserLang.toLowerCase().split('-')[0];
             
-            <div class="footer__bottom">
-                <p>&copy; 2025 Heusala Group. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script defer>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Mobile navigation toggle
-        const navToggle = document.querySelector('.nav__toggle');
-        const navMenu = document.querySelector('.nav__menu');
-        
-        navToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('nav__menu--open');
-        });
-
-        // Active navigation highlighting
-        const sections = document.querySelectorAll('section[id]');
-        const navLinks = document.querySelectorAll('.nav__link');
-
-        window.addEventListener('scroll', () => {
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (scrollY >= (sectionTop - 200)) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            navLinks.forEach(link => {
-                link.classList.remove('nav__link--active');
-                if (link.getAttribute('href') === `#${current}`) {
-                    link.classList.add('nav__link--active');
-                }
-            });
-        });
-
-        // Intersection Observer for animations
-        if ('IntersectionObserver' in window) {
-            const observerOptions = {
-                threshold: 0.1,
-                rootMargin: '0px 0px -50px 0px'
-            };
-
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('animate-in');
-                    }
-                });
-            }, observerOptions);
-
-            // Observe elements for animation
-            document.querySelectorAll('.service-card, .process-step, .reason-card, .package-card').forEach(el => {
-                observer.observe(el);
-            });
+            // Check for Finnish
+            if (langCode === 'fi') {
+                redirectToLanguage('fi');
+                return;
+            }
+            
+            // Default to English for all other languages
+            redirectToLanguage('en');
         }
+        
+        function redirectToLanguage(lang) {
+            const loading = document.getElementById('loading');
+            loading.style.display = 'block';
+            
+            // Store preference
+            localStorage.setItem('preferred-language', lang);
+            
+            // Redirect after a short delay to show loading message
+            setTimeout(() => {
+                window.location.href = lang + '.html';
+            }, 500);
+        }
+        
+        // Run language detection when page loads
+        document.addEventListener('DOMContentLoaded', detectLanguage);
+        
+        // Fallback: if JavaScript fails, the language selector will be visible
+        setTimeout(() => {
+            const selector = document.getElementById('languageSelector');
+            if (selector) {
+                selector.style.display = 'flex';
+            }
+        }, 1000);
     </script>
 </body>
-</html> 
+</html>

@@ -60,6 +60,11 @@ html {
     font-size: 16px; /* Base font size for rem calculations */
 }
 
+/* Ensure proper scroll positioning for anchor links */
+section[id] {
+    scroll-margin-top: 100px; /* Account for fixed header */
+}
+
 body {
     font-family: var(--font-family);
     font-size: var(--font-size-base);
@@ -252,12 +257,52 @@ a:hover {
     color: white;
     border-radius: var(--border-radius);
     transition: var(--transition);
+    white-space: nowrap;
 }
 
 .nav__link--cta:hover {
     background-color: var(--color-accent-hover);
     color: white;
     transform: translateY(-1px);
+}
+
+/* Language Switcher */
+.nav__language-switcher {
+    display: flex;
+    align-items: center;
+    margin-left: var(--space-lg);
+    border-left: 1px solid var(--color-border);
+    padding-left: var(--space-lg);
+}
+
+.nav__language-link {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    color: var(--color-text-muted);
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    transition: var(--transition);
+    border: 1px solid transparent;
+}
+
+.nav__language-link:hover {
+    color: var(--color-accent);
+    background-color: rgba(37, 99, 235, 0.1);
+    border-color: var(--color-accent);
+}
+
+.nav__language-flag {
+    font-size: var(--font-size-base);
+    line-height: 1;
+}
+
+.nav__language-text {
+    font-size: var(--font-size-sm);
+    font-weight: 500;
 }
 
 .nav__toggle {
@@ -1608,6 +1653,15 @@ html {
 
     .nav__menu {
         gap: var(--space-lg);
+    }
+    
+    .nav__language-switcher {
+        margin-left: 0;
+        border-left: none;
+        padding-left: 0;
+        border-top: 1px solid var(--color-border);
+        padding-top: var(--space-md);
+        margin-top: var(--space-md);
     }
 
     /* Hero */
