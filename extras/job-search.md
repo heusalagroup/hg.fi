@@ -1,7 +1,7 @@
 ---
-title-meta: "ChatGPT AI in Job Search"
+title-meta: "AI in Job Search - ChatGPT User Guide for Job Seekers"
 author-meta: "Jaakko Heusala"
-date-meta: "5.8.2025"
+date-meta: "6.8.2025"
 toc: false
 ---
 
@@ -16,7 +16,7 @@ toc: false
 \vspace*{\fill}
 \noindent
 \makebox[\textwidth][s]{%
-  \textcolor{black}{Digital Early Access version, 5.8.2025.}%
+  \textcolor{black}{Digital Early Access version, 6.8.2025.}%
   \hfill%
   \textcolor{white}{\href{https://thejhh.me}{Jaakko Heusala}, \href{https://hg.fi}{Heusala Group Oy}.}%
 }
@@ -33,9 +33,13 @@ toc: false
 
 ### 1.1 What is generative AI and why it revolutionizes job search
 
-Generative AI (GenAI) is a subset of machine learning where models learn from vast text datasets to create new content based on previous material – text, images, code, and even strategic suggestions. LLM models like ChatGPT produce human-like text in seconds while understanding the context and goals of the questioner.
+> In our LinkedIn experiment, where **12 job seekers** tested the method, almost everyone found interesting, suitable job positions in minutes – and one of them exclaimed after sending an application: **"I definitely see the benefit!"** ChatGPT doesn't just save time; it uncovers hidden opportunities that would remain completely unseen in traditional searches.
 
-In job search, GenAI shifts the focus from routine tasks (CV formatting, screening job postings, personalizing applications) back to strategic thinking. Instead of spending hours polishing each application by hand, you can input the essential facts to the model and focus on making good career decisions – or practice interview situations with an AI assistant regardless of the time of day. The result is more targeted applications in less time and a better understanding of your market value.
+**What does this mean for you?** This guide presents the same ChatGPT process that 12 job seekers tested. Feedback showed that AI revealed roles that **most participants ended up applying for**. Additionally, some participants reported clear time savings. When you adopt the method, you can focus on strategic career decisions instead of spending hours on traditional browsing.
+
+Generative AI is a subset of AI where models learn from examples to produce new content that resembles human-generated text, images, code, or speech. LLM models (large language model) like ChatGPT produce natural human-like text in seconds while understanding the context and goals of the questioner.
+
+GenAI frees you from the tedious routines of job search. When you give the AI essential facts from your CV and desired roles, you get ready application templates in minutes – and you can use your time for interview practice at any time of day. This way you make more targeted applications in less time and better understand your market value.
 
 ### 1.2 Who this book is for and how to use it
 
@@ -46,57 +50,40 @@ Generative AI has quickly moved from experiments to everyday routines.
 * **71% of organizations** use generative AI in at least one business function (including HR), according to McKinsey's *State of AI 2025* global survey. ([McKinsey & Company][14])
 
 \vspace{0.5em}
-This book is aimed at:
-
-* **Active and passive job seekers** – across all fields who want to build an AI-ready search process.
-* **Recruiters and career coaches** for whom Gen-AI is already part of the toolkit.
-* **Students** and career changers who want to understand AI-assisted job search rules before the first (or next) application round.
-
-\vspace{0.5em}
-**How to get the most out of reading:**
-
-1. **Ensure data security.** If ChatGPT and AI are not familiar yet, read this introduction and **2.3 Settings** section first and ensure you understand and have set up security settings correctly.
-2. **Test chapter by chapter.** Keep ChatGPT window open and copy prompt templates directly for use as-is and answer ChatGPT's questions.
-3. **Iterate and evaluate.** AI speeds up but doesn't replace judgment – check facts, polish style, and add value from a human perspective.
+This book serves job seekers, career changers, and recruitment professionals who want to leverage AI in every phase of the search process.
 
 [12]: https://www.microsoft.com/en-us/worklab/work-trend-index/ai-at-work-is-here-now-comes-the-hard-part?utm_source=chatgpt.com "AI at Work Is Here. Now Comes the Hard Part - Microsoft"
 [13]: https://www.ihire.com/resourcecenter/employer/pages/40-7-of-candidates-have-used-ai-in-their-job-search-but-adoption-varies-by-generation "40.7% of Candidates Have Used AI in Their Job Search – But Adoption Varies by Generation | iHire"
 [14]: https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai "The State of AI: Global survey | McKinsey"
 
 \pagebreak
-### 1.3 ChatGPT versions, online tools, and what you actually need for job search
+### 1.3 What ChatGPT levels and tools you need for job search
 
-| Version                 | Message Quota\*                           | Web Search               | Note for job search                                  |
-|------------------------|-------------------------------------------|--------------------------|----------------------------------------------------|
-| **Free**               | ≈ 10 messages / 3 h → then GPT-3.   | ✓ On for all        | Basic searches work                         |
-| **Plus**               | ≈ 80 messages / 3 h                        | ✓ Unlimited quota\*   | Recommended if you do many searches daily      |
-| **Team**               | \~2× Plus quota / user              | ✓ Unlimited\*\*            | For teams sharing prompt templates            |
-| **Pro**                | No fixed cap (fair use principle) | ✓ Unlimited                | Overwhelming if you need hundreds of search rounds  |
-| **Enterprise / Edu**   | 500 requests / 3 h (4.1)                   | ✓ Unlimited\*\*            | Large organizations, regulation, strong data protection |
+For job search, the **Web Search tool** alone is sufficient, which is on in all ChatGPT packages. With the free Free level, you can handle job posting browsing and familiarization; Plus level mainly brings more speed and message quotas.
 
-\* Message quotas apply to GPT-4o queries, which also count Web Searches. When quota is reached, conversation continues with GPT-4.1 mini model.
+The **Web Search tool** is a ChatGPT feature that enables real-time web browsing and information retrieval from the internet. It's particularly useful in job search -- you need Web Search for finding job postings online, checking requirements, and personalizing applications.
 
-\*\* Admin can restrict
-
-Even with the free ChatGPT level (GPT-4o web search), you can handle job posting browsing and familiarization; *Plus* mainly brings more speed and message quotas.
-
-*Choose Plus or Free level if you focus purely on job search.* Upgrade to Team/Enterprise level only if multiple users need a shared, secure workspace.
+Detailed version and setting comparisons can be found in [Appendix A](#appendix-a-chatgpt-version-comparison-and-technical-details).
 
 \vspace{0.5em}
-**What is the Web Search tool?**
+> **Tip: How to get the most out of this book**
+> 
+> Read the book chapter by chapter and test the prompts immediately in ChatGPT. If you want to dive into settings or Deep Research, check **Appendix A**. And when the 1-page checklist ([Appendix 14.3](#checklist-job-search-with-chatgpt-1-page-pdf)) is ready, take it as a quick review assistant.
 
-The Web Search tool is a ChatGPT feature that enables real-time web browsing and information retrieval from the internet. It's particularly useful in job search -- you need Web Search for finding job postings online, checking requirements, and personalizing applications.
+### Book progression path at a glance
 
-* **Job posting browsing**: Web Search fetches at most a few dozen URLs, which easily fulfills "10 best places" type prompts.
-* **Application personalization**: The model only needs the posting link or text.
-* **Speed**: More complex web search, such as finding open job postings, can take 5-15 minutes.
-
-\vspace{0.5em}
-**What is Deep Research?**
-
-Deep Research is a useful ChatGPT tool if you want to conduct a time-consuming meta-analysis, such as comparing dozens of industry reports.
-In Deep Research, ChatGPT independently explores the web, reads and summarizes multiple articles, reports, or studies.
-Deep Research takes 5–30 min/request and consumes separate credits. Finally, you get a multi-page summary that includes links to sources and possibly also recommendations, which you can print as PDF or Docx file.
+| Chapter | What you learn? | Why important? |
+|------|------------|-----------------|
+| **1. Introduction** | What is GenAI job search, why it works | You understand the rules before diving into prompts |
+| **2. ChatGPT basic settings** | Security, Web Search, Appendix A references | You ensure you don't accidentally share sensitive data |
+| **3. Profile data in order** | CV + LinkedIn raw data for AI | AI only works as well as the input |
+| **4. Prompt chaining** | Four-phase process: posting → comparison → application | You get rid of mass applications |
+| **5. CV & LinkedIn optimization** | ATS keywords, 300 character About, project presentation | Profile speaks the same language as recruitment bots |
+| **6. Posting analysis** | Must-have vs nice-to-have, gap strategy | Search targets realistic positions |
+| **7. Interview simulations** | Voice Mode, critique-&-improve loops | You practice responses before live situations |
+| **8. Salary negotiations** | Market data + AI sparring | You sell your expertise at its value |
+| **9–10. Workflow library** | Ready Finnish & English prompts | Copy-paste when you need quickly |
+| **14. Appendices** | Template comparisons, deep research, 1-page checklist | Additional information when you need it |
 
 [1]: https://www.indeed.com/career-advice/news/chatgpt-job-search?utm_source=chatgpt.com "How To Use ChatGPT in Your Job Search | Indeed.com"
 [2]: https://www.forbes.com/sites/bernardmarr/2025/01/14/5-chatgpt-prompts-that-will-supercharge-your-job-search/?utm_source=chatgpt.com "5 ChatGPT Prompts That Will Supercharge Your Job Search - Forbes"
@@ -110,68 +97,19 @@ Deep Research takes 5–30 min/request and consumes separate credits. Finally, y
 [10]: https://medium.com/prompt-engine/how-i-use-chatgpt-for-job-search-102945181978?utm_source=chatgpt.com "How I Use ChatGPT for Job Search. Prompts included | Jun, 2025"
 [11]: https://www.tomsguide.com/ai/5-chatgpt-prompts-to-help-you-find-your-dream-job-and-how-to-use-them-effectively?utm_source=chatgpt.com "This ChatGPT hack gives new grads an edge in the job hunt - here's how"
 
-\pagebreak
-**What is a model?**
+> **Next step →** Open ChatGPT, copy the first prompt from chapter 2, and test it with your own CV today.
 
-A model refers to ChatGPT's "brain": the computational structure that understands input text and produces responses. Models vary in size and power, and they have a direct impact on how accurately and flexibly ChatGPT can process questions and create content.
-
-The free version only has one model available, which the interface calls "ChatGPT": this is based on GPT-4o technology. When the free version's message quota is reached, the model temporarily switches to the lighter GPT-4.1 mini version until the limit resets.
-
-OpenAI releases new model versions and improvements regularly, so the available models and their features are updated over time.
-
-Below is a comparison of key ChatGPT models and their support for web search ("Web Search" tool) and other important features.
-
-| Model      | Year  | Free | Plus | Pro | Team | Enterprise | Web Search | Advanced Data Analysis | Images | Voice |
-|------------|--------|---|---|---|---|------|------|------|------|------|
-| **GPT-4o** | 2024   | \* | ✓ | ✓ | ✓ |            | ✓          | ✓                        | ✓     | ✓    |
-| **GPT-4.5** | 2025   |   | ✓ | ✓ | ✓ | ✓          | ✓          | ✓                        | ✓     |      |
-| **o3-mini** | 2025   | ✓ | ✓ | ✓ | ✓ |            | ✓          | ✓                        | ✓     | ✓    |
-| **o3**     | 2025   |   | ✓ | ✓ | ✓ | ✓          | ✓          | ✓                        | ✓     | ✓    |
-| **o3-pro** | 2025   |   |   | ✓ | ✓ | ✓          | ✓          | ✓                        | ✓     | ✓    |
-| **o4-mini** | 2025   |   | ✓ | ✓ | ✓ | ✓          | ✓          | ✓                        | ✓     | ✓    |
-
-\* Free accounts have limited access to *GPT-4o*, and when quota runs out, you fall back to *GPT-4.1 mini*. Upgrading to Plus increases *GPT-4o* quota limits and opens models with broader reasoning and tool support.
-
-\pagebreak
-**How much data can a model process?**
-
-| Model     | Input<br>(tokens) | Output<br>(tokens) | Notable features                                                                                                                              |
-|-----------|-------|-------|-----------------------------------|
-| GPT-4o    | 128 000 |                    | Updated knowledge base April 2023; improved instruction following; integrated tools for automatic use; cost-effective pricing    |
-| o3        | 200 000 | 100 000            | Deliberative reasoning (private chain-of-thought); visual recognition and image analysis; full tool support (web, Python, func. calling)     |
-| o4-mini   | 200 000 | 100 000            | Fast and cost-effective reasoning; excellent in coding and visual analysis tasks; full chain-of-thought and tool support (web, Python, image)          |
-| o4-mini-high | 200 000 | 100 000            | "High-reasoning" variant of o4-mini: more computational power at the cost of accuracy                                                                      |
-| GPT-4.5   | 128 000 |                    | New intermediate version in GPT-4 series; better instruction following and performance; available to ChatGPT Pro and Plus users                               |
-| GPT-5     | ?     | ?                  | Coming Q3 2025                                                                                                                                           |
-
-One token corresponds to approximately four characters and about ¾ of a word in English text. Thus, 128,000 tokens is about 96,000 words, which corresponds to about 192 A4 pages in single-spaced format (about 500 words per page).
-
-When you use ChatGPT, the model processes both new input and model-generated response tokens as a total count in the background. For example, 10,000 token input and 5,000 token response consume 15,000 tokens total. Model usage also considers previous message history and stored data, which is compressed as needed within token limits.
-
-<!--
-https://community.openai.com/t/not-able-to-browse-the-web-anymore-what-is-going-on/616933?utm_source=chatgpt.com "Not able to browse the web anymore? What is going on? - ChatGPT"
-https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq?utm_source=chatgpt.com "ChatGPT Free Tier FAQ"
-https://en.wikipedia.org/wiki/GPT-4o?utm_source=chatgpt.com "GPT-4o"
-https://www.wired.com/story/openai-gpt-45?utm_source=chatgpt.com "OpenAI Launches GPT-4.5 for ChatGPT-It's Huge and Compute-Intensive"
-https://www.reuters.com/technology/openai-launches-new-ai-tool-facilitate-research-tasks-2025-02-03/?utm_source=chatgpt.com "OpenAI launches new AI tool to facilitate research tasks"
-https://en.wikipedia.org/wiki/ChatGPT_Deep_Research?utm_source=chatgpt.com "ChatGPT Deep Research"
-https://en.wikipedia.org/wiki/OpenAI_o3?utm_source=chatgpt.com "OpenAI o3"
--->
+Now that you've read the introduction, you're ready to start. Chapter 2 will guide you through ChatGPT's basic settings and first prompts. Remember: the best way to learn is to try yourself – every prompt has been tested to work.
 
 \pagebreak 
 
 ## 2 ChatGPT Setup and Basic Settings
 
-### 2.1 Account creation, paid tiers, and limits
+### 2.1 Account creation and basic settings
 
-1. **Register** at *chatgpt.com* – you get Free tier access immediately ([OpenAI][21]).
-2. **Free tier** allows you to use GPT-4o for about 10–16 messages every third hour, after which conversation continues with GPT-4.1 mini model; Web Search browsing remains available all the time ([Reddit][22], [OpenAI Community][23]).
-3. **Plus (≈ €23 / month EU price)** raises the limit to 80 GPT-4o messages per three-hour period and opens Advanced tools; this is the best price–benefit balance for most active job seekers ([OpenAI Community][24], [CometAPI][25]).
-4. **Team (€29 / month with annual billing)** adds shared workspace, admin controls, and approximately double quotas per user; choose only if you share prompts and results with others ([OpenAI Help Center][26]).
-5. **Pro ($200 ≈ €229)** removes message caps within fair use framework and offers 125 deep research credit monthly quota – needed mainly for data-intensive power seekers ([Substack][27], [Reddit][28]).
-6. **Enterprise/Edu** offers 500 GPT-4.1 requests per 3 h, unlimited web search, and full SSO and security support; suitable for large organizations ([Facebook][29]).
+**Register** at *chatgpt.com* – you get Free tier access immediately. For job search, the **Web Search tool** alone is sufficient, which is on in all ChatGPT packages. With the free Free level, you can handle job posting browsing and familiarization; Plus level mainly brings more speed and message quotas.
 
-**For job search, Web Search alone is sufficient**, which is on in all packages — upgrade to Plus level only if you repeatedly hit Free version message limits. Deep research is overkill for screening individual job postings.
+Detailed version and price comparisons can be found in [Appendix A](#a.1-chatgpt-version-comparison-table).
 
 [21]: https://openai.com/chatgpt/pricing/?utm_source=chatgpt.com "Pricing - ChatGPT - OpenAI"
 [22]: https://www.reddit.com/r/ChatGPT/comments/1crdxwd/i_hit_the_message_limit_on_free_gpt4o_after_only/?utm_source=chatgpt.com "I hit the message limit on Free GPT-4o after only 10 ... - Reddit"
@@ -422,7 +360,7 @@ You act as my goal coach.
      clarifies points).  
    • Form the following Markdown block:
 
-### 🎯 SMART Goal
+### SMART Goal
 - **Specific**: …
 - **Measurable**: …
 - **Achievable**: …
@@ -464,10 +402,13 @@ QUESTIONS (one at a time):
 
 WHEN all five answers are received, execute **TASK**:  
 1. Ensure that 🔍 Web Search tool is on.  
-2. Find **ten** open positions that meet **all** given requirements.  
+2. Find **ten** open positions that meet **all** given requirements.
+     - Utilize job search sites published at https://hg.fi/prompts/job-sites.txt, 
+       but don't limit yourself to them.
 3. Return results in Markdown table, columns:  
    • Role & Company.  
    • Application deadline (if known).  
+   • If salary is stated as annual salary, divide by 12.
    • Salary €/month — if limit is only met with upper bound or salary not stated, 
      start row with "*) " and write "negotiable".  
    • Direct link to posting.  
@@ -1167,9 +1108,118 @@ Coming 13.8.2025.
 \pagebreak
 ## 14 Appendices
 
+### 14.1 Appendix A: ChatGPT version comparison and technical details
+
+#### A.1 ChatGPT version comparison table
+
+| Version                 | Message Quota\*                           | Web Search               | Note for job search                                  |
+|------------------------|-------------------------------------------|--------------------------|----------------------------------------------------|
+| **Free**               | ≈ 10 messages / 3 h → then GPT-4.1 mini   | ✓ On for all        | Basic searches work                         |
+| **Plus**               | ≈ 80 messages / 3 h                        | ✓ Unlimited quota\*   | Recommended if you do many searches daily      |
+| **Team**               | \~2× Plus quota / user              | ✓ Unlimited\*\*            | For teams sharing prompt templates            |
+| **Pro**                | No fixed cap (fair use principle) | ✓ Unlimited                | Overwhelming if you need hundreds of search rounds  |
+| **Enterprise / Edu**   | 500 requests / 3 h (4.1)                   | ✓ Unlimited\*\*            | Large organizations, regulation, strong data protection |
+
+\* Message quotas apply to GPT-4o queries, which also count Web Searches. When quota is reached, conversation continues with GPT-4.1 mini model.
+
+\*\* Admin can restrict
+
+#### A.1.1 Detailed price comparison
+
+| Level                   | Price (EU)                | Message Quota            | Key features                             |
+|------------------------|---------------------------|--------------------------|----------------------------------------------------|
+| **Free**               | 0 €                       | ≈ 10 messages / 3 h       | Basic Web Search, GPT-4.1 mini after limit       |
+| **Plus**               | ≈ 23 € / month               | ≈ 80 messages / 3 h       | Advanced tools, best price–benefit balance     |
+| **Team**               | 29 € / month (annual billing) | \~2× Plus quota        | Shared workspace, admin controls           |
+| **Pro**                | 200 \$ ≈ 229 €            | No fixed cap       | For data-intensive power seekers                |
+| **Enterprise / Edu**   | By agreement         | 500 requests / 3 h (4.1)  | SSO, security, Zero-Data-Retention               |
+
+**Recommendation for job search:** Start with Free level and upgrade to Plus level if you repeatedly hit message limits. Team/Enterprise only if multiple users need shared workspace.
+
+#### A.2 Deep Research tool
+
+Deep Research is a useful ChatGPT tool if you want to conduct a time-consuming meta-analysis, such as comparing dozens of industry reports.
+In Deep Research, ChatGPT independently explores the web, reads and summarizes multiple articles, reports, or studies.
+Deep Research takes 5–30 min/request and consumes separate credits. Finally, you get a multi-page summary that includes links to sources and possibly also recommendations, which you can print as PDF or Docx file.
+
+#### A.3 ChatGPT model comparison
+
+A model refers to ChatGPT's "brain": the computational structure that understands input text and produces responses. Models vary in size and power, and they have a direct impact on how accurately and flexibly ChatGPT can process questions and create content.
+
+The free version only has one model available, which the interface calls "ChatGPT": this is based on GPT-4o technology. When the free version's message quota is reached, the model temporarily switches to the lighter GPT-4.1 mini version until the limit resets.
+
+OpenAI releases new model versions and improvements regularly, so the available models and their features are updated over time.
+
+Below is a comparison of key ChatGPT models and their support for web search ("Web Search" tool) and other important features.
+
+| Model      | Year  | Free | Plus | Pro | Team | Enterprise | Web Search | Advanced Data Analysis | Images | Voice |
+|------------|--------|---|---|---|---|------|------|------|------|------|
+| **GPT-4o** | 2024   | \* | ✓ | ✓ | ✓ |            | ✓          | ✓                        | ✓     | ✓    |
+| **GPT-4.5** | 2025   |   | ✓ | ✓ | ✓ | ✓          | ✓          | ✓                        | ✓     |      |
+| **o3-mini** | 2025   | ✓ | ✓ | ✓ | ✓ |            | ✓          | ✓                        | ✓     | ✓    |
+| **o3**     | 2025   |   | ✓ | ✓ | ✓ | ✓          | ✓          | ✓                        | ✓     | ✓    |
+| **o3-pro** | 2025   |   |   | ✓ | ✓ | ✓          | ✓          | ✓                        | ✓     | ✓    |
+| **o4-mini** | 2025   |   | ✓ | ✓ | ✓ | ✓          | ✓          | ✓                        | ✓     | ✓    |
+| **GPT-5**  | 2025   |   | ✓ | ✓ | ✓ | ✓          | ✓          | ✓                        | ✓     | ✓    |
+| **GPT-5-mini** | 2025 |   | ✓ | ✓ | ✓ | ✓          | ✓          | ✓                        | ✓     | ✓    |
+| **GPT-5-nano** | 2025 |   | ✓ | ✓ | ✓ | ✓          | ✓          | ✓                        | ✓     | ✓    |
+| **GPT-5-chat** | 2025 |   | ✓ | ✓ | ✓ | ✓          | ✓          | ✓                        | ✓     | ✓    |
+
+\* Free accounts have limited access to *GPT-4o*, and when quota runs out, you fall back to *GPT-4.1 mini*. Upgrading to Plus increases *GPT-4o* quota limits and opens models with broader reasoning and tool support.
+
+#### A.3.1 GPT-5 models and their features
+
+OpenAI's newest and most advanced model, **GPT-5**, will be released on 7.8.2025. GPT-5 offers significant improvements in reasoning ability, code quality, and user experience. It handles complex coding and reasoning tasks with minimal prompting, provides clear explanations, and showcases improved agent capabilities.
+
+**GPT-5 model variants:**
+
+| Variant | Purpose | Special features |
+|-----------|-----------|---------------------|
+| **gpt-5** | Logic and multi-step tasks | Improved reasoning ability, agent capabilities |
+| **gpt-5-mini** | Cost-conscious applications | Lightweight version, maintains core features |
+| **gpt-5-nano** | Speed-optimized | Low latency, ideal for real-time applications |
+| **gpt-5-chat** | Enterprise conversations | Advanced, natural, multimodal and context-aware conversation |
+
+**Key improvements for job search:**
+- **Better reasoning ability:** Understands more complex job search strategies and processes
+- **Code quality:** More efficient help in CV and application optimization
+- **Agent capabilities:** Automatic web research and information gathering
+- **Clear explanations:** Better justification for recommendations and decisions
+
+**Availability:** GPT-5 models will be released on 7.8.2025.
+
+#### A.4 Token limits and data processing
+
+**How much data can a model process?**
+
+| Model     | Input<br>(tokens) | Output<br>(tokens) | Notable features                                                                                                                              |
+|-----------|-------|-------|-----------------------------------|
+| GPT-4o    | 128 000 |                    | Updated knowledge base April 2023; improved instruction following; integrated tools for automatic use; cost-effective pricing    |
+| o3        | 200 000 | 100 000            | Deliberative reasoning (private chain-of-thought); visual recognition and image analysis; full tool support (web, Python, func. calling)     |
+| o4-mini   | 200 000 | 100 000            | Fast and cost-effective reasoning; excellent in coding and visual analysis tasks; full chain-of-thought and tool support (web, Python, image)          |
+| o4-mini-high | 200 000 | 100 000            | "High-reasoning" variant of o4-mini: more computational power at the cost of accuracy                                                                      |
+| GPT-4.5   | 128 000 |                    | New intermediate version in GPT-4 series; better instruction following and performance; available to ChatGPT Pro and Plus users                               |
+| **GPT-5** | 128 000 | 100 000            | OpenAI's most advanced model; improved reasoning ability and code quality; agent capabilities and multi-step tasks; released 7.8.2025 |
+| **GPT-5-mini** | 128 000 | 100 000        | Lightweight version for cost-conscious applications; maintains GPT-5's core features with smaller resource requirements |
+| **GPT-5-nano** | 128 000 | 100 000        | Speed-optimized version; ideal for low-latency applications; maintains basic functionality |
+| **GPT-5-chat** | 128 000 | 100 000        | Advanced, natural, multimodal and context-aware conversation; enterprise applications |
+
+One token corresponds to approximately four characters and about ¾ of a word in English text. Thus, 128,000 tokens is about 96,000 words, which corresponds to about 192 A4 pages in single-spaced format (about 500 words per page).
+
+When you use ChatGPT, the model processes both new input and model-generated response tokens as a total count in the background. For example, 10,000 token input and 5,000 token response consume 15,000 tokens total. Model usage also considers previous message history and stored data, which is compressed as needed within token limits.
+
+### 14.2 Complete example prompt in Finnish and English
+
 Coming 14.8.2025.
 
-* 14.1 Complete example prompt in Finnish and English
-* 14.2 Checklist: job search with ChatGPT 1-page PDF
-* 14.3 Glossary and abbreviations
-* 14.4 Further reading and tool links 
+### 14.3 Checklist: job search with ChatGPT 1-page PDF
+
+Coming 14.8.2025.
+
+### 14.4 Glossary and abbreviations
+
+Coming 14.8.2025.
+
+### 14.5 Further reading and tool links
+
+Coming 14.8.2025. 
