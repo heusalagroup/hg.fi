@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liite A: ChatGPT-versioiden vertailu ja tekniset yksityiskohdat - Tekoäly työnhaussa</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="preview.css">
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav__container">
+            <a href="../index.html" class="nav__logo">
+                <svg id="hg_logo" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 89.959 89.973">
+                    <g id="Group_1" data-name="Group 1" transform="translate(0)">
+                        <path id="Path_1" data-name="Path 1" d="M85.346,89.973H4.627A4.623,4.623,0,0,1,0,85.346V4.627A4.623,4.623,0,0,1,4.627,0H85.333a4.623,4.623,0,0,1,4.627,4.627V85.333A4.605,4.605,0,0,1,85.346,89.973Z" transform="translate(0)" fill="#62579e"></path>
+                    </g>
+                    <g id="Group_6" data-name="Group 6" transform="translate(13.063 13.063)">
+                        <g id="Group_2" data-name="Group 2" transform="translate(0 34.128)">
+                            <path id="Path_2" data-name="Path 2" d="M96,375.7v-6.327l18.139-8.124L96,353.127V346.8l26.548,12.424v4.069Z" transform="translate(-96 -346.8)" fill="#fff"></path>
+                        </g>
+                        <g id="Group_3" data-name="Group 3" transform="translate(36.332 0.463)">
+                            <path id="Path_3" data-name="Path 3" d="M390.514,128.33,363,115.892v-4.069L390.514,99.4v6.341l-18.806,8.124,18.806,8.124Z" transform="translate(-363 -99.4)" fill="#fff"></path>
+                        </g>
+                        <g id="Group_4" data-name="Group 4">
+                            <path id="Path_4" data-name="Path 4" d="M96,96h7.1v12.328h16.792V96H127v29.855h-7.1v-12.41H103.1v12.41H96Z" transform="translate(-96 -96)" fill="#fff"></path>
+                        </g>
+                        <g id="Group_5" data-name="Group 5" transform="translate(31.801 33.325)">
+                            <path id="Path_5" data-name="Path 5" d="M335.987,370.02a10.551,10.551,0,0,1-6.287-9.933v-7.852a10.519,10.519,0,0,1,6.314-9.934,16.333,16.333,0,0,1,6.967-1.4h5.674a16.37,16.37,0,0,1,6.695,1.279,10.4,10.4,0,0,1,4.49,3.62,9.428,9.428,0,0,1,1.592,5.416h-6.9a4.7,4.7,0,0,0-1.619-3.715,6.279,6.279,0,0,0-4.259-1.4h-5.674a6.047,6.047,0,0,0-4.558,1.769,6.383,6.383,0,0,0-1.728,4.627v7.334a6.422,6.422,0,0,0,1.7,4.627,5.913,5.913,0,0,0,4.49,1.769h5.987a6.061,6.061,0,0,0,4.286-1.579,5.131,5.131,0,0,0,1.7-3.919v-.939h-9.838v-5.13h16.737v6.055a9.769,9.769,0,0,1-1.619,5.538,10.853,10.853,0,0,1-4.559,3.8,15.694,15.694,0,0,1-6.695,1.361H342.9A15.8,15.8,0,0,1,335.987,370.02Z" transform="translate(-329.7 -340.9)" fill="#fff"></path>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+            <div class="nav__menu">
+                <a href="index.html#appendices" class="nav__link">← Takaisin esikatseluun</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="book-preview">
+        <!-- Appendix Header -->
+        <section class="appendix-header">
+            <div class="container">
+                <div class="appendix-content">
+                    <h1 class="appendix-title">Liite A: ChatGPT-versioiden vertailu ja tekniset yksityiskohdat</h1>
+                </div>
+            </div>
+        </section>
+
+        <!-- Appendix Content -->
+        <section class="appendix-content">
+            <div class="container">
+                <h2>A.1 ChatGPT-versioiden vertailutaulukko</h2>
+                
+                <table class="version-table">
+                    <thead>
+                        <tr>
+                            <th>Versio</th>
+                            <th>Viestikiintiö*</th>
+                            <th>Verkkohaku</th>
+                            <th>Huomio työnhaussa</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Free</strong></td>
+                            <td>≈ 10 viestiä / 3 h → sen jälkeen GPT-4.1 mini</td>
+                            <td>✓ Päällä kaikilla</td>
+                            <td>Perushakujen teko onnistuu</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Plus</strong></td>
+                            <td>≈ 80 viestiä / 3 h</td>
+                            <td>✓ Rajaton kiintiöllä*</td>
+                            <td>Suositeltu, jos teet paljon hakuja päivittäin</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Team</strong></td>
+                            <td>~2× Plus-kiintiö / käyttäjä</td>
+                            <td>✓ Rajaton**</td>
+                            <td>Tiimeille, joissa jaetaan promptipohjia</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Pro</strong></td>
+                            <td>Ei kiinteää kattoa (reilun käytön periaate)</td>
+                            <td>✓ Rajaton</td>
+                            <td>Ylivoimainen, jos tarvitset satoja hakukierroksia</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Enterprise / Edu</strong></td>
+                            <td>500 pyyntöä / 3 h (4.1)</td>
+                            <td>✓ Rajaton**</td>
+                            <td>Suuret organisaatiot, regulaatio, vahva tietosuoja</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p>* Viestikiintiöt koskevat GPT-4o-mallin kyselyjä, joihin myös Verkkohaut lasketaan. Kiintiön täyttyessä keskustelu jatkuu GPT-4.1 mini -mallilla.</p>
+                <p>** Ylläpitäjä voi rajoittaa</p>
+
+                <h3>A.1.1 Yksityiskohtainen hintavertailu</h3>
+                
+                <table class="version-table">
+                    <thead>
+                        <tr>
+                            <th>Taso</th>
+                            <th>Hinta (EU)</th>
+                            <th>Viestikiintiö</th>
+                            <th>Tärkeimmät ominaisuudet</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Free</strong></td>
+                            <td>0 €</td>
+                            <td>≈ 10 viestiä / 3 h</td>
+                            <td>Perus Verkkohaku, GPT-4.1 mini rajan jälkeen</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Plus</strong></td>
+                            <td>≈ 23 € / kk</td>
+                            <td>≈ 80 viestiä / 3 h</td>
+                            <td>Advanced-työkalut, paras hinta–hyöty-tasapaino</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Team</strong></td>
+                            <td>29 € / kk (vuosilaskutus)</td>
+                            <td>~2× Plus-kiintiö</td>
+                            <td>Yhteinen työtila, ylläpitäjän-kontrollit</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Pro</strong></td>
+                            <td>200 $ ≈ 229 €</td>
+                            <td>Ei kiinteää kattoa</td>
+                            <td>Data-intensiivisille tehohakijoille</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Enterprise / Edu</strong></td>
+                            <td>Sopimuksen mukaan</td>
+                            <td>500 pyyntöä / 3 h (4.1)</td>
+                            <td>SSO, tietoturva, Zero-Data-Retention</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p><strong>Suositus työnhakuun:</strong> Aloita Free-tasolla ja päivitä Plus-tasolle, jos osut viestirajaan toistuvasti. Team/Enterprise vain, jos useampi käyttäjä tarvitsee yhteistä työtilaa.</p>
+
+                <h3>A.2 Syvätutkimus-työkalu</h3>
+                
+                <p>Syvätutkimus on hyödyllinen ChatGPT:n työkalu, jos haluat teettää pitkään vievän meta-analyysin, esim. vertailla kymmeniä toimialaraportteja. Syvätutkimuksessa ChatGPT tutkii itsenäisesti verkkoa, lukee ja tiivistää useita artikkeleita, raportteja tai tutkimuksia. Syvätutkimus vie 5–30 min/pyyntö ja kuluttaa erillisiä kredittejä. Lopuksi saat useamman sivun tiivistelmän, joka sisältää linkit lähteisiin ja mahdollisesti myös suosituksia, jonka voit tulostaa PDF- tai Docx-tiedostoksi.</p>
+
+                <h3>A.3 ChatGPT-mallien vertailu</h3>
+                
+                <p>Mallilla tarkoitetaan ChatGPT:n "aivoja": laskennallista rakennetta, joka ymmärtää syötettyä tekstiä ja tuottaa vastauksia. Mallien koko ja teho vaihtelevat, ja niillä on suora vaikutus siihen, kuinka tarkasti ja joustavasti ChatGPT kykenee käsittelemään kysymyksiä ja luomaan sisältöä.</p>
+                
+                <p>Ilmaisversiossa saatavilla on vain yksi malli, jonka käyttöliittymä kutsuu "ChatGPT": tämä pohjautuu GPT-4o-teknologiaan. Kun ilmaisversion viestikiintiö täyttyy, malli vaihtuu väliaikaisesti kevyempään GPT-4.1 mini -versioon, kunnes raja nollautuu.</p>
+                
+                <p>OpenAI julkaisee säännöllisesti uusia malliversioita ja parannuksia, joten käytettävissä olevat mallit ja niiden ominaisuudet päivittyvät ajan myötä.</p>
+                
+                <p>Alla on vertailu keskeisistä ChatGPT-malleista ja niiden tuesta verkkohakuun ("Verkkohaku"-työkalu) sekä muihin tärkeisiin ominaisuuksiin.</p>
+
+                <table class="model-table">
+                    <thead>
+                        <tr>
+                            <th>Malli</th>
+                            <th>Vuosi</th>
+                            <th>Free</th>
+                            <th>Plus</th>
+                            <th>Pro</th>
+                            <th>Team</th>
+                            <th>Enterprise</th>
+                            <th>Verkkohaku</th>
+                            <th>Edistynyt data-analyysi</th>
+                            <th>Kuvat</th>
+                            <th>Ääni</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>GPT-4o</strong></td>
+                            <td>2024</td>
+                            <td>*</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td></td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td><strong>GPT-4.5</strong></td>
+                            <td>2025</td>
+                            <td></td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><strong>o3-mini</strong></td>
+                            <td>2025</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td></td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td><strong>o3</strong></td>
+                            <td>2025</td>
+                            <td></td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td><strong>o3-pro</strong></td>
+                            <td>2025</td>
+                            <td></td>
+                            <td></td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td><strong>o4-mini</strong></td>
+                            <td>2025</td>
+                            <td></td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td><strong>GPT-5</strong></td>
+                            <td>2025</td>
+                            <td></td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td><strong>GPT-5-mini</strong></td>
+                            <td>2025</td>
+                            <td></td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td><strong>GPT-5-nano</strong></td>
+                            <td>2025</td>
+                            <td></td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td><strong>GPT-5-chat</strong></td>
+                            <td>2025</td>
+                            <td></td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p>* Ilmaisella tilillä on rajoitettu pääsy GPT-4o:hon, ja kun kiintiö loppuu palaudutaan GPT-4.1 miniin. Plussaan päivittäminen nostaa GPT-4o:n kiintiörajoja ja avaa mallit, joissa on laajempi päättely- ja työkalutuki.</p>
+
+                <h4>A.3.1 GPT-5-mallit ja niiden ominaisuudet</h4>
+                
+                <p>OpenAI:n uusin ja edistynein malli, <strong>GPT-5</strong>, julkaistaan 7.8.2025. GPT-5 tarjoaa merkittäviä parannuksia päättelykyvyssä, koodinlaadussa ja käyttäjäkokemuksessa. Se käsittelee monimutkaisia koodaus- ja päättelytehtäviä minimaalisella ohjeistuksella, tarjoaa selkeitä selityksiä ja esittelee parannellut agenttitoiminnot.</p>
+                
+                <p><strong>GPT-5-mallin variantit:</strong></p>
+                
+                <table class="version-table">
+                    <thead>
+                        <tr>
+                            <th>Variantti</th>
+                            <th>Tarkoitus</th>
+                            <th>Erityisominaisuudet</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>gpt-5</strong></td>
+                            <td>Logiikka ja monivaiheiset tehtävät</td>
+                            <td>Paranneltu päättelykyky, agenttitoiminnot</td>
+                        </tr>
+                        <tr>
+                            <td><strong>gpt-5-mini</strong></td>
+                            <td>Kustannustietoiset sovellukset</td>
+                            <td>Kevyt versio, säilyttää keskeiset ominaisuudet</td>
+                        </tr>
+                        <tr>
+                            <td><strong>gpt-5-nano</strong></td>
+                            <td>Nopeusoptimoitu</td>
+                            <td>Matala viive, ihanteellinen reaaliaikaisille sovelluksille</td>
+                        </tr>
+                        <tr>
+                            <td><strong>gpt-5-chat</strong></td>
+                            <td>Yrityskeskustelut</td>
+                            <td>Edistynyt, luonnollinen, monimuotoinen ja kontekstitietoinen keskustelu</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p><strong>Työnhaun kannalta tärkeimmät parannukset:</strong></p>
+                <ul>
+                    <li><strong>Parempi päättelykyky:</strong> Ymmärtää monimutkaisempia työnhakustrategioita ja -prosesseja</li>
+                    <li><strong>Koodinlaatu:</strong> Tehokkaampi apu CV:n ja hakemusten optimoinnissa</li>
+                    <li><strong>Agenttitoiminnot:</strong> Automaattinen verkkojen tutkiminen ja tiedon kerääminen</li>
+                    <li><strong>Selkeät selitykset:</strong> Parempi perustelu suosituksille ja päätöksille</li>
+                </ul>
+                
+                <p><strong>Saatavuus:</strong> GPT-5-mallit julkaistaan 7.8.2025.</p>
+
+                <h3>A.4 Token-rajoitukset ja tiedonkäsittely</h3>
+                
+                <p><strong>Miten suurta tietoa malli kykenee käsittelemään?</strong></p>
+
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Malli</th>
+                            <th>Syöte<br>(tokenia)</th>
+                            <th>Ulostulo<br>(tokenia)</th>
+                            <th>Huomionarvoiset ominaisuudet</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>GPT-4o</td>
+                            <td>128,000</td>
+                            <td></td>
+                            <td>Päivitetty tietopohja huhtikuu 2023; paranneltu ohjeiden noudattaminen; integroidut työkalut automaattiseen käyttöön; kustannustehokkaampi hinnoittelu</td>
+                        </tr>
+                        <tr>
+                            <td>o3</td>
+                            <td>200,000</td>
+                            <td>100,000</td>
+                            <td>Deliberatiivinen reasoning (private chain-of-thought); visuaalinen hahmontunnistus ja kuvien analyysi; täysi työkalutuki (web, Python, func. calling)</td>
+                        </tr>
+                        <tr>
+                            <td>o4-mini</td>
+                            <td>200,000</td>
+                            <td>100,000</td>
+                            <td>Nopea ja kustannustehokas päättely; erinomainen koodaus- ja visuaalianalyysitehtävissä; täysi ketjupäättely- ja työkalutuki (web, Python, image)</td>
+                        </tr>
+                        <tr>
+                            <td>o4-mini-high</td>
+                            <td>200,000</td>
+                            <td>100,000</td>
+                            <td>"High-reasoning"-variantti o4-ministä: lisää laskentatehoa tarkkuuden kustannuksella</td>
+                        </tr>
+                        <tr>
+                            <td>GPT-4.5</td>
+                            <td>128,000</td>
+                            <td></td>
+                            <td>Uusi väliversio GPT-4-sarjassa; parempi käskyjen noudattaminen ja suorituskyky; saatavilla ChatGPT Pro- ja Plus-käyttäjille</td>
+                        </tr>
+                        <tr>
+                            <td><strong>GPT-5</strong></td>
+                            <td></td>
+                            <td></td>
+                            <td>OpenAI:n edistynein malli; paranneltu päättelykyky ja koodinlaatu; agenttitoiminnot ja monivaiheiset tehtävät; julkaistaan 7.8.2025</td>
+                        </tr>
+                        <tr>
+                            <td><strong>GPT-5-mini</strong></td>
+                            <td></td>
+                            <td></td>
+                            <td>Kevyt versio kustannustietoisille sovelluksille; säilyttää GPT-5:n keskeiset ominaisuudet pienemmällä resurssitarpeella</td>
+                        </tr>
+                        <tr>
+                            <td><strong>GPT-5-nano</strong></td>
+                            <td></td>
+                            <td></td>
+                            <td>Nopeusoptimoitu versio; ihanteellinen matalan viiveen sovelluksille; säilyttää perustoiminnallisuudet</td>
+                        </tr>
+                        <tr>
+                            <td><strong>GPT-5-chat</strong></td>
+                            <td></td>
+                            <td></td>
+                            <td>Edistynyt, luonnollinen, monimuotoinen ja kontekstitietoinen keskustelu; yrityssovellukset</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p>Yksi token vastaa englanninkielisessä tekstissä keskimäärin noin neljää merkkiä ja noin ¾ sanaa. Tällöin 128 000 tokenia on noin 96 000 sanaa, mikä vastaa single-spaced-muodossa noin 192 A4-sivua (noin 500 sanaa per sivu).</p>
+                
+                <p>Kun käytät ChatGPT:tä, taustalla malli käsittelee sekä uuden syötteen että mallin tuottaman vastauksen tokenit yhteismääränä. Esimerkiksi 10 000 tokenin syöte ja 5 000 tokenin vastaus kuluttavat yhteensä 15 000 tokenia. Mallin käyttö huomioi myös aiemman viestihistorian ja muistiin tallennetut tiedot, joita tarvittaessa supistetaan token-rajojen puitteissa.</p>
+
+                <div class="appendix-navigation">
+                    <a href="index.html#appendices" class="btn btn--primary">← Takaisin esikatseluun</a>
+                    <a href="liite-f.html" class="btn btn--secondary">Liite F: Työnhakusivustot →</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__section">
+                <h3>Heusala Group Oy</h3>
+                <p>Mukautettua ohjelmistokehitystä ja IT-konsultointia.</p>
+                <a href="https://hg.fi">Vieraile sivustollamme</a>
+            </div>
+            <div class="footer__section">
+                <h3>Yhteystiedot</h3>
+                <p>Kysymyksiä kirjasta tai tekoälyavusteisesta työnhausta?</p>
+                <a href="mailto:info@hg.fi">info@hg.fi</a>
+            </div>
+            <div class="footer__section">
+                <h3>Seuraa</h3>
+                <p>Pysy ajan tasalla uusimmista tekoälyavusteisista työnhakuohjeista.</p>
+                <a href="https://www.linkedin.com/in/jheusala/">Kirjoittajan LinkedIn</a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2025 Heusala Group Oy. Kaikki oikeudet pidätetään.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="preview.js"></script>
+</body>
+</html>

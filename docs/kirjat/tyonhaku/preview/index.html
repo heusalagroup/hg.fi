@@ -117,7 +117,6 @@
                         </g>
                     </g>
                 </svg>
-                <span>Heusala Group Oy</span>
             </a>
             <div class="nav__menu">
                 <a href="/" class="nav__link">Koti</a>
@@ -229,9 +228,13 @@
                             <h3>12. Tulevaisuuden suuntaukset</h3>
                             <p class="chapter-locked">Tulossa 2025 Q3</p>
                         </div>
-                        <div class="toc-chapter toc-chapter--locked">
-                            <h3>13. Liitteet</h3>
-                            <p class="chapter-locked">Tulossa 2025 Q3</p>
+                        <div class="toc-chapter">
+                            <h3><a href="#appendices">14. Liitteet</a></h3>
+                            <ul>
+                                <li><a href="liite-a.html">Liite A: ChatGPT-versioiden vertailu</a></li>
+                                <li><a href="liite-f.html">Liite F: Työnhakusivustojen luettelo</a></li>
+                            </ul>
+                            <p class="chapter-available">✓ Saatavilla esikatselussa</p>
                         </div>
                     </div>
                 </div>
@@ -313,7 +316,7 @@
                         </tr>
                         <tr>
                             <td><strong>7. Haastattelusimulaatiot</strong></td>
-                            <td>Voice Mode, kritiikki-&-paranna-luupit</td>
+                            <td>Kritiikki-&-paranna-luupit</td>
                             <td>Harjoittelet vastaukset ennen live-tilannetta</td>
                         </tr>
                         <tr>
@@ -327,7 +330,7 @@
                             <td>Kopioi–liitä kun tarvitset nopeasti</td>
                         </tr>
                         <tr>
-                            <td><strong>13. Liitteet</strong></td>
+                            <td><strong>14. Liitteet</strong></td>
                             <td>Mallivertailut, syvätutkimus, 1-sivun muistilista</td>
                             <td>Lisätiedot silloin kun niitä kaipaat</td>
                         </tr>
@@ -346,7 +349,7 @@
                 
                 <p><strong>Verkkohaku-työkalu</strong> on ChatGPT:n ominaisuus, joka mahdollistaa reaaliaikaisen verkkoselailun ja tietojen hakemisen verkosta. Se on erityisen hyödyllinen työnhaussa -- tarvitset Verkkohakua ilmoitusten etsimiseen verkosta, vaatimusten tarkistamiseen, ja hakemusten personointiin.</p>
                 
-                <p>Tarkemmat versio- ja asetusvertailut löytyvät <a href="#liite-a">liitteestä A</a>.</p>
+                <p>Tarkemmat versio- ja asetusvertailut löytyvät <a href="liite-a.html">liitteestä A</a>.</p>
                 
                 <blockquote>
                     <p><strong>Vinkki: Näin saat kirjasta eniten irti</strong></p>
@@ -364,7 +367,7 @@
                 
                 <p><strong>Rekisteröidy</strong> osoitteessa <em>chatgpt.com</em> – saat heti Free-tason käyttöön. Työnhaun kannalta riittää pelkkä <strong>Verkkohaku-työkalu</strong>, joka on päällä kaikissa ChatGPT-paketeissa. Maksuttomalla Free-tasolla voit hoitaa hakuilmoitusten etsimisen ja tutustumisen; Plus-taso tuo lähinnä lisää nopeutta ja viestikiintiötä.</p>
                 
-                <p>Tarkemmat versio- ja hintavertailut löytyvät <a href="#liite-a">liitteestä A</a>.</p>
+                <p>Tarkemmat versio- ja hintavertailut löytyvät <a href="liite-a.html">liitteestä A</a>.</p>
                 
                 <h3 id="section2-2">2.2 Työkalupakki: sisäänrakennetut ominaisuudet</h3>
                 
@@ -409,6 +412,23 @@
                 
                 <p>Näin minimoit sensitiivisen tiedon leviämisen ja varmistat, että ChatGPT vastaa haluamallasi kielellä ja sävyllä.</p>
                 
+                <p>Tarkemmat ohjeet seuraavissa kappaleissa.</p>
+                
+                <h4>Kielen vaihto:</h4>
+                
+                <ul>
+                    <li>Avaa <strong>Profiili ▸ Asetukset ▸ Yleinen ▸ Kieli</strong> ja valitse asiointikieli pudotusvalikosta.</li>
+                    <li>Profiilikuva–painike löytyy ChatGPT:n selain- ja työpöytä-versiossa aina <strong>vasemmasta alakulmasta</strong>.</li>
+                </ul>
+                
+                <h4>Tiedonhallinta & mallikoulutus:</h4>
+                
+                <ul>
+                    <li>Selaimessa: <strong>Asetukset ▸ Tiedonhallinta ▸ Auta parantamaan mallia kaikille → Off</strong>. Tällöin viestisi eivät päädy mallien jatkokoulutukseen.</li>
+                    <li>Kun poistat viestiketjun tai käytät <em>Väliaikainen keskustelu</em>-tilaa, aineisto säilyy OpenAI-palvelimilla enintään <strong>30 päivää</strong> ennen lopullista poistoa</li>
+                    <li><strong>Zero-Data-Retention (ZDR)</strong> on saatavilla vain erillisillä API-päätteillä — ChatGPT:n käyttöliittymässä tätä valintaa ei ole</li>
+                </ul>
+                
                 <blockquote>
                     <p><strong>Ota mallikoulutus pois käytöstä</strong></p>
                     <p><strong>Miksi?</strong> Kun poistat toiminnon käytöstä, OpenAI ei käytä keskustelujasi mallien koulutukseen. Tämä parantaa yksityisyyttä ja pienentää arkaluontoisen datan vuotoriskiä.</p>
@@ -421,6 +441,68 @@
                         <li>Sulje asetukset ja jatka keskustelua.</li>
                     </ol>
                 </blockquote>
+                
+                <div class="warning-box">
+                    <h4>Jaa-linkit ovat julkisia (ei hakukoneissa)</h4>
+                    <p><strong>Jaettu linkki on edelleen avoin kenelle tahansa linkin saaneelle</strong>, vaikka se ei enää näy Google-hauissa.<br/>
+                    OpenAI poisti hakukone-indeksoinnin 31. 7. 2025 tietosuoja­huolten vuoksi.</p>
+                    
+                    <p><strong>Muista:</strong></p>
+                    <ol>
+                        <li>Älä jaa arkaluontoista dataa linkillä.</li>
+                        <li>Tarkista säännöllisesti jaetut linkit: <strong>Profiilikuva → Asetukset → Tiedonhallinta → Jaetut linkit</strong>.</li>
+                        <li>Poista tarpeettomat linkit roskakorikuvakkeella.</li>
+                    </ol>
+                </div>
+                
+                <h4>Jaa-linkkien riskit:</h4>
+                
+                <ul>
+                    <li><strong>Jaa → Luo linkki</strong> luo julkisen URL-osoitteen; heinäkuussa 2025 nämä linkit indeksoituivat Googleen, jolloin yksityisiä keskusteluja löytyi hakukoneista.</li>
+                    <li>OpenAI poisti samassa kuussa "Discoverable"-valinnan ja lupasi pyytää hakukoneita poistamaan jo indeksoidut sivut.</li>
+                    <li>Jos jaat linkin, olet itse vastuussa sisällön anonymisoinnista.</li>
+                </ul>
+                
+                <h4>Retention & hallintaoikeudet:</h4>
+                
+                <table class="retention-table">
+                    <thead>
+                        <tr>
+                            <th>Tilaus</th>
+                            <th>Kuka säätää säilytysajan?</th>
+                            <th>Oletus</th>
+                            <th>Vähimmäisaika</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Free / Plus / Pro</td>
+                            <td>Käyttäjä</td>
+                            <td>Poistettu chat poistuu 30 pv:ssa</td>
+                            <td>30 pv</td>
+                        </tr>
+                        <tr>
+                            <td>Team</td>
+                            <td>Käyttäjä (ylläpitäjä ei voi lyhentää)</td>
+                            <td>30 pv</td>
+                            <td>30 pv</td>
+                        </tr>
+                        <tr>
+                            <td>Enterprise / Edu</td>
+                            <td>Workspace-ylläpitäjä</td>
+                            <td>Ylläpitäjä voi valita 0 pv → n pv</td>
+                            <td>0 pv</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h4>Muistilista:</h4>
+                
+                <ul>
+                    <li>Kytke <em>Auta parantamaan mallia kaikille</em> pois päältä, jos käsittelet luottamuksellista tietoa kuten CV- tai NDA-materiaalia.</li>
+                    <li>Älä jaa arkaluonteista dataa Jaa-linkillä.</li>
+                    <li>Tarvitset alle 30 päivän säilytysajan? Valitse Enterprise-paketti.</li>
+                </ul>
             </div>
         </section>
 
@@ -503,6 +585,17 @@ TEHTÄVÄ A – RAAKA POIMINTA (älä muokkaa!):
 • Enintään ~80 merkkiä per luettelorivi.  
 • Älä lisää uusia faktoja.</textarea>
                 </div>
+                
+                <h4>Miksi näin?</h4>
+                
+                <ol>
+                    <li><strong>Verkkohaku + Väliaikainen keskustelu</strong> = reaaliaikainen haku ilman pysyvää tallennetta.</li>
+                    <li><strong>Kaksivaiheisuus</strong> paljastaa hallusinaatiot, koska näet kerätyn tiedon ensin.</li>
+                    <li><strong>Markdown</strong> on helppo siirtää CV-pohjiin, sähköposteihin tai ChatGPT:n Mukauta ChatGPT:tä -kenttiin.</li>
+                    <li><strong>Liitetiedosto (CV.pdf)</strong> täydentää automaattisesti puuttuvat tiedot, jos profiileissa ei ole kaikkea.</li>
+                </ol>
+                
+                <p><strong>Yksityisyysvinkki:</strong> Älä syötä henkilötunnuksia tai luottamuksellista materiaalia. Julkiset profiilit + oma CV riittävät vahvoihin hakemuksiin.</p>
                 
                 <h3 id="section3-2">3.2 Uramotivaatiot ja elämäntilanne – promptit kirkastamiseen</h3>
                 
@@ -603,6 +696,28 @@ tulleita tietoja.</textarea>
             </div>
         </section>
 
+        <!-- Appendices Section -->
+        <section id="appendices" class="appendices-section">
+            <div class="container">
+                <h2>Liitteet</h2>
+                <p>Syvempää tietoa ja lisäresursseja työnhaun kannalta:</p>
+                
+                <div class="appendices-grid">
+                    <div class="appendix-card">
+                        <h3>Liite A: ChatGPT-versioiden vertailu</h3>
+                        <p>ChatGPT-versioiden vertailu ja tekniset yksityiskohdat.</p>
+                        <a href="liite-a.html" class="btn btn--secondary">Lue liite A</a>
+                    </div>
+                    
+                    <div class="appendix-card">
+                                                    <h3>Liite F: Työnhakusivustojen luettelo</h3>
+                        <p>Tämä liite sisältää kattavan luettelon työnhakusivustoista, jotka ovat erityisen hyödyllisiä tekoälyavusteisen työnhaun yhteydessä. Sivustot on jaettu kategorioihin selkeyden vuoksi.</p>
+                                                    <a href="liite-f.html" class="btn btn--secondary">Lue liite F</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- CTA Section -->
         <section class="preview-cta">
             <div class="container">
@@ -616,7 +731,7 @@ tulleita tietoja.</textarea>
                         <li>✓ CV-optimointi ja ATS-strategiat</li>
                         <li>✓ Haastatteluihin valmistautuminen ja palkkaneuvottelut</li>
                         <li>✓ Ilmaiset päivitykset vuoden 2025 loppuun</li>
-                        <li>✓ Työnhakusivustojen kattava luettelo (liite 13.6)</li>
+                                
                     </ul>
                     <div class="cta-pricing">
                         <div class="price-container">

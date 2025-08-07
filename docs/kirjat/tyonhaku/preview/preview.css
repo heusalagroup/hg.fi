@@ -78,6 +78,7 @@
 /* Book Preview Layout */
 .book-preview {
     min-height: 100vh;
+    padding-top: 70px; /* Account for fixed navigation */
 }
 
 /* Cover Section */
@@ -264,6 +265,176 @@
     font-weight: 600;
     margin: 0;
     font-size: var(--font-size-sm);
+}
+
+/* Appendix Styles */
+.appendix-header {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, var(--color-bg) 0%, var(--color-border-light) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.appendix-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.appendix-title {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    color: var(--color-text);
+    margin-bottom: var(--space-lg);
+    font-weight: 700;
+}
+
+.appendix-subtitle {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-xl);
+}
+
+.appendix-content {
+    padding: var(--space-4xl) 0;
+    background: var(--color-bg);
+}
+
+.appendix-content h2 {
+    font-size: var(--font-size-2xl);
+    color: var(--color-text);
+    margin-top: var(--space-3xl);
+    margin-bottom: var(--space-xl);
+}
+
+.appendix-content h3 {
+    font-size: var(--font-size-xl);
+    color: var(--color-text);
+    margin-top: var(--space-2xl);
+    margin-bottom: var(--space-lg);
+}
+
+.appendix-content h4 {
+    font-size: var(--font-size-lg);
+    color: var(--color-text);
+    margin-top: var(--space-xl);
+    margin-bottom: var(--space-md);
+}
+
+.recommendation-box {
+    background: var(--color-bg-dark);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-lg);
+    padding: var(--space-lg);
+    margin: var(--space-lg) 0;
+}
+
+.recommendation-box h4 {
+    color: var(--color-accent);
+    margin-top: 0;
+    margin-bottom: var(--space-sm);
+}
+
+.usage-tips {
+    background: var(--color-bg-light);
+    border-radius: var(--border-radius-lg);
+    padding: var(--space-xl);
+    margin: var(--space-xl) 0;
+}
+
+.appendix-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: var(--space-3xl);
+    padding-top: var(--space-xl);
+    border-top: 1px solid var(--color-border);
+}
+
+.appendix-navigation .btn {
+    min-width: 200px;
+}
+
+@media (max-width: 768px) {
+    .appendix-navigation {
+        flex-direction: column;
+        gap: var(--space-md);
+    }
+    
+    .appendix-navigation .btn {
+        width: 100%;
+        min-width: auto;
+    }
+}
+
+/* Appendices Section Styles */
+.appendices-section {
+    padding: var(--space-4xl) 0;
+    background: var(--color-bg-light);
+    border-top: 1px solid var(--color-border);
+}
+
+.appendices-section h2 {
+    font-size: var(--font-size-2xl);
+    color: var(--color-text);
+    margin-bottom: var(--space-lg);
+    text-align: center;
+}
+
+.appendices-section > .container > p {
+    text-align: center;
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-2xl);
+    font-size: var(--font-size-lg);
+}
+
+.appendices-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: var(--space-xl);
+    margin-top: var(--space-xl);
+}
+
+.appendix-card {
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-lg);
+    padding: var(--space-xl);
+    transition: all 0.3s ease;
+}
+
+.appendix-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-accent);
+}
+
+.appendix-card h3 {
+    color: var(--color-accent);
+    margin-bottom: var(--space-md);
+    font-size: var(--font-size-lg);
+}
+
+.appendix-card p {
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-lg);
+    line-height: 1.6;
+}
+
+.appendix-card .btn {
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .appendices-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+    
+    .appendix-card {
+        padding: var(--space-lg);
+    }
 }
 
 .toc-navigation {
