@@ -7,8 +7,8 @@ This document outlines the SEO improvements implemented to achieve a Lighthouse 
 ### 1. Enhanced Meta Tags (`index.html`)
 
 **Primary Meta Tags:**
-- ✅ Title: "Heusala Group – Custom Software Development & IT Consulting in Finland" (≤60 chars)
-- ✅ Description: "Custom software development, web development, cloud, DevOps, hosting and automation consulting for Finnish small businesses. Contact us to discuss your project." (≈155 chars)
+- ✅ Title: "Heusala Group – AI-Powered Software Development in Finland" (≤60 chars)
+- ✅ Description: "Automated custom software development with senior humans and AI agents. We help Finnish businesses build software faster with human supervision." (≈145 chars)
 - ✅ Added keywords, author, and robots meta tags
 - ✅ Canonical URL: `https://hg.fi/`
 

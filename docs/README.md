@@ -1,6 +1,6 @@
 # Heusala Group Website
 
-A professional single-page marketing website for Heusala Group, showcasing custom software development and IT consulting services for Finnish small businesses.
+A professional single-page marketing website for Heusala Group, showcasing automated custom software development with senior humans and AI agents.
 
 ## 🚀 Quick Start
 
@@ -53,7 +53,7 @@ docs/
 ## 🎯 Key Sections
 
 1. **Hero** - Main value proposition and primary CTA
-2. **Services** - Three core service offerings with icons
+2. **Services** - Automated custom software development, AI-agent workflows, deployment and hosting
 3. **Process** - 3-step guided process
 4. **Why Choose Us** - Key differentiators, including fixed project pricing after scoping
 5. **About** - Founder bio and company values

@@ -49,6 +49,7 @@ python3 -m http.server 8000
 
 - Main site content usually needs parallel edits in both `docs/en.html` and `docs/fi.html`.
 - When changing one locale, check the paired locale for matching structure, links, metadata, CTAs, and pricing language.
+- The current core offer is automated custom software development using a senior-led team of humans and AI agents. Be direct and trustworthy about AI-agent use from the beginning; avoid drifting back to generic old-school "senior developer custom software consulting" positioning.
 - Keep contact and company details synchronized across pages:
   - Email: `info@hg.fi` on the main site.
   - Company: Heusala Group Oy.

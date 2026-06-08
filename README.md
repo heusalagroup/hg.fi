@@ -1,6 +1,6 @@
 # Heusala Group (hg.fi)
 
-Professional single-page marketing website for Heusala Group Oy, showcasing custom software development and IT consulting services for Finnish small businesses.
+Professional single-page marketing website for Heusala Group Oy, showcasing automated custom software development with senior humans and AI agents.
 
 ## 🚀 Quick Start
 
@@ -41,7 +41,7 @@ hg.fi/
 ## 🔧 Key Sections
 
 1. **Hero** - Value proposition and primary CTA
-2. **Services** - Custom software, cloud & DevOps, hosting
+2. **Services** - Automated custom software development, AI-agent workflows, deployment and hosting
 3. **Process** - 3-step guided approach
 4. **Why Choose Us** - Key differentiators, including fixed project pricing after scoping
 5. **About** - Founder bio and company values
