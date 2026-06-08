@@ -35,18 +35,17 @@ hg.fi/
 - **Accessibility compliant** (WCAG AA standards)
 - **Performance optimized** (Lighthouse 90+ scores)
 - **SEO ready** with proper meta tags and structure
-- **Contact information** with direct email and phone links
+- **Contact-first conversion** with direct LinkedIn, email, and phone links
 - **No external dependencies** for maximum performance
 
 ## 🔧 Key Sections
 
 1. **Hero** - Value proposition and primary CTA
 2. **Services** - Custom software, cloud & DevOps, hosting
-3. **Packages** - Startup Launch, Online Presence, Automation, Free Discovery
-4. **Process** - 3-step guided approach
-5. **Why Choose Us** - Key differentiators
-6. **About** - Founder bio and company values
-7. **Contact** - Contact information and direct links
+3. **Process** - 3-step guided approach
+4. **Why Choose Us** - Key differentiators, including fixed project pricing after scoping
+5. **About** - Founder bio and company values
+6. **Contact** - Contact information and direct links
 
 ## 📞 Contact
 

@@ -8,7 +8,7 @@ This document outlines the SEO improvements implemented to achieve a Lighthouse 
 
 **Primary Meta Tags:**
 - ✅ Title: "Heusala Group – Custom Software Development & IT Consulting in Finland" (≤60 chars)
-- ✅ Description: "Fixed-scope software packages delivered in 1-2 weeks. 12 months support included. Custom software, web development & automation for Finnish small businesses." (≈155 chars)
+- ✅ Description: "Custom software development, web development, cloud, DevOps, hosting and automation consulting for Finnish small businesses. Contact us to discuss your project." (≈155 chars)
 - ✅ Added keywords, author, and robots meta tags
 - ✅ Canonical URL: `https://hg.fi/`
 
@@ -36,13 +36,8 @@ This document outlines the SEO improvements implemented to achieve a Lighthouse 
 **LocalBusiness Schema:**
 - ✅ Company name, URL, telephone, email
 - ✅ Complete address with PostalAddress schema
-- ✅ Price range (€€€)
 - ✅ Social media links (`sameAs`)
 - ✅ Service area (Finland)
-- ✅ Offer catalog with three main packages:
-  - Startup Launch Package (€15,000)
-  - Online Presence Package (€6,000)
-  - Business Process Automation (€10,000)
 
 ### 4. Performance Optimizations
 
@@ -103,19 +98,13 @@ This document outlines the SEO improvements implemented to achieve a Lighthouse 
    <meta property="twitter:description" content="Your new description">
    ```
 
-### For New Services/Packages
+### For New Services
 
-1. **Update Structured Data** in the JSON-LD script:
+1. **Update Structured Data** in the JSON-LD script when the business details change:
    ```json
    {
-     "@type": "Offer",
-     "itemOffered": {
-       "@type": "Service",
-       "name": "New Service Name",
-       "description": "Service description"
-     },
-     "price": "15000",
-     "priceCurrency": "EUR"
+     "@type": "LocalBusiness",
+     "description": "Updated service description"
    }
    ```
 

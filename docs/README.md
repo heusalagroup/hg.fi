@@ -54,12 +54,10 @@ docs/
 
 1. **Hero** - Main value proposition and primary CTA
 2. **Services** - Three core service offerings with icons
-3. **Packages** - Four solution packages with pricing
-4. **Process** - 3-step guided process
-5. **Why Choose Us** - Four key differentiators
-6. **Testimonial** - Social proof (placeholder)
-7. **About** - Founder bio and company values
-8. **Contact** - Contact information and direct links
+3. **Process** - 3-step guided process
+4. **Why Choose Us** - Key differentiators, including fixed project pricing after scoping
+5. **About** - Founder bio and company values
+6. **Contact** - Contact information and direct links
 
 ## 🔧 Customization
 
@@ -73,7 +71,7 @@ Update CSS variables in `:root`:
 
 ### Content
 - **Company info**: Update contact details in the contact section
-- **Pricing**: Modify package prices in the packages grid
+- **Pricing**: Keep pricing contact-led; fixed project prices are agreed after scoping, not listed as ready-made offers
 - **Services**: Edit service descriptions and icons
 - **About**: Update founder bio and company values
 
@@ -187,7 +185,7 @@ npx lighthouse index.html --output=html
 ## 🔄 Maintenance
 
 ### Regular Updates
-- **Content**: Update testimonials, case studies, and pricing
+- **Content**: Update services, process copy, contact details, and current positioning
 - **Contact info**: Keep phone, email, and availability current
 - **Legal**: Update company information and compliance details
 - **Performance**: Monitor and optimize loading times
