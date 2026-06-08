@@ -18,6 +18,28 @@
     <link rel="alternate" hreflang="en" href="https://hg.fi/en.html">
     <link rel="alternate" hreflang="fi" href="https://hg.fi/fi.html">
     <link rel="alternate" hreflang="x-default" href="https://hg.fi/en.html">
+
+    <script>
+        (function () {
+            function getTargetLanguage() {
+                try {
+                    const storedLang = localStorage.getItem('preferred-language');
+                    if (storedLang === 'fi' || storedLang === 'en') {
+                        return storedLang;
+                    }
+                } catch (error) {
+                    // Continue with browser language detection if storage is unavailable.
+                }
+
+                const browserLang = navigator.language || navigator.userLanguage || '';
+                return browserLang.toLowerCase().split('-')[0] === 'fi' ? 'fi' : 'en';
+            }
+
+            const targetLang = getTargetLanguage();
+            window.__languageRedirectStarted = true;
+            window.location.replace(targetLang + '.html');
+        }());
+    </script>
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -55,7 +77,7 @@
         /* Language selection styles using site's design system */
         .language-selector {
             min-height: 100vh;
-            display: flex;
+            display: none;
             align-items: center;
             justify-content: center;
             background: linear-gradient(135deg, var(--color-bg) 0%, var(--color-border-light) 100%);
@@ -213,6 +235,13 @@
             }
         }
     </style>
+    <noscript>
+        <style>
+            .language-selector {
+                display: flex;
+            }
+        </style>
+    </noscript>
 </head>
 <body>
     <!-- Language Selection for non-JavaScript users -->
@@ -241,11 +270,11 @@
             </div>
             <p>Valitse kieli / Select language</p>
             <div class="language-buttons">
-                <a href="fi.html" class="language-btn language-btn--primary">
+                <a href="fi.html" class="language-btn language-btn--primary" data-language-choice="fi">
                     <span class="language-btn__flag">🇫🇮</span>
                     <span class="language-btn__text">Suomi</span>
                 </a>
-                <a href="en.html" class="language-btn language-btn--secondary">
+                <a href="en.html" class="language-btn language-btn--secondary" data-language-choice="en">
                     <span class="language-btn__flag">🇬🇧</span>
                     <span class="language-btn__text">English</span>
                 </a>
@@ -255,52 +284,31 @@
     </div>
 
     <script>
-        // Language detection and automatic redirect
-        function detectLanguage() {
-            // Check for stored preference first
-            const storedLang = localStorage.getItem('preferred-language');
-            if (storedLang) {
-                redirectToLanguage(storedLang);
-                return;
+        function rememberLanguage(lang) {
+            try {
+                localStorage.setItem('preferred-language', lang);
+            } catch (error) {
+                // Language links should still work even if storage is unavailable.
             }
-            
-            // Check browser language
-            const browserLang = navigator.language || navigator.userLanguage;
-            const langCode = browserLang.toLowerCase().split('-')[0];
-            
-            // Check for Finnish
-            if (langCode === 'fi') {
-                redirectToLanguage('fi');
-                return;
-            }
-            
-            // Default to English for all other languages
-            redirectToLanguage('en');
         }
-        
-        function redirectToLanguage(lang) {
-            const loading = document.getElementById('loading');
-            loading.style.display = 'block';
-            
-            // Store preference
-            localStorage.setItem('preferred-language', lang);
-            
-            // Redirect after a short delay to show loading message
-            setTimeout(() => {
-                window.location.href = lang + '.html';
-            }, 500);
-        }
-        
-        // Run language detection when page loads
-        document.addEventListener('DOMContentLoaded', detectLanguage);
-        
-        // Fallback: if JavaScript fails, the language selector will be visible
+
+        document.querySelectorAll('[data-language-choice]').forEach(link => {
+            link.addEventListener('click', () => {
+                rememberLanguage(link.getAttribute('data-language-choice'));
+            });
+        });
+
+        // Fallback: show the selector if the early redirect did not happen.
         setTimeout(() => {
+            if (window.__languageRedirectStarted) {
+                return;
+            }
+
             const selector = document.getElementById('languageSelector');
             if (selector) {
                 selector.style.display = 'flex';
             }
-        }, 1000);
+        }, 300);
     </script>
 </body>
 </html>

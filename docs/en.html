@@ -112,7 +112,7 @@
                     <li><a href="#contact" class="nav__link nav__link--cta">Contact</a></li>
                     <li>
                         <div class="nav__language-switcher">
-                            <a href="fi.html" class="nav__language-link" title="Suomeksi">
+                            <a href="fi.html" class="nav__language-link" title="Suomeksi" data-language-choice="fi">
                                 <span class="nav__language-flag">🇫🇮</span>
                                 <span class="nav__language-text">FI</span>
                             </a>
@@ -464,6 +464,17 @@
         
         navToggle.addEventListener('click', () => {
             navMenu.classList.toggle('nav__menu--open');
+        });
+
+        // Remember explicit language choices for future visits to the root page
+        document.querySelectorAll('[data-language-choice]').forEach(link => {
+            link.addEventListener('click', () => {
+                try {
+                    localStorage.setItem('preferred-language', link.getAttribute('data-language-choice'));
+                } catch (error) {
+                    // Navigation should still work even if storage is unavailable.
+                }
+            });
         });
 
         // Active navigation highlighting

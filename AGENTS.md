@@ -12,7 +12,7 @@ Use this file as persistent guidance for future Codex work in this repository. U
 
 ## Important directories and files
 
-- `docs/index.html`: language selector. It detects `localStorage.preferred-language` or browser language and redirects to `fi.html` for Finnish, otherwise `en.html`.
+- `docs/index.html`: root language redirect page. It runs a head script before paint, using `localStorage.preferred-language` or browser language to redirect to `fi.html` for Finnish and `en.html` otherwise. Keep the visible language picker as a no-JavaScript/failure fallback only to avoid a flash before redirect.
 - `docs/en.html` and `docs/fi.html`: main English and Finnish marketing pages. These contain inline JavaScript for smooth scrolling, mobile nav, active nav highlighting, and reveal animations.
 - `docs/index.css`: shared CSS for the main language selector and main marketing pages.
 - `docs/privacy.html`: bilingual privacy page with its own language toggle logic using `localStorage.privacyLanguage`.
